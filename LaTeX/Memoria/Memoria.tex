@@ -1,0 +1,109 @@
+% Paquetes
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage{anyfontsize}
+\usepackage{tocloft}
+\usepackage{titlesec}
+
+% Preámbulo
+\geometry{
+  a4paper,         % Paper size
+  left = 3cm,        % Left margin
+  right = 3cm,       % Right margin
+  top = 2.5cm,         % Top margin
+  bottom = 2.5cm       % Bottom margin
+}
+
+%% Estilos de letras
+\newcommand{\boldcenteredtext}[1]{
+  \begin{center}
+    \textbf{\fontsize{12pt}{14pt}\selectfont #1}
+  \end{center}
+}
+\newcommand{\largeboldcenteredtext}[1]{
+  \begin{center}
+    \textbf{\fontsize{16pt}{18pt}\selectfont #1}
+  \end{center}
+}
+\newcommand{\boldrightalignedtext}[1]{
+  \begin{flushright}
+    \textbf{\fontsize{12pt}{14pt}\selectfont #1}
+  \end{flushright}
+}
+\newcommand{\centeredtext}[1]{
+  \begin{center}
+    \fontsize{12pt}{14pt}\selectfont #1
+  \end{center}
+}
+
+%% Apariencia referencias
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  pdfborder={0 0 0}
+}
+
+%% Nombre de índices
+\renewcommand{\contentsname}{Índice}
+\renewcommand{\listfigurename}{Índice de figuras}
+\renewcommand{\listtablename}{Índice de tablas}
+
+% Documento
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+  \includegraphics[width=0.4\linewidth, height=0.1\textheight]{FigurasMemoria/logoTecnun.png}
+\end{center}
+
+\vspace{1cm}
+
+\boldcenteredtext{Proyecto Fin de Grado}
+
+\largeboldcenteredtext{INGENIERÍA ELÉCTRICA}
+
+\vspace{6cm}
+
+\largeboldcenteredtext{Diseño y desarrollo de una lanzadera electromagnética}
+
+\vspace{8cm}
+
+\boldrightalignedtext{Pedro José Romero Gombau}
+\boldrightalignedtext{Donostia-San Sebastián, mayo 2024}
+
+\vspace{0.6cm}
+
+\centeredtext{Po Manuel Lardizabal, 13. 20018 Donostia-San Sebastián, Gipuzkoa Tel. 943 219 877 · Fax 943 311 442 · www.tecnun.es}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+% Indice títulos
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+
+% Indice figuras
+\newpage
+\thispagestyle{empty}
+\listoffigures
+
+% Indice tablas
+\newpage
+\thispagestyle{empty}
+\listoftables
+
+\newpage
+\thispagestyle{plain}
+\section{Introducción}
+\section{gordo}
+
+\end{document}

@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{amsmath}
 \usepackage[spanish]{babel}
+\usepackage{graphicx}
 
 \title{Setups de simulaciones}
 \author{Pedro J. Romero Gombau}
@@ -24,24 +25,15 @@ El primer setup utilizado es:
     m_{bar}=0.019~kg~~~~~~v_{bar~ini}=0~ms^{-1}
 \end{align*}
 
-\section{Quadratic Equations}
-The general form of a quadratic equation is $ax^2 + bx + c = 0$. The solution can be found using:
-\[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
-
-\section{Calculus}
-Some basic calculus formulas include derivatives and integrals.
-\subsection{Derivatives}
-\begin{itemize}
-\item $\frac{d}{dx}x^n = nx^{n-1}$
-\item $\frac{d}{dx}\sin x = \cos x$
-\item $\frac{d}{dx}\cos x = -\sin x$
-\end{itemize}
-
-\subsection{Integrals}
-\begin{itemize}
-\item $\int x^n \, dx = \frac{x^{n+1}}{n+1} + C$, for $n \neq -1$
-\item $\int e^x \, dx = e^x + C$
-\item $\int \cos x \, dx = \sin x + C$
-\end{itemize}
-
+\section{Setup 2}
+El primer setup utilizado es:
+\begin{align*}
+    T_{sim}=150ms~~~~~~T_{step}=5ms\to30~steps
+    \\~\\
+    I(t=0)=3.5~A\to I(t=50~ms)=I(t=T_{sim})=0~A
+    \\~\\
+    V_{coil}=13.1~V~~~~~~R_{coil}=3.65~\Omega
+    \\~\\
+    m_{bar}=0.019~kg~~~~~~v_{bar~ini}=0~ms^{-1}
+\end{align*}
 \end{document}
