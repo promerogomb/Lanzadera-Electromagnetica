@@ -1,2 +1,3 @@
-\contentsline {section}{\numberline {1}Introducción}{6}{section.1}%
-\contentsline {section}{\numberline {2}gordo}{6}{section.2}%
+\contentsline {section}{\numberline {1}Resumen}{6}{section.1}%
+\contentsline {section}{\numberline {2}Abstract}{7}{section.2}%
+\contentsline {section}{\numberline {3}Introducción}{8}{section.3}%

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1716600177.07076 "/Users/pjose/Desktop/PFG/LaTeX/Memoria/Memoria.tex" "Memoria.pdf" "Memoria" 1716600178.63373 0
-  "/Users/pjose/Desktop/PFG/LaTeX/Memoria/Memoria.tex" 1716600176.80873 2200 d8433217642f65a7687b1bae61126c33 ""
+["pdflatex"] 1716647412.69492 "/Users/pjose/Desktop/PFG/LaTeX/Memoria/Memoria.tex" "Memoria.pdf" "Memoria" 1716647413.83258 0
+  "/Users/pjose/Desktop/PFG/LaTeX/Memoria/Memoria.tex" 1716647411.19591 5179 69dbecf5ffc390ed6da227584b96ef8a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -74,12 +74,12 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1716570010 8221431 36001531ea65909097ff1852a0c815b2 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "FigurasMemoria/logoTecnun.png" 1716593500.14402 19567 0f7461f54f7ea98814527f3f9c73504c ""
-  "Memoria.aux" 1716600178.52279 374 375695f3be554b627ef850e2c9282cfa "pdflatex"
-  "Memoria.lof" 1716600178.51471 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Memoria.lot" 1716600178.51686 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Memoria.out" 1716600178.52353 174 9a42fe999555931081dec8a5ebc5cd06 "pdflatex"
-  "Memoria.tex" 1716600176.80873 2200 d8433217642f65a7687b1bae61126c33 ""
-  "Memoria.toc" 1716600178.52396 130 eefb60d83b6a8c6c89ca6a0d3d147d90 "pdflatex"
+  "Memoria.aux" 1716647413.73513 481 2d83dffe0856d8f7c0206752c60cc884 "pdflatex"
+  "Memoria.lof" 1716647413.7186 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Memoria.lot" 1716647413.72072 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Memoria.out" 1716647413.73626 267 534801e65680583ae36789e7e7c50c12 "pdflatex"
+  "Memoria.tex" 1716647411.19591 5179 69dbecf5ffc390ed6da227584b96ef8a ""
+  "Memoria.toc" 1716647413.73694 196 0a3803cec0e1f540cd46058e1d04a9b1 "pdflatex"
   (generated)
   "Memoria.aux"
   "Memoria.lof"
