@@ -1,0 +1,7 @@
+$begin 'ValidationCache'
+	$begin 'OneValidationResult'
+		Variation='$bar_mass=\'0.021811739507176995meter\' $coil_current=\'3.5A\' $coil_resistance=\'3.6499999999999999ohm\' $coil_voltage=\'13V\' $copper_lenght=\'41.329999999999998meter\' $h_coil=\'0.053120000000000001meter\' $l_bar=\'0.096000000000000002meter\' $N=\'750\' $r_bar=\'0.003045\' $r_coil_ext=\'0.010635meter\' $r_coil_int=\'0.0060350000000000004meter\' $r_pvc=\'0.0040400000000000002meter\' $r_wire=\'0.00025000000000000001meter\' posicion=\'0mm\' Steps=\'50\' T_total=\'0.5s\' velocidad=\'0.001m_per_sec\''
+		Status=true
+		FileName='VI02DE1274817159561774.tmp'
+	$end 'OneValidationResult'
+$end 'ValidationCache'
