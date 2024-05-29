@@ -1,0 +1,123 @@
+% Paquetes
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage{anyfontsize}
+\usepackage{tocloft}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{indentfirst}
+\usepackage{textcomp}
+\usepackage[spanish]{babel}
+\usepackage{caption}
+
+% Preámbulo
+\geometry{
+  a4paper,         % Paper size
+  left = 3cm,        % Left margin
+  right = 3cm,       % Right margin
+  top = 2.5cm,         % Top margin
+  bottom = 2.5cm       % Bottom margin
+}
+
+\setlength{\parindent}{2em}
+\setlength{\parskip}{1em plus 0.5em minus 0.2em}
+\captionsetup{font=small}
+
+%% Estilos de letras
+\newcommand{\boldcenteredtext}[1]{
+  \begin{center}
+    \textbf{\fontsize{12pt}{14pt}\selectfont #1}
+  \end{center}
+}
+\newcommand{\largeboldcenteredtext}[1]{
+  \begin{center}
+    \textbf{\fontsize{16pt}{18pt}\selectfont #1}
+  \end{center}
+}
+\newcommand{\boldrightalignedtext}[1]{
+  \begin{flushright}
+    \textbf{\fontsize{12pt}{14pt}\selectfont #1}
+  \end{flushright}
+}
+\newcommand{\centeredtext}[1]{
+  \begin{center}
+    \fontsize{12pt}{14pt}\selectfont #1
+  \end{center}
+}
+
+%% Apariencia referencias
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  pdfborder={0 0 0}
+}
+
+%% Índices
+\renewcommand{\contentsname}{Índice de contenidos}
+\renewcommand{\listfigurename}{Índice de figuras}
+\renewcommand{\listtablename}{Índice de tablas}
+
+% Documento
+\begin{document}
+
+\pagestyle{plain}
+
+\thispagestyle{empty}
+\input{portada.tex}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+\input{resumen.tex}
+
+% Indice títulos
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+
+% Indice figuras
+\newpage
+\thispagestyle{empty}
+\listoffigures
+
+% Indice tablas
+\newpage
+\thispagestyle{empty}
+\listoftables
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
+
+\newpage
+\input{introduccion.tex}
+
+\newpage
+\input{motivacionyobjetivos.tex}
+
+\newpage
+\section{Marco teórico}
+
+\newpage
+\input{desarrollo.tex}
+\input{desarrolloteorico.tex}
+
+\newpage
+\subsection{Simulaciones}
+
+\newpage
+\subsection{Prototipo}
+
+\newpage
+\section{Resultados}
+
+\newpage
+\section{Discusión y conclusiones}
+
+\end{document}
