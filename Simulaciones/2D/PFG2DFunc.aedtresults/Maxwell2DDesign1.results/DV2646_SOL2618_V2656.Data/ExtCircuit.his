@@ -1,8 +1,0 @@
-ExtCircuit_begin
-  equiLL
-    1
-    0
-  Flux_internal
-    1
-    0
-ExtCircuit_end
