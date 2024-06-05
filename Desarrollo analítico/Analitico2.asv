@@ -35,7 +35,7 @@ for i = 1:length(x)
     %Reluctancias:
     Rel_gap = (h_c - x(i)) / (mu_0 * S_coil);
     Rel_bar = x(i) / (mu * S_bar);
-    Rel_vec(i) = Rel_bar + Rel_gap + Rel_disp;
+    Rel_vec(i) =  Rel_bar + Rel_gap + Rel_disp;
 
     %Inducción:
     Bvec(i) = FFM / (Rel_vec(i) * S_coil);
