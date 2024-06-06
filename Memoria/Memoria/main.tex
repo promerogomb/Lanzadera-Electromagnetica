@@ -14,7 +14,7 @@
 \usepackage{textcomp}
 \usepackage[spanish]{babel}
 \usepackage{caption}
-\usepackage{biblatex}
+\usepackage{natbib}
 
 % Preámbulo
 \geometry{
@@ -28,7 +28,7 @@
 \setlength{\parindent}{2em}
 \setlength{\parskip}{1em plus 0.5em minus 0.2em}
 \captionsetup{font=small}
-\addbibresource{referencias.bib}
+
 
 %% Estilos de letras
 \newcommand{\boldcenteredtext}[1]{
@@ -57,7 +57,8 @@
   colorlinks=true,
   linkcolor=black,
   urlcolor=blue,
-  pdfborder={0 0 0}
+  pdfborder={0 0 0},
+  citecolor=black
 }
 
 %% Índices
@@ -123,6 +124,7 @@
 \section{Discusión y conclusiones}
 
 \newpage
-\input{referencias.tex}
+\bibliographystyle{unsrt}
+\bibliography{referencias}
 
 \end{document}

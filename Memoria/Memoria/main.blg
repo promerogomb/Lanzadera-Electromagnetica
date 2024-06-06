@@ -1,9 +1,50 @@
-[0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is 'main.blg'
-[84] biber-darwin:340> INFO - === Wed Jun  5, 2024, 19:55:11
-[103] Biber.pm:419> INFO - Reading 'main.bcf'
-[202] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[216] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[216] bbl.pm:763> INFO - Output to main.bbl
-[216] Biber.pm:131> WARN - The file 'main.bcf' does not contain any citations!
-[216] Biber.pm:133> INFO - WARNINGS: 1
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: unsrt.bst
+Database file #1: referencias.bib
+Warning--entry type for "inproceedings" isn't style-file defined
+--line 9 of file referencias.bib
+Warning--empty journal in introCoilGun
+You've used 2 entries,
+            1791 wiz_defined-function locations,
+            456 strings with 3787 characters,
+and the built_in function-call counts, 317 in all, are:
+= -- 23
+> -- 15
+< -- 0
++ -- 6
+- -- 4
+* -- 13
+:= -- 59
+add.period$ -- 7
+call.type$ -- 2
+change.case$ -- 2
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 13
+empty$ -- 33
+format.name$ -- 4
+if$ -- 66
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 1
+newline$ -- 14
+num.names$ -- 2
+pop$ -- 11
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 6
+stack$ -- 0
+substring$ -- 0
+swap$ -- 1
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 2
+width$ -- 3
+write$ -- 23
+(There were 2 warnings)
