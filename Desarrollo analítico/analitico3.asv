@@ -1,0 +1,49 @@
+% Define parameters
+
+mu0 = 4 * pi * 10^-7; % Permeability of free space in H/m
+mu_r_fe = 5000; % Relative permeability of the iron bar
+N = 500; % Number of turns
+I_c = 3.65; % Coil current [A]
+
+h_c = 0.05321; % Coil length [m]
+r_c = 0.01064; % Coil external radius [m]
+l_b = 0.096; % Length of the iron bar [m]
+r_b = 0.003045; % Bar radius [m]
+
+% Reluctance paths
+x = linspace(0, h_c, 200); % Movement region
+l_ag_0 = h_c; % Initial air gap length [m]
+l_fe_0 = l_b; % Initial core length [m]
+l_al = l_ag_0 + l_fe_0;
+
+A_ag = pi * r_c ^ 2; % Cross-sectional area of the core [m^2]
+A_fe =pi * r_b ^ 2; % Cross-sectional area of the iron bar [m^2]
+A_al = pi *(1.1 * r_c) ^ 2; % Cross-sectional area of the flux region [m^2]
+
+% Pre-allocate arrays for reluctance, flux, induction and force
+R_total = zeros(size(x));
+Phi = zeros(size(x));
+B = zeros(size(x));
+F = zeros(size(x));
+
+% Calculate reluctance, flux, and induction for each position
+for i = 1:length(x)
+    R_ag = (h_c - x(i)) / (mu0 * A_ag);
+    R_feIN = x(i) / (mu0 * mu_r_fe * A_ag);
+    R_al = l_al / (mu0 * A_ag); % Assuming l_al corresponds to air permeability
+    R_total(i) = R_core + R_feIN + R_al;
+    
+    % Calculate flux
+    Phi(i) = (N * I_c) / R_total(i);
+    
+    % Calculate magnetic induction (assuming in the core area)
+    B(i) = Phi(i) / A_ag;
+end
+
+% Plot the results
+figure;
+plot(l_gap, B, 'LineWidth', 2);
+xlabel('Air Gap Length (m)');
+ylabel('Magnetic Induction B (T)');
+title('Magnetic Induction vs. Air Gap Length');
+grid on;
