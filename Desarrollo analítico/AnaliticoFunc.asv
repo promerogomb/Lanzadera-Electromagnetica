@@ -30,11 +30,7 @@ F = zeros(size(x));
 
 % Calculate reluctance, flux, and induction for each position
 for i = 1:length(x)
-    R_dispc(i) = h_c / (mu0 * S_disp);
-    R_phi(i) = ((h_c + l_fe) - x(i)) / (mu0 * S_disp);
-    R_B(i) = l_fe / (mu_fe * mu0 * S_bar);
-    R_airc(i) = (h_c - x(i)) / (mu0 * S_c);
-    R_total(i) = R_dispc(i) + R_phi(i) + R_B(i) + R_airc(i);
+    R
     
     % Calculate flux
     Phi(i) = (N * I_c) / R_total(i);
@@ -48,10 +44,9 @@ end
 
 figure;
 hold on;
-plot(x, R_dispc, 'r', 'DisplayName', 'R_{dispc}');
+plot(x, R_dispc, 'r', 'DisplayName', 'R_{core}');
 plot(x, R_B, 'g', 'DisplayName', 'R_{bar}');
 plot(x, R_phi, 'b', 'DisplayName', 'R_{phi}');
-plot(x, R_airc, 'b', 'DisplayName', 'R_{airc}');
 plot(x, R_total, 'k', 'DisplayName', 'R_{total}');
 xlabel('Air Gap Length (m)');
 ylabel('Total circuit reluctance');
