@@ -1,12 +1,10 @@
 % Electromagnetic properties
-
 mu0 = 4 * pi * 10^-7; % Permeability of free space in H/m
 mu_fe = 5000; % Relative permeability of the iron bar
 N = 500; % Number of turns
 I_c = 3.65; % Coil current [A]
 
 % Geometry
-
 h_c = 0.05321; % Coil length [m]
 r_c = 0.01064; % Coil external radius [m]
 l_fe = 0.096; % Length of the iron bar [m]
