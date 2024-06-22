@@ -1,16 +1,23 @@
 \begin{thebibliography}{1}
 
+\bibitem{purcell2013electricidad}
+Edward~M. Purcell and David~J. Morin.
+\newblock Electricidad y magnetismo, 2013.
+
 \bibitem{introCoilGun}
 Vineeth~Kumar Sai~Chaithanya.
-\newblock A review on technological advancement in electromagnetic coil gun
-  system.
+\newblock A review on technological advancement in electromagnetic coil gun system.
 \newblock 2018.
-\newblock Accedido en 05-06-2024.
+\newblock Accedido: 05-06-2024.
 
 \bibitem{inproceedings}
 R.J. Kaye, B.N. Turman, and S.L. Shope.
-\newblock Applications of coilgun electromagnetic propulsion technology, 08
-  2002.
-\newblock Accedido en 05-06-2024.
+\newblock Applications of coilgun electromagnetic propulsion technology, 08 2002.
+\newblock Accedido: 05-06-2024.
+
+\bibitem{oersted2024}
+{IEEE Spain}.
+\newblock Doscientos aniversario de oersted y el descubrimiento del electromagnetismo.
+\newblock Accedido: 24-06-2024.
 
 \end{thebibliography}
