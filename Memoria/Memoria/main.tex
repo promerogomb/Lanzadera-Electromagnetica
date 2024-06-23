@@ -14,8 +14,12 @@
 \usepackage{textcomp}
 \usepackage[spanish]{babel}
 \usepackage{caption}
-\usepackage{natbib}
+\usepackage[square,numbers]{natbib}
 \usepackage{float}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
 
 % Preámbulo
 \geometry{
@@ -65,6 +69,9 @@
 %% Índices
 \renewcommand{\contentsname}{Índice de contenidos}
 \renewcommand{\listfigurename}{Índice de figuras}
+\renewcommand{\cftfigpresnum}{\figurename\ }
+\renewcommand{\cftfigaftersnum}{:}
+\setlength{\cftfignumwidth}{3em}
 \renewcommand{\listtablename}{Índice de tablas}
 
 % Documento
@@ -116,7 +123,7 @@
 \subsection{Simulaciones}
 
 \newpage
-\subsection{Prototipo}
+\input{desarrolloprototipo.tex}
 
 \newpage
 \section{Resultados}
@@ -125,7 +132,9 @@
 \section{Discusión y conclusiones}
 
 \newpage
-\bibliographystyle{unsrt}
-\bibliography{referencias}
+\begin{flushleft}
+  \bibliographystyle{abbrvnat}
+  \bibliography{referencias}
+\end{flushleft}
 
 \end{document}

@@ -1,23 +1,50 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem{purcell2013electricidad}
-Edward~M. Purcell and David~J. Morin.
+\bibitem[Griffiths(2005)]{griffiths2005}
+D.~J. Griffiths.
+\newblock \textit{Introduction to Electrodynamics}, 2005.
+
+\bibitem[Hughes et~al.(2005)Hughes, McKenzie-Smith, Hiley, and Brown]{hughes2005electrical}
+E.~Hughes, I.~McKenzie-Smith, J.~Hiley, and K.~Brown.
+\newblock \emph{Electrical and Electronic Technology}.
+\newblock Pearson Education, 10th edition, 2005.
+
+\bibitem[{IEEE Spain}()]{oersted2024}
+{IEEE Spain}.
+\newblock \textit{Doscientos aniversario de Oersted y el descubrimiento del electromagnetismo}.
+\newblock URL \url{https://ieeespain.org/doscientos-aniversario-oersted-y-el-descubrimiento-del-electromagnetismo/}.
+\newblock Accedido: 24-06-2024.
+
+\bibitem[Jerez(2016)]{jerez2016resueltos}
+N.~Jerez.
+\newblock \textit{Problemas de Máquinas Électricas}, 2016.
+\newblock URL \url{https://www.researchgate.net/profile/Nicolas-Jerez-3/}.
+\newblock Accedido: 2024-06-04.
+
+\bibitem[Kaye et~al.(2002)Kaye, Turman, and Shope]{inproceedings}
+R.~Kaye, B.~Turman, and S.~Shope.
+\newblock \textit{Applications of coilgun electromagnetic propulsion technology}, 08 2002.
+\newblock URL \url{https://ieeexplore.ieee.org/abstract/document/1189573}.
+\newblock Accedido: 05-06-2024.
+
+\bibitem[Sai~Chaithanya(2018)]{introCoilGun}
+V.~K. Sai~Chaithanya.
+\newblock \textit{A Review on Technological Advancement in Electromagnetic Coil Gun System}, 2018.
+\newblock URL \url{https://www.ijert.org/}.
+\newblock Accedido: 05-06-2024.
+
+\bibitem[\textit{Purcell, Edward M. and Morin, David J.}(2013)]{purcell2013electricidad}
+\textit{Purcell, Edward M. and Morin, David J.}
 \newblock Electricidad y magnetismo, 2013.
 
-\bibitem{introCoilGun}
-Vineeth~Kumar Sai~Chaithanya.
-\newblock A review on technological advancement in electromagnetic coil gun system.
-\newblock 2018.
-\newblock Accedido: 05-06-2024.
-
-\bibitem{inproceedings}
-R.J. Kaye, B.N. Turman, and S.L. Shope.
-\newblock Applications of coilgun electromagnetic propulsion technology, 08 2002.
-\newblock Accedido: 05-06-2024.
-
-\bibitem{oersted2024}
-{IEEE Spain}.
-\newblock Doscientos aniversario de oersted y el descubrimiento del electromagnetismo.
-\newblock Accedido: 24-06-2024.
+\bibitem[Tipler and Mosca(2008)]{tipler2008}
+P.~A. Tipler and G.~Mosca.
+\newblock \emph{\textit{Physics for Scientists and Engineers}}.
+\newblock W. H. Freeman, New York, NY, 6th edition, 2008.
 
 \end{thebibliography}

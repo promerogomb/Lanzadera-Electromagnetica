@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.24)  22 JUN 2024 13:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.24)  23 JUN 2024 22:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -292,49 +292,130 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box52
 \@float@everytoks=\toks24
 \@floatcapt=\box53
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip100
+\enit@outerparindent=\dimen169
+\enit@toks=\toks25
+\enit@inbox=\box54
+\enit@count@id=\count286
+\enitdp@description=\count287
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip101
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks26
+\ex@=\dimen170
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen171
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 63.
+\inf@bad=\count288
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count289
+\leftroot@=\count290
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count291
+\DOTSCASE@=\count292
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen172
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count293
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count294
+\dotsspace@=\muskip17
+\c@parentequation=\count295
+\dspbrk@lvl=\count296
+\tag@help=\toks27
+\row@=\count297
+\column@=\count298
+\maxfields@=\count299
+\andhelp@=\toks28
+\eqnshift@=\dimen173
+\alignsep@=\dimen174
+\tagshift@=\dimen175
+\tagwidth@=\dimen176
+\totwidth@=\dimen177
+\lineht@=\dimen178
+\@envbody=\toks29
+\multlinegap=\skip102
+\multlinetaggap=\skip103
+\mathdisplay@stack=\toks30
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 67.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count286
-\l__pdf_internal_box=\box54
+\l__color_backend_stack_int=\count300
+\l__pdf_internal_box=\box57
 ) (./main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count287
-\scratchdimen=\dimen169
-\scratchbox=\box55
-\nofMPsegments=\count288
-\nofMParguments=\count289
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count290
-\MPscratchDim=\dimen170
-\MPnumerator=\count291
-\makeMPintoPDFobject=\count292
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count301
+\scratchdimen=\dimen179
+\scratchbox=\box58
+\nofMPsegments=\count302
+\nofMParguments=\count303
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count304
+\MPscratchDim=\dimen180
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
+\everyMPtoPDFconversion=\toks32
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -347,7 +428,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 71.
+Package hyperref Info: Link coloring ON on input line 78.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -387,8 +468,8 @@ Package hyperref Info: Link coloring ON on input line 71.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 71.
-LaTeX Info: Redefining \% on input line 71.
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -406,26 +487,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--7
  []
 
 [3])
-Underfull \hbox (badness 10000) in paragraph at lines 12--84
+Underfull \hbox (badness 10000) in paragraph at lines 12--91
 
  []
 
 [4] (./main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
  [5] (./main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
+
+Overfull \hbox (115.93275pt too wide) in paragraph at lines 5--5
+ [][] [][][]\OT1/cmr/m/n/10.95 Curva \OT1/cmr/bx/n/10.95 C \OT1/cmr/m/n/10.95 pa-ra la cual rea-li-za-re-mos los c^^Salcu-los.Imagen to-ma-da de [][]https://artpictures.club/autumn- 
+ []
+
+
+Overfull \hbox (15.98471pt too wide) in paragraph at lines 6--6
+ \OT1/cmr/m/n/10.95 ma-da de [][]https://ece.northeastern.edu/fac-ece/nian/mom/electromagnets.html[][].[][] []  
+ []
+
 )
 \tf@lof=\write5
 \openout5 = `main.lof'.
@@ -438,29 +530,52 @@ LaTeX Info: Redefining \% on input line 1.
 \openout6 = `main.lot'.
 
  [7] (./introduccion.tex
-<FigurasMemoria/fig1coilgunIntro.jpeg, id=102, 513.92pt x 317.185pt>
+<FigurasMemoria/fig1coilgunIntro.jpeg, id=115, 513.92pt x 317.185pt>
 File: FigurasMemoria/fig1coilgunIntro.jpeg Graphic file (type jpg)
 <use FigurasMemoria/fig1coilgunIntro.jpeg>
 Package pdftex.def Info: FigurasMemoria/fig1coilgunIntro.jpeg  used on input line 8.
 (pdftex.def)             Requested size: 199.16928pt x 122.92726pt.
 ) [8 <./FigurasMemoria/fig1coilgunIntro.jpeg>] (./motivacionyobjetivos.tex [9]) [10] (./marcoteorico.tex
-<FigurasMemoria/fig3electromagnet.jpg, id=132, 602.25pt x 863.225pt>
-File: FigurasMemoria/fig3electromagnet.jpg Graphic file (type jpg)
-<use FigurasMemoria/fig3electromagnet.jpg>
-Package pdftex.def Info: FigurasMemoria/fig3electromagnet.jpg  used on input line 23.
-(pdftex.def)             Requested size: 227.62204pt x 326.2639pt.
- [11]) [12 <./FigurasMemoria/fig3electromagnet.jpg>] (./desarrollo.tex) (./desarrolloteorico.tex
-<FigurasMemoria/fig2esquemaGeom.png, id=147, 1040.38687pt x 368.1253pt>
-File: FigurasMemoria/fig2esquemaGeom.png Graphic file (type png)
-<use FigurasMemoria/fig2esquemaGeom.png>
-Package pdftex.def Info: FigurasMemoria/fig2esquemaGeom.png  used on input line 7.
-(pdftex.def)             Requested size: 170.71652pt x 60.40102pt.
+<FigurasMemoria/amperelaw.png, id=147, 655.44875pt x 654.445pt>
+File: FigurasMemoria/amperelaw.png Graphic file (type png)
+<use FigurasMemoria/amperelaw.png>
+Package pdftex.def Info: FigurasMemoria/amperelaw.png  used on input line 33.
+(pdftex.def)             Requested size: 142.26378pt x 142.04105pt.
+ [11]
+<FigurasMemoria/integralampere.png, id=159, 1012.78375pt x 622.325pt>
+File: FigurasMemoria/integralampere.png Graphic file (type png)
+<use FigurasMemoria/integralampere.png>
+Package pdftex.def Info: FigurasMemoria/integralampere.png  used on input line 42.
+(pdftex.def)             Requested size: 227.62204pt x 139.86514pt.
 
-Overfull \hbox (14.5544pt too wide) in paragraph at lines 22--23
-\OT1/cmr/m/n/10.95 la ba-rra, ya que con su va-lor po-dre-mos cal-cu-lar la fuer-za uti-li-zan-do Lo-rentz (\OT1/cmr/bx/n/10.95 COMPROBAR
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
+[]\OT1/cmr/m/n/10 Figura 4: |Cur-va \OT1/cmr/bx/n/10 C \OT1/cmr/m/n/10 pa-ra la cual rea-li-za-re-mos los c^^Salcu-los.Imagen to-ma-da de
  []
 
-) [13 <./FigurasMemoria/fig2esquemaGeom.png>] [14] [15] [16] [17] (./main.bbl) [18] (./main.aux
+[12 <./FigurasMemoria/amperelaw.png> <./FigurasMemoria/integralampere.png>]
+<FigurasMemoria/electromagnet.png, id=171, 454.69875pt x 610.28pt>
+File: FigurasMemoria/electromagnet.png Graphic file (type png)
+<use FigurasMemoria/electromagnet.png>
+Package pdftex.def Info: FigurasMemoria/electromagnet.png  used on input line 84.
+(pdftex.def)             Requested size: 142.26378pt x 190.94482pt.
+ [13 <./FigurasMemoria/electromagnet.png>]
+<FigurasMemoria/esquemabasico.png, id=183, 900.36375pt x 571.13374pt>
+File: FigurasMemoria/esquemabasico.png Graphic file (type png)
+<use FigurasMemoria/esquemabasico.png>
+Package pdftex.def Info: FigurasMemoria/esquemabasico.png  used on input line 95.
+(pdftex.def)             Requested size: 398.33858pt x 252.68527pt.
+) [14 <./FigurasMemoria/esquemabasico.png>] (./desarrollo.tex) (./desarrolloteorico.tex
+<FigurasMemoria/esquemaDesTeor.png, id=190, 1674.255pt x 2165.08875pt>
+File: FigurasMemoria/esquemaDesTeor.png Graphic file (type png)
+<use FigurasMemoria/esquemaDesTeor.png>
+Package pdftex.def Info: FigurasMemoria/esquemaDesTeor.png  used on input line 25.
+(pdftex.def)             Requested size: 199.16928pt x 257.55295pt.
+ [15] [16 <./FigurasMemoria/esquemaDesTeor.png>]) [17] [18] (./desarrolloprototipo.tex) [19] [20] [21] (./main.bbl
+Overfull \hbox (16.43788pt too wide) in paragraph at lines 18--22
+\OT1/cmtt/m/n/10.95 doscientos-[]aniversario-[]oersted-[]y-[]el-[]descubrimiento-[]del-[]electromagnetismo/$[][]\OT1/cmr/m/n/10.95 . 
+ []
+
+) [22] (./main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -472,18 +587,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B2EE3CA678C6028152A2F3C2AAFC7442;1222.
  ) 
 Here is how much of TeX's memory you used:
- 13018 strings out of 474116
- 211248 string characters out of 5743682
- 1936187 words of memory out of 5000000
- 35152 multiletter control sequences out of 15000+600000
- 564675 words of font info for 57 fonts, out of 8000000 for 9000
+ 14644 strings out of 474116
+ 233957 string characters out of 5743682
+ 1938187 words of memory out of 5000000
+ 36718 multiletter control sequences out of 15000+600000
+ 566701 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,1332b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on main.pdf (18 pages, 422469 bytes).
+ 75i,6n,79p,1332b,532s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
+Output written on main.pdf (22 pages, 3965686 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
- 188 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 311 PDF objects out of 1000 (max. 8388607)
+ 243 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

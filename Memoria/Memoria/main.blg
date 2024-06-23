@@ -1,50 +1,48 @@
 This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-The style file: unsrt.bst
+The style file: abbrvnat.bst
 Database file #1: referencias.bib
-Warning--entry type for "inproceedings" isn't style-file defined
---line 9 of file referencias.bib
-Warning--empty journal in introCoilGun
-You've used 4 entries,
-            1791 wiz_defined-function locations,
-            465 strings with 4019 characters,
-and the built_in function-call counts, 576 in all, are:
-= -- 41
-> -- 27
-< -- 0
-+ -- 11
-- -- 7
-* -- 16
-:= -- 97
-add.period$ -- 12
-call.type$ -- 4
-change.case$ -- 4
-chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 23
-empty$ -- 69
-format.name$ -- 7
-if$ -- 127
-int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 1
-newline$ -- 23
-num.names$ -- 4
-pop$ -- 26
+Warning--empty year in oersted2024
+You've used 8 entries,
+            2773 wiz_defined-function locations,
+            642 strings with 5805 characters,
+and the built_in function-call counts, 2773 in all, are:
+= -- 231
+> -- 140
+< -- 6
++ -- 50
+- -- 42
+* -- 177
+:= -- 434
+add.period$ -- 26
+call.type$ -- 8
+change.case$ -- 38
+chr.to.int$ -- 8
+cite$ -- 17
+duplicate$ -- 132
+empty$ -- 259
+format.name$ -- 52
+if$ -- 580
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 4
+newline$ -- 50
+num.names$ -- 32
+pop$ -- 108
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 30
 quote$ -- 0
-skip$ -- 14
+skip$ -- 109
 stack$ -- 0
-substring$ -- 0
-swap$ -- 3
+substring$ -- 16
+swap$ -- 9
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 78
 warning$ -- 1
-while$ -- 4
-width$ -- 5
-write$ -- 40
-(There were 2 warnings)
+while$ -- 24
+width$ -- 0
+write$ -- 109
+(There was 1 warning)
