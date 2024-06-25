@@ -1,0 +1,27 @@
+Intro ->ok
+tres pregunta -> que, por que y como
+marco teorico:
+	-cambiar todo a impersonal
+	-añadir explicación de los circuitos magnéticos
+desarrollo teor:
+	-cambiar 2rc por krc y meter k en matlab
+	-código en anexo
+simulaciones:
+	-hacer desarrollo del procedimiento
+	-resultados aunque no sean certeros
+prototipo:
+	-poner lo que hay definitivamente
+	-anexo con la génesis del prot
+	-descripción del prototipo
+	-anexo listado de componentes
+	-proceso de diseño pcb
+resultados:
+	-4 apartados, uno por sección + discusión
+conclusiones:
+	-cerrar todo en una página
+	-principales hitos
+diseño de prácticas:
+	-conocimientos teóricos necesarios
+	-objetivo de la práctica
+	-restricciones
+	-anexo con el documento
