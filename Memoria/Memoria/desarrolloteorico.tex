@@ -4,7 +4,7 @@ En la sección de desarrollo teórico trataré de proporcionar un procedimiento 
 \begin{itemize}
     \item \textbf{Parámetros geométricos}:
     \begin{enumerate}[label=\alph*., leftmargin=*, itemindent=1em]
-        \item \(r_{cext}\) y \(r_{cint} \) : radios exterior e interior de la bobina, respectivamente.
+        \item \(r_{cext}\) y \(r_{cint} \): radios exterior e interior de la bobina, respectivamente.
         \item \(l_c\): altura de la bobina.
         \item \(r_{fe}\): radio del vástago.
         \item \(l_{fe}\): longitud del vástago.
@@ -18,7 +18,7 @@ En la sección de desarrollo teórico trataré de proporcionar un procedimiento 
 \end{itemize}
 
 El objetivo de este desarrollo es crear un programa en MATLAB al que se le proporcionen estos datos, y que calcule automáticamente la fuerza que experimentará el proyectil. Como se muestra en la figura \ref{fig:electromagnet} el valor de
-\(B\) varía a lo largo del solenoide. Por lo tanto, además de los parámetros dados (que son constantes), será necesario parametrizar también la posición del vástago en cada momento y calcular la fuerza que experimenta en cada una de esas posiciones. Con todo esto, he desarrollado el siguiente esquema que muestra las variables del sistema:
+\(B\) varía a lo largo del solenoide. Por lo tanto, además de los parámetros dados (que son constantes), será necesario parametrizar también la posición del vástago en cada momento (\(x\) en la figura \ref{fig:esquemaDesTeor}) y calcular la fuerza que experimenta en cada una de esas posiciones. Con todo esto, he desarrollado el siguiente esquema que muestra las variables del sistema:
 
 \begin{figure}[H]
     \centering
@@ -33,7 +33,7 @@ Antes de empezar a escribir el código, tenemos que realizar un desarrollo anal�
     \[\mathcal{R} = \frac{l_{caract}}{\mu_0*\mu_r*S_{efect}}\]
 \end{center}
 
-Como se puede observar, el valor de la reluctancia depende de la geometría del cuerpo del que se esté calculando, por lo que este será el parámetro que nos relaciones los valores métricos del sistema con los eléctricos.
+Donde \(l_{caract}\) y \(S_{efect}\) son la longitud característica y la sección efectiva, respectivamente, lo que nos indica que el valor de la reluctancia depende de la geometría del cuerpo del que se esté calculando, por lo que este será el parámetro que nos relaciones los valores métricos del sistema con los eléctricos.
 
 Además de este valor, también podemos definir la \textit{Fuerza Electromotriz} o \textit{FFM}, un parámetro análogo a la tensión en un circuito eléctrico, que en un solenoide es el resultado de multiplicar el número de espiras por su corriente de alimentación:
 
@@ -54,8 +54,42 @@ Y para terminar, la inducción magnética \(B\) se corresponde con el flujo magn
 \end{center}
 
 Al tener una expresión de la inducción en función de la reluctancia, ya hemos conseguido una fórmula que nos proporciona la cantidad de campo generado a partir de las diferentes variables de entrada. Solo necesitamos otra expresión que nos devuelva la fuerza dinámica a partir de la inducción. Según Nicolás Jerez \citep{jerez2016resueltos} la fuerza de atracción para un flujo constante y un circuito magnético lineal es:
+
 \begin{center}
 \[F=\frac{1}{2}\frac{B^2*S}{\mu_0}\]
 \end{center}
 
-Por lo que la relación queda definida. Con las fórmulas generales obtenidas, solo nos quedaría definir las reluctancias que van a representar el sistema. Para esto, tenemos que analizar el conjunto proyectil-bobina, e intentar visualizar el camino del flujo magnético.
+Por lo que la relación queda definida. Con las fórmulas generales obtenidas, solo nos quedaría definir las reluctancias que van a representar el sistema. Para esto, tenemos que analizar el conjunto proyectil-bobina y definir los principales caminos por los que va a fluir el flujo magnético. Antes de empezar a desarrollar las reluctancias, será necesario definir claramente las diferentes áreas efectivas de los componentes del sistema, las cuales serán:
+
+\begin{itemize}
+    \item \(S_{c}=\pi *r_{cext}^2\): Esta superficie se corresponde con la sección delimitada por el radio exterior de la bobina, y es el área efectiva del flujo encerrado en su interior.
+    \item \(S_{fe}=\pi *r_{fe}^2\): Esta superficie se corresponde con la sección delimitada por el radio del vástago.
+    \item \(S_{disp}=\pi *r_{disp}~~\forall r_{disp}\approx 2r_c\): Esta superficie se corresponde con el área de dispersión de flujo. La dispersión es la parte del flujo que abraza a la bobina y a la barra.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5cm]{FigurasMemoria/areasFlujo.jpg}
+    \caption{Vista de planta del sistema. Elaboración propia.}
+    \label{fig:areasFlujo} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+
+Teniendo en cuenta el razonamiento realizado en la sección del marco teórico (\ref{sec:marcoteorico}) y lo expuesto en la figura \ref{fig:areasFlujo}, podemos concluir que existen cuatro principales reluctancias en el sistema de la figura \ref{fig:esquemaDesTeor}:
+
+\begin{itemize}
+    \item \(R_{disp~c}=\frac{h_c}{\mu_0*S_{disp}}\): Se corresponde a la reluctancia del aire que abraza la bobina. Esta reluctancia es fija ya que las dimensiones del solenoide son constantes.
+    \item \(R_{fe}=\frac{l_{fe}}{\mu_0*\mu_{fe}*S_{fe}}\): Se corresponde a la reluctancia de la barra. Esta reluctancia es fija ya que las dimensiones del vástago son constantes.
+    \item \(R_{\phi}=\frac{(h_c+l_{fe})-x}{\mu_0*S_{disp}}\): Se corresponde a la reluctancia del aire del camino más largo del flujo magnético, y es la que provoca que el campo del electroimán interactúe con el vástago. Es variable ya que la posición del vástago es variable y el camino se reduce con el tiempo.
+    \item \(R_{aire~c}=\frac{h_c-x}{\mu_0*S_c}\): Se corresponde a la reluctancia del aire en el interior de la bobina. Es variable ya que la cantidad de aire disminuye con la posición del vástago.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=9cm]{FigurasMemoria/circuitoMag.jpg}
+    \caption{Circuito magnético del sistema. Elaboración propia.}
+    \label{fig:circuitoMag} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+
+UTILIZAR ANSYS PARA VER LOS FLUJOS MEJOR????
+
+Con el circuito magnético definido, el siguiente paso es programar las relaciones presentadas en esta sección en MATLAB y graficar los resultados en función de la posición. El programa en MATLAB constará de tres secciones: definición, cálculos y graficación. PREGUNTAR A IBÓN SI METER CÓDIGO. Las gráficas obtenidas con el código se pueden ver en la sección de resultados AÑADIR REF.

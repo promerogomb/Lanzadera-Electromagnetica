@@ -19,6 +19,8 @@
 \usepackage{enumitem}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{matlab-prettifier}
+\usepackage{xcolor}
 
 
 % Preámbulo
@@ -34,6 +36,30 @@
 \setlength{\parskip}{1em plus 0.5em minus 0.2em}
 \captionsetup{font=small}
 
+%% Definición código MATLAB:
+\lstset{
+  language=Matlab,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  commentstyle=\color{green},
+  stringstyle=\color{red},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  stepnumber=1,
+  numbersep=10pt,
+  backgroundcolor=\color{white},
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  frame=single,
+  tabsize=4,
+  captionpos=b,
+  breaklines=true,
+  breakatwhitespace=false,
+  title=\lstname,
+  escapeinside={},
+  morekeywords={},
+}
 
 %% Estilos de letras
 \newcommand{\boldcenteredtext}[1]{
