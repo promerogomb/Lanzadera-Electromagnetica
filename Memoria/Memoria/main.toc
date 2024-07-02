@@ -11,6 +11,7 @@
 \contentsline {subsection}{\numberline {3.2}Simulaciones}{21}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Geometría}{21}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}Simulaciones instantáneas}{22}{subsubsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.3}Prototipo}{24}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Resultados}{25}{section.4}%
-\contentsline {section}{\numberline {5}Discusión y conclusiones}{26}{section.5}%
+\contentsline {subsubsection}{\numberline {3.2.3}Simulaciones transitorias}{24}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Prototipo}{28}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Resultados}{29}{section.4}%
+\contentsline {section}{\numberline {5}Discusión y conclusiones}{30}{section.5}%

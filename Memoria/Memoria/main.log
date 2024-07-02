@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.24)  2 JUL 2024 18:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.24)  2 JUL 2024 20:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -534,7 +534,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count318
 (./portada.tex
-<FigurasMemoria/logoTecnun.png, id=52, 211.5102pt x 91.542pt>
+<FigurasMemoria/logoTecnun.png, id=56, 211.5102pt x 91.542pt>
 File: FigurasMemoria/logoTecnun.png Graphic file (type png)
 <use FigurasMemoria/logoTecnun.png>
 Package pdftex.def Info: FigurasMemoria/logoTecnun.png  used on input line 2.
@@ -590,7 +590,7 @@ LaTeX Info: Redefining \% on input line 1.
 \openout6 = `main.lot'.
 
  [7] (./introduccion.tex
-<FigurasMemoria/fig1coilgunIntro.jpeg, id=151, 513.92pt x 317.185pt>
+<FigurasMemoria/fig1coilgunIntro.jpeg, id=175, 513.92pt x 317.185pt>
 File: FigurasMemoria/fig1coilgunIntro.jpeg Graphic file (type jpg)
 <use FigurasMemoria/fig1coilgunIntro.jpeg>
 Package pdftex.def Info: FigurasMemoria/fig1coilgunIntro.jpeg  used on input line 8.
@@ -600,13 +600,13 @@ Package pdftex.def Info: FigurasMemoria/fig1coilgunIntro.jpeg  used on input lin
 LaTeX Warning: Reference `subsec:desarrollo' on page 9 undefined on input line 10.
 
 [9]) [10] (./marcoteorico.tex
-<FigurasMemoria/amperelaw.jpg, id=183, 1653.17625pt x 1235.61626pt>
+<FigurasMemoria/amperelaw.jpg, id=206, 1653.17625pt x 1235.61626pt>
 File: FigurasMemoria/amperelaw.jpg Graphic file (type jpg)
 <use FigurasMemoria/amperelaw.jpg>
 Package pdftex.def Info: FigurasMemoria/amperelaw.jpg  used on input line 34.
 (pdftex.def)             Requested size: 199.16928pt x 148.85202pt.
  [11]
-<FigurasMemoria/integralampere.png, id=191, 1012.78375pt x 622.325pt>
+<FigurasMemoria/integralampere.png, id=214, 1012.78375pt x 622.325pt>
 File: FigurasMemoria/integralampere.png Graphic file (type png)
 <use FigurasMemoria/integralampere.png>
 Package pdftex.def Info: FigurasMemoria/integralampere.png  used on input line 43.
@@ -617,13 +617,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--44
  []
 
 [12 <./FigurasMemoria/amperelaw.jpg> <./FigurasMemoria/integralampere.png>]
-<FigurasMemoria/electromagnet.png, id=202, 454.69875pt x 610.28pt>
+<FigurasMemoria/electromagnet.png, id=225, 454.69875pt x 610.28pt>
 File: FigurasMemoria/electromagnet.png Graphic file (type png)
 <use FigurasMemoria/electromagnet.png>
 Package pdftex.def Info: FigurasMemoria/electromagnet.png  used on input line 85.
 (pdftex.def)             Requested size: 170.71652pt x 229.13379pt.
  [13]
-<FigurasMemoria/esquemabasico.png, id=214, 900.36375pt x 571.13374pt>
+<FigurasMemoria/esquemabasico.png, id=237, 900.36375pt x 571.13374pt>
 File: FigurasMemoria/esquemabasico.png Graphic file (type png)
 <use FigurasMemoria/esquemabasico.png>
 Package pdftex.def Info: FigurasMemoria/esquemabasico.png  used on input line 96.
@@ -643,59 +643,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--131
 
  []
 
-<FigurasMemoria/circuitoMagExplicacion.png, id=223, 1312.905pt x 594.22pt>
+<FigurasMemoria/circuitoMagExplicacion.png, id=246, 1312.905pt x 594.22pt>
 File: FigurasMemoria/circuitoMagExplicacion.png Graphic file (type png)
 <use FigurasMemoria/circuitoMagExplicacion.png>
 Package pdftex.def Info: FigurasMemoria/circuitoMagExplicacion.png  used on input line 141.
 (pdftex.def)             Requested size: 426.79135pt x 193.16455pt.
 [15]) [16 <./FigurasMemoria/circuitoMagExplicacion.png>] (./desarrollo.tex) (./desarrolloteorico.tex
-<FigurasMemoria/esquemaDesTeor.jpg, id=236, 1738.495pt x 1113.15875pt>
+<FigurasMemoria/esquemaDesTeor.jpg, id=259, 1738.495pt x 1113.15875pt>
 File: FigurasMemoria/esquemaDesTeor.jpg Graphic file (type jpg)
 <use FigurasMemoria/esquemaDesTeor.jpg>
 Package pdftex.def Info: FigurasMemoria/esquemaDesTeor.jpg  used on input line 25.
 (pdftex.def)             Requested size: 284.52756pt x 182.16855pt.
  [17]
-<FigurasMemoria/areasFlujo.jpg, id=251, 1608.0075pt x 1607.00375pt>
+<FigurasMemoria/areasFlujo.jpg, id=274, 1608.0075pt x 1607.00375pt>
 File: FigurasMemoria/areasFlujo.jpg Graphic file (type jpg)
 <use FigurasMemoria/areasFlujo.jpg>
 Package pdftex.def Info: FigurasMemoria/areasFlujo.jpg  used on input line 46.
 (pdftex.def)             Requested size: 142.26378pt x 142.17201pt.
  [18 <./FigurasMemoria/esquemaDesTeor.jpg> <./FigurasMemoria/areasFlujo.jpg>]
-<FigurasMemoria/circuitoMag.jpg, id=260, 1491.5725pt x 1213.53375pt>
+<FigurasMemoria/circuitoMag.jpg, id=283, 1491.5725pt x 1213.53375pt>
 File: FigurasMemoria/circuitoMag.jpg Graphic file (type jpg)
 <use FigurasMemoria/circuitoMag.jpg>
 Package pdftex.def Info: FigurasMemoria/circuitoMag.jpg  used on input line 62.
 (pdftex.def)             Requested size: 312.9803pt x 254.62741pt.
  [19 <./FigurasMemoria/circuitoMag.jpg>]
-<FigurasMemoria/calculadora.png, id=268, 1445.4pt x 903.375pt>
+<FigurasMemoria/calculadora.png, id=291, 1445.4pt x 903.375pt>
 File: FigurasMemoria/calculadora.png Graphic file (type png)
 <use FigurasMemoria/calculadora.png>
 Package pdftex.def Info: FigurasMemoria/calculadora.png  used on input line 73.
 (pdftex.def)             Requested size: 398.33858pt x 248.9596pt.
 ) [20 <./FigurasMemoria/calculadora.png>] (./simulaciones.tex
-<FigurasMemoria/BarGeom.png, id=275, 575.90157pt x 574.39594pt>
+<FigurasMemoria/BarGeom.png, id=298, 575.90157pt x 574.39594pt>
 File: FigurasMemoria/BarGeom.png Graphic file (type png)
 <use FigurasMemoria/BarGeom.png>
 Package pdftex.def Info: FigurasMemoria/BarGeom.png  used on input line 17.
 (pdftex.def)             Requested size: 256.0748pt x 255.40817pt.
-<FigurasMemoria/BarGeomMesh.png, id=276, 576.65437pt x 579.66562pt>
+<FigurasMemoria/BarGeomMesh.png, id=299, 576.65437pt x 579.66562pt>
 File: FigurasMemoria/BarGeomMesh.png Graphic file (type png)
 <use FigurasMemoria/BarGeomMesh.png>
 Package pdftex.def Info: FigurasMemoria/BarGeomMesh.png  used on input line 24.
 (pdftex.def)             Requested size: 256.0748pt x 257.4241pt.
  [21 <./FigurasMemoria/BarGeom.png>]
-<FigurasMemoria/BarMeshDetail.png, id=282, 916.1728pt x 380.17032pt>
+<FigurasMemoria/BarMeshDetail.png, id=306, 916.1728pt x 380.17032pt>
 File: FigurasMemoria/BarMeshDetail.png Graphic file (type png)
 <use FigurasMemoria/BarMeshDetail.png>
 Package pdftex.def Info: FigurasMemoria/BarMeshDetail.png  used on input line 30.
 (pdftex.def)             Requested size: 256.0748pt x 106.25552pt.
-<FigurasMemoria/fields8.PNG, id=284, 1072.75781pt x 655.69969pt>
+<FigurasMemoria/fields8.PNG, id=308, 1072.75781pt x 655.69969pt>
 File: FigurasMemoria/fields8.PNG Graphic file (type png)
 <use FigurasMemoria/fields8.PNG>
 Package pdftex.def Info: FigurasMemoria/fields8.PNG  used on input line 43.
 (pdftex.def)             Requested size: 426.79135pt x 260.8645pt.
  [22 <./FigurasMemoria/BarGeomMesh.png> <./FigurasMemoria/BarMeshDetail.png>]
-<FigurasMemoria/fieldsDetail.jpg, id=295, 339.2675pt x 699.61375pt>
+<FigurasMemoria/fieldsDetail.jpg, id=319, 339.2675pt x 699.61375pt>
 File: FigurasMemoria/fieldsDetail.jpg Graphic file (type jpg)
 <use FigurasMemoria/fieldsDetail.jpg>
 Package pdftex.def Info: FigurasMemoria/fieldsDetail.jpg  used on input line 52.
@@ -704,16 +704,49 @@ Package pdftex.def Info: FigurasMemoria/fieldsDetail.jpg  used on input line 52.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [23 <./FigurasMemoria/fields8.PNG> <./FigurasMemoria/fieldsDetail.jpg>] (./desarrolloprototipo.tex) [24] [25] [26] (./main.bbl
+[23 <./FigurasMemoria/fields8.PNG> <./FigurasMemoria/fieldsDetail.jpg>]
+<FigurasMemoria/S1CurrentForce.jpg, id=326, 1678.27pt x 691.58376pt>
+File: FigurasMemoria/S1CurrentForce.jpg Graphic file (type jpg)
+<use FigurasMemoria/S1CurrentForce.jpg>
+Package pdftex.def Info: FigurasMemoria/S1CurrentForce.jpg  used on input line 91.
+(pdftex.def)             Requested size: 369.88582pt x 152.42326pt.
+<FigurasMemoria/S1SpeedPosition.jpg, id=327, 1927.2pt x 1084.05pt>
+File: FigurasMemoria/S1SpeedPosition.jpg Graphic file (type jpg)
+<use FigurasMemoria/S1SpeedPosition.jpg>
+Package pdftex.def Info: FigurasMemoria/S1SpeedPosition.jpg  used on input line 97.
+(pdftex.def)             Requested size: 369.88582pt x 208.05583pt.
+ [24 <./FigurasMemoria/S1CurrentForce.jpg>]
+<FigurasMemoria/S2ForceCurrent.jpg, id=334, 1655.18375pt x 647.41875pt>
+File: FigurasMemoria/S2ForceCurrent.jpg Graphic file (type jpg)
+<use FigurasMemoria/S2ForceCurrent.jpg>
+Package pdftex.def Info: FigurasMemoria/S2ForceCurrent.jpg  used on input line 121.
+(pdftex.def)             Requested size: 369.88582pt x 144.67505pt.
+<FigurasMemoria/S2SpeedPosition.jpg, id=335, 1655.18375pt x 647.41875pt>
+File: FigurasMemoria/S2SpeedPosition.jpg Graphic file (type jpg)
+<use FigurasMemoria/S2SpeedPosition.jpg>
+Package pdftex.def Info: FigurasMemoria/S2SpeedPosition.jpg  used on input line 127.
+(pdftex.def)             Requested size: 369.88582pt x 144.67505pt.
+ [25 <./FigurasMemoria/S1SpeedPosition.jpg> <./FigurasMemoria/S2ForceCurrent.jpg>]
+<FigurasMemoria/S3ForceCurrent.jpg, id=341, 1685.29625pt x 840.13875pt>
+File: FigurasMemoria/S3ForceCurrent.jpg Graphic file (type jpg)
+<use FigurasMemoria/S3ForceCurrent.jpg>
+Package pdftex.def Info: FigurasMemoria/S3ForceCurrent.jpg  used on input line 150.
+(pdftex.def)             Requested size: 369.88582pt x 184.38242pt.
+<FigurasMemoria/S3SpeedPos.jpg, id=342, 1685.29625pt x 840.13875pt>
+File: FigurasMemoria/S3SpeedPos.jpg Graphic file (type jpg)
+<use FigurasMemoria/S3SpeedPos.jpg>
+Package pdftex.def Info: FigurasMemoria/S3SpeedPos.jpg  used on input line 156.
+(pdftex.def)             Requested size: 369.88582pt x 184.38242pt.
+ [26 <./FigurasMemoria/S2SpeedPosition.jpg> <./FigurasMemoria/S3ForceCurrent.jpg>]) [27 <./FigurasMemoria/S3SpeedPos.jpg>] (./desarrolloprototipo.tex) [28] [29] [30] (./main.bbl
 Overfull \hbox (16.43788pt too wide) in paragraph at lines 19--23
 \OT1/cmtt/m/n/10.95 doscientos-[]aniversario-[]oersted-[]y-[]el-[]descubrimiento-[]del-[]electromagnetismo/$[][]\OT1/cmr/m/n/10.95 . 
  []
 
-) [27] (./anexo1.tex [28]
+) [31] (./anexo1.tex [32]
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 61.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)) [29] (./main.aux
+)) [33] (./anexo2.tex) [34] (./main.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -729,21 +762,21 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 024E351B7151D076DBE8CD4FC65BA829;1537.
+(rerunfilecheck)             Checksum: E5CD8EF510948756DACAC0BBE1885B59;1733.
  ) 
 Here is how much of TeX's memory you used:
- 17250 strings out of 474116
- 272440 string characters out of 5743682
- 2341187 words of memory out of 5000000
- 39183 multiletter control sequences out of 15000+600000
+ 17317 strings out of 474116
+ 274478 string characters out of 5743682
+ 2342187 words of memory out of 5000000
+ 39235 multiletter control sequences out of 15000+600000
  569317 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,10n,79p,1332b,2174s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (29 pages, 4109152 bytes).
+Output written on main.pdf (34 pages, 5190098 bytes).
 PDF statistics:
- 531 PDF objects out of 1000 (max. 8388607)
- 431 compressed objects within 5 object streams
- 167 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 586 PDF objects out of 1000 (max. 8388607)
+ 475 compressed objects within 5 object streams
+ 179 named destinations out of 1000 (max. 500000)
+ 215 words of extra memory for PDF output out of 10000 (max. 10000000)
 

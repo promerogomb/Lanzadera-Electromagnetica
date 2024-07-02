@@ -68,3 +68,93 @@ Además de visualizar los campos, ANSYS Maxwell permite añadir distintas medida
     \caption{Fuerzas de atracción magnética en los diferentes ejes del espacio. Elaboración propia.}
     \label{tab:fuerzas}
 \end{table}
+
+\subsubsection{Simulaciones transitorias}
+Una vez observados los campos de manera estacionaria, el siguiente paso es conseguir la variación de los valores de fuerza con la posición del vástago, además sin forzar este movimiento. Es decir, especificar la región de movimiento y los valores de alimentación de la bobina y dejar que ANSYS genere el movimiento y nos de información acerca de la fuerza y velocidad experimentadas por el vástago. Al realizar esto con el modelo 3D, ANSYS devolvía un error fatal probablemente debido a que los ordenaores en los que se estaba realiando la simulación no eran lo suficientemente potentes. Se recurrió entonces a la utilización exclusiva de la geometría en 2D, la que dio resultados tanto de movimiento como fuerza. Para llegar a los últimos resultados, se realizaron varias simulaciones con varias configuraciones temporales diferentes, las cuales se muestran a 
+\subsection*{Configuración 1}
+La primera configuración transitoria utilizada es:
+\[
+T_{sim}=150~ms \quad T_{step}=5~ms \to 30~steps
+\]
+\[
+I(t=0)=3.5~A \quad I(t\geq 50~ms)=0~A
+\]
+\[
+V_{coil}=13.1~V \quad R_{coil}=3.65~\Omega
+\]
+\[
+m_{bar}=0.019~kg \quad v_{bar~ini}=0~ms^{-1}
+\]
+Las gráficas resultantes de fuerza-corriente y velocidad-posición son:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=13cm]{FigurasMemoria/S1CurrentForce.jpg}
+    \caption{Fuerza (verde) y corriente (rojo) vs tiempo en la configuración 1. Elaboración propia.}
+    \label{fig:S1CurrentForce} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=13cm]{FigurasMemoria/S1SpeedPosition.jpg}
+    \caption{Posición (verde) y velocidad (rojo) vs tiempo en la configuración 1. Elaboración propia.}
+    \label{fig:S1SpeedPosition} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+Como se puede observar en las figuras \ref{fig:S1CurrentForce} y \ref{fig:S1SpeedPosition}, \(T_{sim}\) es muy largo ya que la mayor parte del tiempo no ocurre nada. También es destacable que existen oscilaciones, lo que indica que la bobina está siendo alimentada durante demasiado tiempo y está siendo retenida en el centro.
+
+
+\subsection*{Configuración 2}
+La segunda configuración transitoria utilizada es:
+\[
+T_{sim}=75~ms \quad T_{step}=0.6~ms \to 125~steps
+\]
+\[
+I(t=0)=3.5~A \quad I(t\geq 30~ms)=0~A
+\]
+\[
+V_{coil}=13.1~V \quad R_{coil}=3.65~\Omega
+\]
+\[
+m_{bar}=0.019~kg \quad v_{bar~ini}=0~ms^{-1}
+\]
+Las gráficas resultantes de fuerza-corriente y velocidad-posición son:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=13cm]{FigurasMemoria/S2ForceCurrent.jpg}
+    \caption{Fuerza (rojo) y corriente (verde) vs tiempo en la configuración 2. Elaboración propia.}
+    \label{fig:S2ForceCurrent} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=13cm]{FigurasMemoria/S2SpeedPosition.jpg}
+    \caption{Posición (verde) y velocidad (rojo) vs tiempo en la configuración 2. Elaboración propia.}
+    \label{fig:S2SpeedPosition} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+En la segunda configuración, se utilizó un timestep muy pequeño para poder observar con precisión el movimiento del vástago. Se observa más ajustado el tiempo de simulación, aunque el tiempo de alimentación de la bobina sigue siendo muy elevado ya que el vástago sigue oscilando, aunque ya solo lo hace una vez. 
+
+\subsection*{Configuración 3}
+La tercera configuración transitoria utilizada es:
+\[
+T_{sim}=25~ms \quad T_{step}=1~ms \to 25~steps
+\]
+\[
+I(t=0)=3.5~A \quad I(t\geq 15~ms)=0~A
+\]
+\[
+V_{coil}=13.1~V \quad R_{coil}=3.65~\Omega
+\]
+\[
+m_{bar}=0.019~kg \quad v_{bar~ini}=0~ms^{-1}
+\]
+Las gráficas resultantes de fuerza-corriente y velocidad-posición son:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=13cm]{FigurasMemoria/S3ForceCurrent.jpg}
+    \caption{Fuerza (rojo) y corriente (verde) vs tiempo en la configuración 3. Elaboración propia.}
+    \label{fig:S3ForceCurrent} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=13cm]{FigurasMemoria/S3SpeedPos.jpg}
+    \caption{Posición (verde) y velocidad (rojo) vs tiempo en la configuración 3. Elaboración propia.}
+    \label{fig:S3SpeedPos} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+Esta configuración proporciona unos resultados que aunque no sean verosímiles debido a la magnitud de la fuerza (\(F_{max}\approx 80~N\)), sí que tienen una forma que se corresponde con lo obtenido en la calculadora de la figura \ref{fig:calculadora}.
