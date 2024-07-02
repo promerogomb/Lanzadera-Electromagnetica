@@ -1,3 +1,89 @@
 \section*{Anexo I. Código de MATLAB para la calculadora de fuerza.}
 \label{sec:anexo1}
-En este anexo se presenta el código escrito para la calculadora expuesta en el apartado de desarrollo teórico \ref{subsec:desarrolloteorico}
+En este anexo se presenta el código escrito para la calculadora expuesta en el apartado de desarrollo teórico \ref{subsec:desarrolloteorico}. El código para la calculadora es ligeramente diferente ya que recibe las variables del campo \textit{Value} de los componentes de la interfaz en lugar de desde un valor numérico fijo, pero el procedimiento que ejecuta es el mismo que se muestra a continuación:
+
+\begin{lstlisting}[style=Matlab-editor]
+    % Propiedades electromagneticas
+    mu0 = 4 * pi * 10^-7; % Permeabilidad del vacio [H/m]
+    mu_fe = 5000; % Permeabilidad relativa del hierro
+    N = 500; % Numero de espiras
+    I_c = 3.65; % Corriente de la bobina
+
+    % Geometria
+    h_c = 0.05321; % Longitud de la bobina [m]
+    r_c = 0.01064; % Radio externo de la bobina [m]
+    l_fe = 0.096; % Longitud del vastago [m]
+    r_fe = 0.003045; % Radio del vastago [m]
+
+    S_c = pi * r_c ^ 2; % Seccion de la bobina [m^2]
+    S_bar = pi * r_fe ^ 2; % Seccion del vastago [m^2]
+    S_disp = 2 * S_c; % Seccion de dispersion [m^2]
+
+    % Vectores espaciales
+    num_points = 2000; % Numero de puntos
+    x = linspace(0, h_c, num_points); % Region de movimiento
+
+    % Definicion de los vectores magneticos
+    R_dispc = zeros(size(x));
+    R_phi = zeros(size(x));
+    R_B = zeros(size(x));
+    R_airc = zeros(size(x));
+    R_total = zeros(size(x));
+    Phi = zeros(size(x));
+    B = zeros(size(x));
+    F = zeros(size(x));
+
+    % Calculos
+    for i = 1:length(x)
+        % Calculo de reluctancias:
+        R_dispc(i) = h_c / (mu0 * S_disp); % Reluctancia de dispersion de la bobina [H^-1]
+        R_B(i) = l_fe / (mu_fe * mu0 * S_bar); % Reluctancia del vastago [H^-1]
+        R_phi(i) = ((h_c + l_fe) - x(i)) / (mu0 * S_disp); % Reluctancia de dispersion [H^-1]
+        R_airc(i) = (h_c - x(i)) / (mu0 * S_c); % Reluctancia del aire dentro de la bobina [H^-1]
+
+        R_total(i) = R_dispc(i) + R_phi(i) + R_B(i) + R_airc(i); % Reluctancia total [H^-1]
+        
+        % Flujo [Wb]
+        Phi(i) = (N * I_c) / R_total(i);
+        
+        % Induccion magnetica [T]
+        B(i) = Phi(i) / S_bar;
+
+        % Fuerza en x(i) [N]
+        F(i) = 0.5 * B(i)^2 * S_bar / mu0;
+    end
+
+    % Graficas
+
+    % Reluctancias R[H^-1]
+    figure;
+    hold on;
+    plot(x, R_dispc, 'r', 'DisplayName', 'R_{dispc}');
+    plot(x, R_B, 'g', 'DisplayName', 'R_{bar}');
+    plot(x, R_phi, 'b', 'DisplayName', 'R_{phi}');
+    plot(x, R_airc, 'b', 'DisplayName', 'R_{airc}');
+    plot(x, R_total, 'k', 'DisplayName', 'R_{total}');
+    xlabel('Posicion del vastago [m]');
+    ylabel('Reluctancias [H^-1]');
+    title('Reluctancias vs posicion');
+    legend show;
+    legend('Location', 'best');
+    grid on;
+    hold off;
+
+    % Induccion magnetica B[T]
+    figure;
+    plot(x, B, 'LineWidth', 2);
+    xlabel('Posicion del vastago [m]');
+    ylabel('Induccion magnetica [T]');
+    title('Induccion magnetica vs posicion');
+    grid on;
+
+    % Fuerza [N]
+    figure;
+    plot(x, F, 'LineWidth', 2);
+    xlabel('Posicion del vastago [m]');
+    ylabel('Fuerza magnetica [N]');
+    title('Fuerza vs posicion');
+    grid on;
+\end{lstlisting}
