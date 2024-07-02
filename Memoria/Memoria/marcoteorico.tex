@@ -1,7 +1,7 @@
 \section{Marco teórico}
 \label{sec:marcoteorico}
 
-En esta sección se desarrollarán los principios teóricos que permiten el funcionamiento de las lanzaderas electromagnéticas. Para entender estos principios, es esencial comprender los fundamentos del electromagnetismo, el concepto de bobina y su relación con la generación de campos magnéticos.
+En esta sección se desarrollarán los principios teóricos que permiten el funcionamiento de las lanzaderas electromagnéticas. Para entender estos principios, es esencial comprender los fundamentos del electromagnetismo, el concepto de bobina, su relación con la generación de campos magnéticos y la forma de modelar estos.
 
 El electromagnetismo es una rama fundamental de la física que estudia las interacciones entre los campos eléctricos y magnéticos. Su desarrollo ha sido crucial para el avance de la tecnología, desde la generación y transmisión de electricidad hasta las comunicaciones inalámbricas. Aunque la raza humana conoce los fenómenos eléctricos y magnéticos desde la historia antigua, estos no fueron estudiados hasta el siglo XVII, y se consideraban fenómenos independientes hasta que Hans Christian Ørsted descubrió en 1820 que una corriente eléctrica puede generar un campo magnético. Mientras el físico danés preparaba los equipos para dar una conferencia en la Universidad de Copenhague, observó que la aguja de una brújula cercana se desviaba cuando la corriente fluía a través de un alambre conductor. Este accidental descubrimiento le llevó a publicar el artículo CIRCA EFFECTUM CONFLICTUS ELECTRICI IN ACUM MAGNETICAM, en el que se describieron los fenómenos electromagnéticos por primera vez, aunque de manera cualitativa. En la siguiente década, Ampère y Faraday describirían matemáticamente el descubrimiento de Ørsted, dando lugar al electromagnetismo como lo conocemos hoy en día. \citep{oersted2024}
 
@@ -19,7 +19,7 @@ El trabajo de James Clerk Maxwell en la década de 1860 unificó estos descubrim
     \label{fig:maxwell_equations}
 \end{figure}
 
-En nuestro caso, la ley de Maxwell que nos es de mayor interés es la de Ampère. Esta ley es la que define la relación entre un campo magnético y uno eléctrico, y partir de las ecuaciones anteriores podemos definir la ley integral de Ampère como:
+En el caso de este proyecto, la ley de Maxwell de mayor interés es la de Ampère. Esta ley es la que define la relación entre un campo magnético y uno eléctrico, y partir de las ecuaciones anteriores se puede definir la ley integral de Ampère como:
 
 \begin{quote}
     "La integral de línea del campo magnético \(\mathbf{B}\) alrededor de un lazo cerrado es igual a \(\mu_0\) multiplicado por la corriente total \(I_{enc}\) que pasa a través de cualquier superficie delimitada por el lazo. Matemáticamente, esto se expresa como:
@@ -36,12 +36,12 @@ En nuestro caso, la ley de Maxwell que nos es de mayor interés es la de Ampère
     \label{fig:amperelaw} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
-Una vez entendido el comportamiento en un conductor, el siguiente paso es analizar el componente principal de la lanzadera: la \textbf{bobina}. Una bobina, o solenoide, es un conductor enrollado de manera cilíndrica alrededor de un núcleo de algún material. El número de vueltas que da el conductor alrededor del núcleo se define como espiras y se denota como \textit{N}, y el núcleo posee un parámetro físico llamado permeabilidad relativa \textit{\(\mu_r\)}, que indica su capacidad para permitir el paso del flujo magnético. El siguiente paso por tanto es llegar a una expresión para el campo magnético alrededor de un solenoide. Para ello, partiremos de la ley integral de Ampère y consideraremos un solenoide con \textit{N} espiras y longitud \textit{L}, por el cual pasa una corriente \textit{I}. Elegimos una trayectoria rectangular C que va parcialmente dentro y fuera del solenoide, la cual es conveniente porque simplifica los cálculos del campo magnético.
+Una vez entendido el comportamiento en un conductor, el siguiente paso es analizar el componente principal de la lanzadera: la \textbf{bobina}. Una bobina, o solenoide, es un conductor enrollado de manera cilíndrica alrededor de un núcleo de algún material. El número de vueltas que da el conductor alrededor del núcleo se define como espiras y se denota como \textit{N}, y el núcleo posee un parámetro físico llamado permeabilidad relativa \textit{\(\mu_r\)}, que indica su capacidad para permitir el paso del flujo magnético. Se llegará a continuación a una expresión para el campo magnético alrededor de un solenoide. Para ello, partiremos de la ley integral de Ampère y consideraremos un solenoide con \textit{N} espiras y longitud \textit{l}, por el cual pasa una corriente \textit{I}. Elegimos una trayectoria rectangular \(\vec{C}\) que va parcialmente dentro y fuera del solenoide, la cual es conveniente porque simplifica los cálculos del campo magnético.
 
 \begin{figure}[H]
     \centering %\raggedleft \raggedright
     \includegraphics[width=9cm]{FigurasMemoria/integralampere.png}
-    \caption{Curva \textbf{C} para la cual realizaremos los cálculos.Imagen tomada de \href{URL}{https://artpictures.club/autumn-2023.html}.}
+    \caption{Curva \textbf{\(\vec{C}\)} para la cual realizaremos los cálculos. Imagen tomada de \href{URL}{https://artpictures.club/autumn-2023.html}.}
     \label{fig:integralampere} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
@@ -58,27 +58,27 @@ Debido a la simetría y a que el solenoide es muy largo, asumimos que el campo m
     \[\oint_c\vec{B} \vec{dl}=Bl\]
 \end{center}
 
-Analizaremos ahora la corriente encerrada total, que será igual a la corriente que fluye por las \textit{N} espiras:
+Analizando ahora la corriente encerrada total, se observa que será igual a la corriente que fluye por las \textit{N} espiras:
 
 \begin{center}
     \[I_{encerrada} = NI\]
 \end{center}
 
-En una longitud cualquiera, \textit{L}, podemos hablar de una densidad de espiras igual a \(n=\frac{N}{L}\), por lo que en la curva \textit{C} tendremos:
+En una longitud cualquiera, \textit{l}, se puede hablar de una densidad de espiras igual a \(n=\frac{N}{l}\), por lo que en la curva \(\vec{C}\) tendremos:
 
 \begin{center}
     \[I_{encerrada} = nIl\]
 \end{center}
 
-Ya tenemos los dos términos de la ecuación integral de Ampère, por lo que podemos igualar:
+Con lo que se obtien los dos términos de la ecuación integral de Ampère, por lo que podemos igualar:
 
 \begin{center}
-    \[Bl=\mu_0nIl\to B=\mu_0nI~~\forall n=\frac{N}{L}\to B=\mu_0\frac{NI}{L}\]
+    \[Bl=\mu_0nIl\to B=\mu_0nI~~\forall n=\frac{N}{l}\to B=\mu_0\frac{NI}{l}\]
 \end{center}
 
 Que es la expresión para la inducción electromagnética en un solenoide.
 
-El siguiente punto de interés, con el cual además terminaré el marco teórico, es la forma del campo magnético del solenoide. La geometría del mismo juega un papel crucial en la distribución del campo magnético. Debido a su forma cilíndrica y a la disposición de las espiras, el campo magnético generado en el interior del solenoide es casi uniforme y paralelo al eje del cilindro, variando solo en los extremos donde se curva hacia el núcleo para cumplir la ley de Gauss para el campo magnético (\(\nabla B=0\)). Esta uniformidad del campo magnético es una característica deseable en muchas aplicaciones, como en el diseño de inductores o transformadores. En nuestro caso, la uniformidad del campo nos va a permitir acelerar el proyectil de la lanzadera de manera rectilínea hacia el centro de la bobina.\citep{purcell2013electricidad} \citep{griffiths2005}\citep{tipler2008}.
+El siguiente punto de interés es la forma del campo magnético del solenoide. La geometría del mismo juega un papel crucial en la distribución del campo magnético. Debido a su forma cilíndrica y a la disposición de las espiras, el campo magnético generado en el interior del solenoide es casi uniforme y paralelo al eje del cilindro, variando solo en los extremos donde se curva hacia el núcleo para cumplir la ley de Gauss para el campo magnético (\(\nabla B=0\)). Esta uniformidad del campo magnético es una característica deseable en muchas aplicaciones, como en el diseño de inductores o transformadores. En nuestro caso, la uniformidad del campo nos va a permitir acelerar el proyectil de la lanzadera de manera rectilínea hacia el centro de la bobina.\citep{purcell2013electricidad} \citep{griffiths2005}\citep{tipler2008}.
 
 \begin{figure}[H]
     \centering %\raggedleft \raggedright
@@ -87,9 +87,9 @@ El siguiente punto de interés, con el cual además terminaré el marco teórico
     \label{fig:electromagnet} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
-La forma en que aprovecharé este fenómeno para construir la lanzadera consiste en colocar un proyectil de material ferromagnético en el extremo de una bobina energizada, el cual será atraído hacia el centro debido al campo magnético. Justo cuando los centros del proyectil y la bobina coincidan, la corriente se interrumpirá, evitando que el proyectil siga siendo atraído por el electroimán y permitiéndole avanzar por inercia. Esto se logrará mediante un circuito electrónico que energizará la bobina durante el tiempo necesario para que el proyectil alcance la máxima velocidad posible. Este circuito será desarrollado en la sección de prototipo (\ref{subsec:prototipo}).
+La forma en que este fenómeno será aprovechado para construir la lanzadera consiste en colocar un proyectil de material ferromagnético en el extremo de una bobina energizada, el cual será atraído hacia el centro debido al campo magnético. Justo cuando los centros del proyectil y la bobina se encuentren alineados, la corriente se interrumpirá, evitando que el proyectil siga siendo atraído por el electroimán y permitiéndole avanzar por inercia. Esto se logrará mediante un circuito electrónico que energizará la bobina durante el tiempo necesario para que el proyectil alcance la máxima velocidad posible. Este circuito será desarrollado en la sección de prototipo (\ref{subsec:prototipo}).
 
-Para finalizar el marco teórico, presentaré un esquema básico de montaje que servirá como preámbulo al desarrollo de las siguientes partes:
+La figura \ref{fig:esquemabasico} a continuación es un esquema sencillo en el que se visualizan las partes esenciales de una lanzadera electromagnética:
 
 \begin{figure}[H]
     \centering %\raggedleft \raggedright
@@ -97,3 +97,50 @@ Para finalizar el marco teórico, presentaré un esquema básico de montaje que 
     \caption{Esquema cualitativo de la lanzadera electromagnética. Elaboración propia.}
     \label{fig:esquemabasico} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
+
+Antes de finalizar el marco teórico, es necesario definir la manera en la que se va a representar el sistema de manera computable. Para ello, se utiliza el análisis del circuito magnético del sistema. Un circuito magnético se puede analizar de manera análoga a un circuito eléctrico, utilizando los conceptos de reluctancia, fuerza magnetomotriz (FMM) y flujo magnético. A continuación, se describen estos conceptos y sus relaciones entre sí.
+
+\begin{itemize}
+    \item \textbf{Reluctancia}
+    La reluctancia \(\mathcal{R}\) es una medida de la oposición que ofrece un material al paso del flujo magnético. Es análoga a la resistencia en un circuito eléctrico y su unidad es \([H^{-1}]\). La fórmula para la reluctancia es:
+    
+    \[\mathcal{R}=\frac{l_{car}}{\mu_0\mu_r A}\] 
+    
+    Donde:\\
+    \(\mu_0\mu_r\) es la permeabilidad del material \([NA^2]\).\\
+    \(l_{car}\) es la longitud característica del camino magnético \([m]\).\\
+    \(A\) es el área de la sección transversal del camino magnético \([m^2]\).\\
+
+    \item \textbf{Fuerza Magnetomotriz (FMM)}
+    La fuerza magnetomotriz \(\mathcal{F}\) es la fuerza que impulsa el flujo magnético a través de un circuito magnético. Es análoga a la fuerza electromotriz (\(fem\)) en un circuito eléctrico y su unidad es \([A-v]\). La FMM se define como:
+    
+    \[\mathcal{F}=NI\]
+    
+    Donde:\\
+    \(N\) es el número de vueltas de la bobina \([v]\).\\
+    \(I\) es la corriente de alimentación de la bobina \([A]\).\\
+
+    \item \textbf{Flujo Magnético}
+    El flujo magnético \(\phi\) es la cantidad de campo magnético que pasa a través de una superficie. Es análogo a la corriente eléctrica y su unidad es \([Wb]\). Se define como:
+    
+    \[\phi = BA\]
+    
+    Donde:\\
+    \(B\) es la densidad de flujo magnético \([T]\).\\
+    \(A\) es el área de la superficie perpendicular al campo magnético \([m^2]\).\\
+
+    \item \textbf{Ley de Hopkinson}
+    La Ley de Hopkinson establece la relación entre la FMM, el flujo magnético y la reluctancia en un circuito magnético, de manera análoga a la Ley de Ohm en los circuitos eléctricos:
+    
+    \[\mathcal{F}=\mathcal{R}\phi\]
+    
+    Como expresa la ley de Hopkinson, los conceptos de reluctancia, FMM y flujo magnético están interrelacionados en un circuito magnético. La FMM generada por una corriente que pasa a través de un devanado crea un flujo magnético que se opone a la reluctancia del material.\citep{griffiths2005}\citep{tipler2008}
+
+    \begin{figure}[H]
+        \centering %\raggedleft \raggedright
+        \includegraphics[width=\textwidth]{FigurasMemoria/circuitoMagExplicacion.png}
+        \caption{Esquema de una bobina con un core ferromagnético y su circuito magnético equivalente. Elaboración propia.}
+        \label{fig:esquemabasico} %Para referenciar -> \ref{fig:figNum}
+    \end{figure}
+\end{itemize}
+

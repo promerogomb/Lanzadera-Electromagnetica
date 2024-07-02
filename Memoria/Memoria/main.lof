@@ -2,9 +2,11 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Cañón de Gauss. Imagen tomada de \href {URL}{http://www.coilgun.eclipse.co.uk/}}}{8}{figure.caption.1}%
 \contentsline {figure}{\numberline {2}{\ignorespaces Ecuaciones de Maxwell.\citep {purcell2013electricidad}}}{11}{figure.caption.2}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Visualización del campo magnético de un conductor. Elaboración propia.}}{12}{figure.caption.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Curva \textbf {C} para la cual realizaremos los cálculos.Imagen tomada de \href {URL}{https://artpictures.club/autumn-2023.html}.}}{12}{figure.caption.4}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Curva \textbf {\(\vec {C}\)} para la cual realizaremos los cálculos. Imagen tomada de \href {URL}{https://artpictures.club/autumn-2023.html}.}}{12}{figure.caption.4}%
 \contentsline {figure}{\numberline {5}{\ignorespaces Visualización del campo magnético de una bobina energizada. Imagen tomada de \href {URL}{https://ece.northeastern.edu/fac-ece/nian/mom/electromagnets.html}.}}{14}{figure.caption.5}%
 \contentsline {figure}{\numberline {6}{\ignorespaces Esquema cualitativo de la lanzadera electromagnética. Elaboración propia.}}{14}{figure.caption.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Esquema geométrico del sistema. Elaboración propia.}}{15}{figure.caption.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Vista de planta del sistema. Elaboración propia.}}{17}{figure.caption.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Circuito magnético del sistema. Elaboración propia.}}{18}{figure.caption.9}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Esquema de una bobina con un core ferromagnético y su circuito magnético equivalente. Elaboración propia.}}{16}{figure.caption.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Esquema geométrico del sistema. Elaboración propia.}}{18}{figure.caption.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Vista de planta del sistema. Elaboración propia.}}{19}{figure.caption.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Circuito magnético del sistema. Elaboración propia.}}{19}{figure.caption.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Aplicación de cálculos de MATLAB. Elaboración propia.}}{20}{figure.caption.11}%

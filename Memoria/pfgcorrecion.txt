@@ -1,10 +1,10 @@
 Intro ->ok
 tres pregunta -> que, por que y como
 marco teorico:
-	-cambiar todo a impersonal
-	-añadir explicación de los circuitos magnéticos
+	-cambiar todo a impersonal HECHO
+	-añadir explicación de los circuitos magnéticos HECHO
 desarrollo teor:
-	-cambiar 2rc por krc y meter k en matlab
+	-cambiar 2rc por krc y meter k en matlab HECHO
 	-código en anexo
 simulaciones:
 	-hacer desarrollo del procedimiento
