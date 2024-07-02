@@ -1,5 +1,5 @@
 \subsection{Desarrollo teórico}
-\label{subsec:desarrollo}
+\label{subsec:desarrolloteorico}
 En la sección de desarrollo teórico trataré de proporcionar un procedimiento mediante el cual los alumnos que realicen la práctica sean capaces de optimizar la velocidad y fuerza del proyectil a partir de los parámetros eléctricos y geométricos que definen el sistema. Estos parámetros de entrada serán:
 \begin{itemize}
     \item \textbf{Parámetros geométricos}:
@@ -8,7 +8,7 @@ En la sección de desarrollo teórico trataré de proporcionar un procedimiento 
         \item \(l_c\): altura de la bobina.
         \item \(r_{fe}\): radio del vástago.
         \item \(l_{fe}\): longitud del vástago.
-        \item \(k_{disp}\): parámetro multiplicador para obtener la sección de dispersión.
+        \item \(k_{disp}\): parámetro multiplicador para obtener la sección de dispersión. La dispersión es la parte del flujo que abraza a la bobina y a la barra.
     \end{enumerate}
     \item \textbf{Parámetros eléctricos}:
     \begin{enumerate}[label=\alph*., leftmargin=*, itemindent=1em]
@@ -18,8 +18,7 @@ En la sección de desarrollo teórico trataré de proporcionar un procedimiento 
     \end{enumerate}
 \end{itemize}
 
-El objetivo de este desarrollo es crear un programa en MATLAB al que se le proporcionen estos datos, y que calcule automáticamente la fuerza que experimentará el proyectil. Como se muestra en la figura \ref{fig:electromagnet} el valor de
-\(B\) varía a lo largo del solenoide. Por lo tanto, además de los parámetros dados (que son constantes), será necesario parametrizar también la posición del vástago en cada momento (\(x\) en la figura \ref{fig:esquemaDesTeor}) y calcular la fuerza que experimenta en cada una de esas posiciones. Con todo esto, he desarrollado el siguiente esquema que muestra las variables del sistema:
+El objetivo de este desarrollo es crear un programa en MATLAB al que se le proporcionen estos datos, y que calcule automáticamente la fuerza que experimentará el proyectil a través del circuito magnético del sistema. Como se muestra en la figura \ref{fig:electromagnet} el valor de \(B\) varía a lo largo del solenoide, por lo tanto, además de los parámetros constantes dados, será necesario parametrizar también la posición del vástago en cada momento (\(x\) en la figura \ref{fig:esquemaDesTeor}) y calcular la fuerza que experimenta en cada una de esas posiciones. Se muesta a continuación el esquema que nos servirá de guía durante la creación del código, en el que se muestran todas las variables mencionadas anteriormente:
 
 \begin{figure}[H]
     \centering
@@ -28,28 +27,28 @@ El objetivo de este desarrollo es crear un programa en MATLAB al que se le propo
     \label{fig:esquemaDesTeor} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
-Antes de empezar a escribir el código, tenemos que realizar un desarrollo analítico partiendo de las fórmulas del marco teórico. Para ello, se realizará un análisis de las diferentes reluctancias del sistema para poder computar el circuito magnético y obtener así la fuerza de atracción que experimenta el vástago, que según \citeauthor{jerez2016resueltos} viene dada por la expresión:
+El primer paso será partir de las fórmulas del circuito magnético definidas en el \ref{sec:marcoteorico} marco teórico y para ello la primera tarea es realizar un análisis de las diferentes reluctancias del sistema, con el objetivo de computar así la inducción magnética, la cual nos permitirá obtener la fuerza de atracción que experimenta el vástago, que según Nicolás Jerez \citep{jerez2016resueltos} viene dada por la expresión:
 
 \begin{center}
 \[F=\frac{1}{2}\frac{B^2*S}{\mu_0}\]
 \end{center}
 
-Para crear un modelo del sistema, se va a analizar el conjunto proyectil-bobina y se definirán los caminos por los que va a fluir el flujo magnético así como las reluctancias. Para conseguir esto último, será necesario definir claramente las diferentes áreas efectivas de los componentes del sistema, las cuales serán:
+Teniendo clara la relación entre inducción y fuerza, el siguiente paso es definir claramente las diferentes áreas efectivas de los componentes del sistema para calcular las reluctancias, las cuales son:
 
 \begin{itemize}
     \item \(S_{c}=\pi *r_{cext}^2\): Esta superficie se corresponde con la sección delimitada por el radio exterior de la bobina, y es el área efectiva del flujo encerrado en su interior.
     \item \(S_{fe}=\pi *r_{fe}^2\): Esta superficie se corresponde con la sección delimitada por el radio del vástago.
-    \item \(S_{disp}=\pi *r_{disp}~~\forall r_{disp} = k_{disp}r_c\): Esta superficie se corresponde con el área de dispersión de flujo. La dispersión es la parte del flujo que abraza a la bobina y a la barra.
+    \item \(S_{disp}=\pi *r_{disp}~~\forall r_{disp} = k_{disp}r_c\): Esta superficie se corresponde con el área de dispersión de flujo.
 \end{itemize}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=5cm]{FigurasMemoria/areasFlujo.jpg}
-    \caption{Vista de planta del sistema. Elaboración propia.}
+    \caption{Secciones del sistema con una vista de planta. Elaboración propia.}
     \label{fig:areasFlujo} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
-Teniendo en cuenta el razonamiento realizado en la sección del marco teórico (\ref{sec:marcoteorico}) y lo expuesto en la figura \ref{fig:areasFlujo}, podemos concluir que existen cuatro principales reluctancias en el sistema de la figura \ref{fig:esquemaDesTeor}:
+Teniendo en cuenta las fórmulas en la sección del marco teórico (\ref{sec:marcoteorico}) y lo expuesto en la figura \ref{fig:areasFlujo}, podemos concluir que existen cuatro principales reluctancias en el sistema de la figura \ref{fig:esquemaDesTeor}:
 
 \begin{itemize}
     \item \(\mathcal{R}_{disp~c}=\frac{h_c}{\mu_0*S_{disp}}\): Se corresponde a la reluctancia del aire que abraza la bobina. Esta reluctancia es fija ya que las dimensiones del solenoide son constantes.
@@ -60,12 +59,14 @@ Teniendo en cuenta el razonamiento realizado en la sección del marco teórico (
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=9cm]{FigurasMemoria/circuitoMag.jpg}
+    \includegraphics[width=11cm]{FigurasMemoria/circuitoMag.jpg}
     \caption{Circuito magnético del sistema. Elaboración propia.}
     \label{fig:circuitoMag} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
-Con el circuito magnético definido, el siguiente paso es programar las relaciones presentadas en esta sección en MATLAB y graficar los resultados en función de la posición. El programa en MATLAB constará de tres secciones: definición, cálculos y graficación. El producto de este código es una "calculadora" que devuelve la evolución de la fuerza con el parámetro \(x\), y queda así:
+\newpage
+
+Con el circuito magnético definido, el siguiente paso es programar las relaciones presentadas en esta sección en MATLAB y graficar los resultados en función de la posición. El programa en MATLAB constará de tres secciones: definición, cálculos y graficación. El código está disonible en el anexo 1 MIRAR POR QUE NO PUEDO PONER REF AQUI. El producto de este código es una "calculadora" que devuelve la evolución de la fuerza con el parámetro \(x\), y queda así:
 
 \begin{figure}[H]
     \centering
@@ -73,3 +74,13 @@ Con el circuito magnético definido, el siguiente paso es programar las relacion
     \caption{Aplicación de cálculos de MATLAB. Elaboración propia.}
     \label{fig:calculadora} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
+
+Los valores escritos en las variables del sistema que se pueden ver en la figura \ref{fig:calculadora} se correponden con la bobina de ejemplo que se ha utilizado para crear el proyecto. Dicha bobina tiene la siguiente geometría:
+
+\[
+\begin{array}{c}
+    \mu_0 = 4\pi \times 10^{-7}~~~~~~\mu_{fe} = 5000~~~~~~N = 500 \\~\\
+    l_{fe} = 0.096m~~~~~~r_{fe} = 0.003045m \\~\\
+    h_c = 0.05321m~~~~~~r_{c} = 0.01064m~~~~~~r_{disp} = k_{disp}~r_{c}=2~r_{c}
+\end{array}
+\]

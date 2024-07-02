@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1719916877.11293 "main.aux" "main.bbl" "main" 1719916880.94835 0
+["bibtex main"] 1719920832.4485 "main.aux" "main.bbl" "main" 1719920913.41603 0
   "./referencias.bib" 1719174874.7288 2028 f6772f2c12469d0cece876ce5579378c ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/natbib/abbrvnat.bst" 1233624470 26532 66bed5cc59495faaa3f9ae9af9fa5e42 ""
-  "main.aux" 1719916880.26414 6725 59f8407e05d3d799332506009ff13c56 "pdflatex"
+  "main.aux" 1719920912.80105 6814 ffa817328be88a1bcf3f8b56b4550ca3 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1719916877.36613 "/Users/pjose/Desktop/PFG/Memoria/Memoria/main.tex" "main.pdf" "main" 1719916880.94862 0
-  "/Users/pjose/Desktop/PFG/Memoria/Memoria/main.tex" 1719844451.13692 3129 cd36e1ac9386258de7cc7cc947303fc1 ""
+["pdflatex"] 1719920909.71856 "/Users/pjose/Desktop/PFG/Memoria/Memoria/main.tex" "main.pdf" "main" 1719920913.41632 0
+  "/Users/pjose/Desktop/PFG/Memoria/Memoria/main.tex" 1719920828.39161 3178 155cbc9595d9596d7d76ef747ec8b78c ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -150,18 +150,19 @@
   "FigurasMemoria/fig1coilgunIntro.jpeg" 1717665626.65726 66077 a53df87a91ea941aa0853e7bef4aac73 ""
   "FigurasMemoria/integralampere.png" 1719162971.29703 660257 d0baea40a9826782218214af7b97047d ""
   "FigurasMemoria/logoTecnun.png" 1716593500.14402 19567 0f7461f54f7ea98814527f3f9c73504c ""
+  "anexo1.tex" 1719920800.58196 230 4e2760f9ee1c997cef3d62e981a3e8c9 ""
   "desarrollo.tex" 1717672063.69926 393 bece744873122a1ce98e423a72116920 ""
   "desarrolloprototipo.tex" 1719170989.22853 47 a10540181506a7b3c99d8d2c6004eb80 ""
-  "desarrolloteorico.tex" 1719913914.77409 5786 c939b6e8ff95fcd8f4685f29e7ffbe5b ""
+  "desarrolloteorico.tex" 1719920909.44041 6400 c236e9a68239dad61db4a4b2732bfa52 ""
   "introduccion.tex" 1719912236.02328 3462 4f6bf9f0966ce6ad5d05553fde1de128 ""
-  "main.aux" 1719916880.26414 6725 59f8407e05d3d799332506009ff13c56 "pdflatex"
-  "main.bbl" 1719916877.35589 1829 c8a74a1bd63046739edb377853902801 "bibtex main"
-  "main.lof" 1719916880.26985 1804 606b8e8bc9d314b18eff681b5ac0cecc "pdflatex"
-  "main.lot" 1719916880.2699 30 1bb04962d39b6bda471ac6c46ce13f85 "pdflatex"
-  "main.out" 1719916880.26856 1222 b2ee3ca678c6028152a2f3c2aafc7442 "pdflatex"
-  "main.tex" 1719844451.13692 3129 cd36e1ac9386258de7cc7cc947303fc1 ""
-  "main.toc" 1719916880.26977 871 12a8292a10f049ad79f3f1c0d11c048b "pdflatex"
-  "marcoteorico.tex" 1719916872.79569 11398 fa19173e754cf85df1c9601d657e7fe8 ""
+  "main.aux" 1719920912.80105 6814 ffa817328be88a1bcf3f8b56b4550ca3 "pdflatex"
+  "main.bbl" 1719920832.69194 1829 c8a74a1bd63046739edb377853902801 "bibtex main"
+  "main.lof" 1719920912.80672 1822 5a3167367bc971c287d7b50da2456b8a "pdflatex"
+  "main.lot" 1719920912.80678 30 1bb04962d39b6bda471ac6c46ce13f85 "pdflatex"
+  "main.out" 1719920912.80593 1222 b2ee3ca678c6028152a2f3c2aafc7442 "pdflatex"
+  "main.tex" 1719920828.39161 3178 155cbc9595d9596d7d76ef747ec8b78c ""
+  "main.toc" 1719920912.80664 871 12a8292a10f049ad79f3f1c0d11c048b "pdflatex"
+  "marcoteorico.tex" 1719919846.47171 11398 fa19173e754cf85df1c9601d657e7fe8 ""
   "motivacionyobjetivos.tex" 1717672060.0161 4824 deb256b44bbb3e2954a4f5e6e67e56ed ""
   "portada.tex" 1717425519.89348 635 70096f595347e83c5271a0a3693f1445 ""
   "resumen.tex" 1717666289.93506 2703 5d398707b18c26013ecb4793c36d879a ""

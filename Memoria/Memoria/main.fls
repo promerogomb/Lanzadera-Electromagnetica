@@ -327,6 +327,9 @@ INPUT ./main.bbl
 INPUT ./main.bbl
 INPUT main.bbl
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT ./anexo1.tex
+INPUT ./anexo1.tex
+INPUT anexo1.tex
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
