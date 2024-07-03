@@ -5,10 +5,10 @@ marco teorico:
 	-añadir explicación de los circuitos magnéticos HECHO
 desarrollo teor:
 	-cambiar 2rc por krc y meter k en matlab HECHO
-	-código en anexo
+	-código en anexo HECHO
 simulaciones:
-	-hacer desarrollo del procedimiento
-	-resultados aunque no sean certeros
+	-hacer desarrollo del procedimiento HECHO
+	-resultados aunque no sean certeros HECHO
 prototipo:
 	-poner lo que hay definitivamente
 	-anexo con la génesis del prot

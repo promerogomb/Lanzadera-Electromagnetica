@@ -15,7 +15,7 @@ S_bar = pi * r_fe ^ 2; % Sección del vástago [m^2]
 S_disp = 2 * S_c; % Sección de dispersión [m^2]
 
 % Vectores espaciales
-num_points = 2000; % Número de puntos
+num_points = 500; % Número de puntos
 x = linspace(0, h_c, num_points); % Región de movimiento
 
 

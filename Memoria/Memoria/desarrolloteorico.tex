@@ -66,11 +66,11 @@ Teniendo en cuenta las fórmulas en la sección del marco teórico (\ref{sec:mar
 
 \newpage
 
-Con el circuito magnético definido, el siguiente paso es programar las relaciones presentadas en esta sección en MATLAB y graficar los resultados en función de la posición. El programa en MATLAB constará de tres secciones: definición, cálculos y graficación. El código está disonible en el anexo 1 MIRAR POR QUE NO PUEDO PONER REF AQUI. El producto de este código es una "calculadora" que devuelve la evolución de la fuerza con el parámetro \(x\), y queda así:
+Con el circuito magnético definido, el siguiente paso es programar las relaciones presentadas en esta sección en MATLAB y graficar los resultados en función de la posición. El programa en MATLAB constará de tres secciones: definición, cálculos y graficación. El código está disonible en el anexo 1 \ref{sec:anexo1}. El producto de este código es una ''calculadora'' que devuelve la evolución de la fuerza con el parámetro \(x\), y queda así:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=14cm]{FigurasMemoria/calculadora.png}
+    \includegraphics[width=13cm]{FigurasMemoria/calculadora.png}
     \caption{Aplicación de cálculos de MATLAB. Elaboración propia.}
     \label{fig:calculadora} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
@@ -79,8 +79,33 @@ Los valores escritos en las variables del sistema que se pueden ver en la figura
 
 \[
 \begin{array}{c}
-    \mu_0 = 4\pi \times 10^{-7}~~~~~~\mu_{fe} = 5000~~~~~~N = 500 \\~\\
-    l_{fe} = 0.096m~~~~~~r_{fe} = 0.003045m \\~\\
+    \mu_0 = 4\pi \times 10^{-7}~~~~~~\mu_{fe} = 5000~~~~~~N = 500 \\
+    l_{fe} = 0.096m~~~~~~r_{fe} = 0.003045m \\
     h_c = 0.05321m~~~~~~r_{c} = 0.01064m~~~~~~r_{disp} = k_{disp}~r_{c}=2~r_{c}
 \end{array}
 \]
+
+Con esta configuración, la forma de las gráficas obtenidas es:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=13cm]{FigurasMemoria/calcRsetupBase.png}
+    \caption{Reluctancias vs x. Elaboración propia.}
+    \label{fig:calcRsetupBase} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{FigurasMemoria/calcBsetupBase.png}
+    \caption{Inducción vs x. Elaboración propia.}
+    \label{fig:calcBsetupBase} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{FigurasMemoria/calcFsetupBase.png}
+    \caption{Fuerza vs x. Elaboración propia.}
+    \label{fig:calcFsetupBase} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+
+Estas figuras serán discutidas en el apartado de conclusiones %\ref{sec:conclusiones}.

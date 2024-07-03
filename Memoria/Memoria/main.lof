@@ -10,14 +10,17 @@
 \contentsline {figure}{\numberline {9}{\ignorespaces Secciones del sistema con una vista de planta. Elaboración propia.}}{18}{figure.caption.9}%
 \contentsline {figure}{\numberline {10}{\ignorespaces Circuito magnético del sistema. Elaboración propia.}}{19}{figure.caption.10}%
 \contentsline {figure}{\numberline {11}{\ignorespaces Aplicación de cálculos de MATLAB. Elaboración propia.}}{20}{figure.caption.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Geometría de la barra y bobina en 2D. Elaboración propia.}}{21}{figure.caption.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Mallado de la barra y bobina en 2D. Elaboración propia.}}{22}{figure.caption.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Detalle del mallado de la barra y bobina en 2D. Elaboración propia.}}{22}{figure.caption.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Visualización de los campos magnéticos con la bobina energizada y \(x=2/10 * h_c\). Elaboración propia.}}{23}{figure.caption.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Visualización de los campos magnéticos dentro del solenoide. Elaboración propia.}}{23}{figure.caption.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Fuerza (verde) y corriente (rojo) vs tiempo en la configuración 1. Elaboración propia.}}{24}{figure.caption.18}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Posición (verde) y velocidad (rojo) vs tiempo en la configuración 1. Elaboración propia.}}{25}{figure.caption.19}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Fuerza (rojo) y corriente (verde) vs tiempo en la configuración 2. Elaboración propia.}}{25}{figure.caption.20}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Posición (verde) y velocidad (rojo) vs tiempo en la configuración 2. Elaboración propia.}}{26}{figure.caption.21}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Fuerza (rojo) y corriente (verde) vs tiempo en la configuración 3. Elaboración propia.}}{26}{figure.caption.22}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Posición (verde) y velocidad (rojo) vs tiempo en la configuración 3. Elaboración propia.}}{27}{figure.caption.23}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Reluctancias vs x. Elaboración propia.}}{20}{figure.caption.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Inducción vs x. Elaboración propia.}}{21}{figure.caption.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Fuerza vs x. Elaboración propia.}}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Geometría de la barra y bobina en 2D. Elaboración propia.}}{22}{figure.caption.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Mallado de la barra y bobina en 2D. Elaboración propia.}}{23}{figure.caption.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Detalle del mallado de la barra y bobina en 2D. Elaboración propia.}}{23}{figure.caption.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Visualización de los campos magnéticos con la bobina energizada y \(x=2/10 * h_c\). Elaboración propia.}}{24}{figure.caption.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Visualización de los campos magnéticos dentro del solenoide. Elaboración propia.}}{24}{figure.caption.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Fuerza (verde) y corriente (rojo) vs tiempo en la configuración 1. Elaboración propia.}}{25}{figure.caption.21}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Posición (verde) y velocidad (rojo) vs tiempo en la configuración 1. Elaboración propia.}}{25}{figure.caption.22}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Fuerza (rojo) y corriente (verde) vs tiempo en la configuración 2. Elaboración propia.}}{26}{figure.caption.23}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Posición (verde) y velocidad (rojo) vs tiempo en la configuración 2. Elaboración propia.}}{26}{figure.caption.24}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Fuerza (rojo) y corriente (verde) vs tiempo en la configuración 3. Elaboración propia.}}{27}{figure.caption.25}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Posición (verde) y velocidad (rojo) vs tiempo en la configuración 3. Elaboración propia.}}{27}{figure.caption.26}%

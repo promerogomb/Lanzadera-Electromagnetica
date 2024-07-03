@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1719945461.41254 "main.aux" "main.bbl" "main" 1719945465.93699 0
+["bibtex main"] 1719986154.96035 "main.aux" "main.bbl" "main" 1719986159.86969 0
   "./referencias.bib" 1719936682.9661 2236 86524ecef3381c77849734a75ac0d7a5 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/natbib/abbrvnat.bst" 1233624470 26532 66bed5cc59495faaa3f9ae9af9fa5e42 ""
-  "main.aux" 1719945465.28074 11556 56700225013f6bf9f6a4308f68474e97 "pdflatex"
+  "main.aux" 1719986158.97699 12326 930b5b6f4f1de12210fad6a54fd4a294 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1719945461.65682 "/Users/pjose/Desktop/PFG/Memoria/Memoria/main.tex" "main.pdf" "main" 1719945465.93725 0
+["pdflatex"] 1719986155.21322 "/Users/pjose/Desktop/PFG/Memoria/Memoria/main.tex" "main.pdf" "main" 1719986159.86998 0
   "/Users/pjose/Desktop/PFG/Memoria/Memoria/main.tex" 1719942304.68753 3337 7e0d1b44cc0ddca61ac32f52ae11c412 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -155,6 +155,9 @@
   "FigurasMemoria/S3SpeedPos.jpg" 1719050012.32706 185904 31b73df7e21232957175f4b338e031ca ""
   "FigurasMemoria/amperelaw.jpg" 1719249967.06356 279237 60ae1cc5ea6552eace797ef8147fc868 ""
   "FigurasMemoria/areasFlujo.jpg" 1719257009.03682 575612 ab20d622175dc4bcf5a7c38a1f3b12c6 ""
+  "FigurasMemoria/calcBsetupBase.png" 1719985224.97477 82807 ae26a07455b16833c3dd006f47c3ddec ""
+  "FigurasMemoria/calcFsetupBase.png" 1719985244.47076 65872 2d9944852cb4c35665b580e517f9d978 ""
+  "FigurasMemoria/calcRsetupBase.png" 1719985204.38729 82114 2728b60ba861146f1340b5da7157c420 ""
   "FigurasMemoria/calculadora.png" 1719913787.04097 585199 ca2d6dff11bce78b3673306986ab37c2 ""
   "FigurasMemoria/circuitoMag.jpg" 1719255675.87291 456275 df80a2525889526d5cc1412f0c9cecb7 ""
   "FigurasMemoria/circuitoMagExplicacion.png" 1719916837.96401 194770 dd12069a0fc0f5fe8f052c93cea6a744 ""
@@ -170,20 +173,20 @@
   "anexo2.tex" 1719945455.9546 151 f57a219a456f90e78f10d836dc1ee2da ""
   "desarrollo.tex" 1717672063.69926 393 bece744873122a1ce98e423a72116920 ""
   "desarrolloprototipo.tex" 1719170989.22853 47 a10540181506a7b3c99d8d2c6004eb80 ""
-  "desarrolloteorico.tex" 1719920909.44041 6400 c236e9a68239dad61db4a4b2732bfa52 ""
+  "desarrolloteorico.tex" 1719985708.31024 7248 225f5279a07f6f665fb147e43e0ed731 ""
   "introduccion.tex" 1719912236.02328 3462 4f6bf9f0966ce6ad5d05553fde1de128 ""
-  "main.aux" 1719945465.28074 11556 56700225013f6bf9f6a4308f68474e97 "pdflatex"
-  "main.bbl" 1719945461.64951 2055 8135939d8b9ef5c64db69602c2254f52 "bibtex main"
-  "main.lof" 1719945465.28476 3622 fcb40b2431433fb9a3e5092a12968353 "pdflatex"
-  "main.lot" 1719945465.2848 197 75f67621dfd8653637a72cde04e8b500 "pdflatex"
-  "main.out" 1719945465.28426 1733 e5cd8ef510948756dacac0bbe1885b59 "pdflatex"
+  "main.aux" 1719986158.97699 12326 930b5b6f4f1de12210fad6a54fd4a294 "pdflatex"
+  "main.bbl" 1719986155.20598 2055 8135939d8b9ef5c64db69602c2254f52 "bibtex main"
+  "main.lof" 1719986158.98405 3974 c1335d524b9bdeb1a1702af7e4b38dda "pdflatex"
+  "main.lot" 1719986158.98411 197 0f274314ebcafb8603f8c196ac970e49 "pdflatex"
+  "main.out" 1719986158.98312 1733 e5cd8ef510948756dacac0bbe1885b59 "pdflatex"
   "main.tex" 1719942304.68753 3337 7e0d1b44cc0ddca61ac32f52ae11c412 ""
-  "main.toc" 1719945465.28469 1163 7afb0a32de9988edf1225565fca4743b "pdflatex"
+  "main.toc" 1719986158.98397 1163 d726318b9983496c344d58cba88b4967 "pdflatex"
   "marcoteorico.tex" 1719919846.47171 11398 fa19173e754cf85df1c9601d657e7fe8 ""
   "motivacionyobjetivos.tex" 1717672060.0161 4824 deb256b44bbb3e2954a4f5e6e67e56ed ""
   "portada.tex" 1717425519.89348 635 70096f595347e83c5271a0a3693f1445 ""
   "resumen.tex" 1717666289.93506 2703 5d398707b18c26013ecb4793c36d879a ""
-  "simulaciones.tex" 1719945455.81514 10166 c048d6d00f8a57343cc79b9f53401868 ""
+  "simulaciones.tex" 1719986149.96175 10804 e151d5abfac5380a2a1c1be8a78370cb ""
   (generated)
   "main.aux"
   "main.lof"

@@ -8,10 +8,10 @@
 \contentsline {section}{\numberline {2}Marco teórico}{11}{section.2}%
 \contentsline {section}{\numberline {3}Desarrollo}{17}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Desarrollo teórico}{17}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Simulaciones}{21}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Geometría}{21}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Simulaciones instantáneas}{22}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Simulaciones transitorias}{24}{subsubsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.3}Prototipo}{28}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Resultados}{29}{section.4}%
-\contentsline {section}{\numberline {5}Discusión y conclusiones}{30}{section.5}%
+\contentsline {subsection}{\numberline {3.2}Simulaciones}{22}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Geometría}{22}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Simulaciones instantáneas}{23}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Simulaciones transitorias}{25}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Prototipo}{29}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Resultados}{30}{section.4}%
+\contentsline {section}{\numberline {5}Discusión y conclusiones}{31}{section.5}%
