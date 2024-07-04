@@ -13,5 +13,9 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Simulaciones instantáneas}{23}{subsubsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {3.2.3}Simulaciones transitorias}{25}{subsubsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.3}Prototipo}{29}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Resultados}{30}{section.4}%
-\contentsline {section}{\numberline {5}Discusión y conclusiones}{31}{section.5}%
+\contentsline {subsubsection}{\numberline {3.3.1}Materiales}{30}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Sensores de movimiento}{30}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Circuito electrónico}{31}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Bobina}{32}{subsubsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.4}Desarrollo de la práctica}{33}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Discusión y conclusiones}{34}{section.4}%
