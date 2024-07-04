@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1720123762.26622 "main.aux" "main.bbl" "main" 1720123766.91406 0
+["bibtex main"] 1720129160.65368 "main.aux" "main.bbl" "main" 1720129166.50007 0
   "./referencias.bib" 1719936682.9661 2236 86524ecef3381c77849734a75ac0d7a5 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/natbib/abbrvnat.bst" 1233624470 26532 66bed5cc59495faaa3f9ae9af9fa5e42 ""
-  "main.aux" 1720123766.24899 14192 579a01de25bdb74666ad0cbf68d740c7 "pdflatex"
+  "main.aux" 1720129165.59935 14512 a3fd225abd71bfa425acfa4a469c5722 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1720123762.51234 "/Users/pjose/Desktop/PFG/Memoria/Memoria/main.tex" "main.pdf" "main" 1720123766.91436 0
+["pdflatex"] 1720129160.9059 "/Users/pjose/Desktop/PFG/Memoria/Memoria/main.tex" "main.pdf" "main" 1720129166.50043 0
   "/Users/pjose/Desktop/PFG/Memoria/Memoria/main.tex" 1719987335.95405 3318 58fd2756c7d45194e39d543937e5a29d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -161,7 +161,8 @@
   "FigurasMemoria/calculadora.png" 1719913787.04097 585199 ca2d6dff11bce78b3673306986ab37c2 ""
   "FigurasMemoria/circuitoMag.jpg" 1719255675.87291 456275 df80a2525889526d5cc1412f0c9cecb7 ""
   "FigurasMemoria/circuitoMagExplicacion.png" 1719916837.96401 194770 dd12069a0fc0f5fe8f052c93cea6a744 ""
-  "FigurasMemoria/conexionInterruptor.png" 1720122349.93801 37760 20a991a1986bea95553b8e9ad24f6e5d ""
+  "FigurasMemoria/conexionInterruptor.png" 1720125992.46663 95415 8af9d56d27e82cd37b13f7a76d44e15b ""
+  "FigurasMemoria/divisorTensiones.png" 1720127326.20633 68284 e74dc250c2de40102ade2c5d4c1c39ec ""
   "FigurasMemoria/electromagnet.png" 1719165677.81615 1098924 37ba3b1251d758b7832d46fabdfc8be4 ""
   "FigurasMemoria/esquemaDesTeor.jpg" 1719239072.05033 110016 8686952ba8dd57e161206eec7c13c118 ""
   "FigurasMemoria/esquemaJustDisparo.png" 1720121491.83996 91451 be11aa8644142dad0e26fe0f94e2611d ""
@@ -175,16 +176,16 @@
   "anexo1.tex" 1719939270.02039 3211 b4d0f0bfddfed44ea21f6cbc5b929228 ""
   "desarrollo.tex" 1717672063.69926 393 bece744873122a1ce98e423a72116920 ""
   "desarrollopractica.tex" 1719987336.07256 311 3dc900ceccea643482cb085015a6e143 ""
-  "desarrolloprototipo.tex" 1720123757.4191 7896 cbfb9f54a590c6ca20aa08420afdf268 ""
+  "desarrolloprototipo.tex" 1720129155.18833 8755 cc4c5a7287345fb2aaf0b2aeb9a41d17 ""
   "desarrolloteorico.tex" 1720120587.84847 7717 dc5bf201a1ceed0c5d140418340f8852 ""
   "introduccion.tex" 1719912236.02328 3462 4f6bf9f0966ce6ad5d05553fde1de128 ""
-  "main.aux" 1720123766.24899 14192 579a01de25bdb74666ad0cbf68d740c7 "pdflatex"
-  "main.bbl" 1720123762.50435 2055 8135939d8b9ef5c64db69602c2254f52 "bibtex main"
-  "main.lof" 1720123766.254 4388 55d5139c62ec21f99ed262eeda89c73e "pdflatex"
-  "main.lot" 1720123766.25408 197 0f274314ebcafb8603f8c196ac970e49 "pdflatex"
-  "main.out" 1720123766.25341 2408 ba17425767c608af469a96fa2f60b1cc "pdflatex"
+  "main.aux" 1720129165.59935 14512 a3fd225abd71bfa425acfa4a469c5722 "pdflatex"
+  "main.bbl" 1720129160.89876 2055 8135939d8b9ef5c64db69602c2254f52 "bibtex main"
+  "main.lof" 1720129165.60556 4536 60ac70d54af5713221322e6da51e9713 "pdflatex"
+  "main.lot" 1720129165.60595 197 0f274314ebcafb8603f8c196ac970e49 "pdflatex"
+  "main.out" 1720129165.60466 2408 ba17425767c608af469a96fa2f60b1cc "pdflatex"
   "main.tex" 1719987335.95405 3318 58fd2756c7d45194e39d543937e5a29d ""
-  "main.toc" 1720123766.25392 1556 8d64860e05ebba8671ce62361fe79df9 "pdflatex"
+  "main.toc" 1720129165.60549 1556 8d64860e05ebba8671ce62361fe79df9 "pdflatex"
   "marcoteorico.tex" 1719919846.47171 11398 fa19173e754cf85df1c9601d657e7fe8 ""
   "motivacionyobjetivos.tex" 1717672060.0161 4824 deb256b44bbb3e2954a4f5e6e67e56ed ""
   "portada.tex" 1717425519.89348 635 70096f595347e83c5271a0a3693f1445 ""
