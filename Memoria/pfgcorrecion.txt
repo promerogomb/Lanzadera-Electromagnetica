@@ -10,11 +10,11 @@ simulaciones:
 	-hacer desarrollo del procedimiento HECHO
 	-resultados aunque no sean certeros HECHO
 prototipo:
-	-poner lo que hay definitivamente
-	-anexo con la génesis del prot
-	-descripción del prototipo
+	-poner lo que hay definitivamente HECHO
+	-anexo con la génesis del prot 
+	-descripción del prototipo HECHO
 	-anexo listado de componentes
-	-proceso de diseño pcb
+	-proceso de diseño pcb HECHO
 resultados:
 	-4 apartados, uno por sección + discusión
 conclusiones:

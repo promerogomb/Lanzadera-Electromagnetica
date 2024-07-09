@@ -1,30 +1,36 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Cañón de Gauss. Imagen tomada de \href {URL}{http://www.coilgun.eclipse.co.uk/}}}{8}{figure.caption.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Ecuaciones de Maxwell.\citep {purcell2013electricidad}}}{11}{figure.caption.2}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Visualización del campo magnético de un conductor. Elaboración propia.}}{12}{figure.caption.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Curva \textbf {\(\vec {C}\)} para la cual realizaremos los cálculos. Imagen tomada de \href {URL}{https://artpictures.club/autumn-2023.html}.}}{12}{figure.caption.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Visualización del campo magnético de una bobina energizada. Imagen tomada de \href {URL}{https://ece.northeastern.edu/fac-ece/nian/mom/electromagnets.html}.}}{14}{figure.caption.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Esquema cualitativo de la lanzadera electromagnética. Elaboración propia.}}{14}{figure.caption.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Esquema de una bobina con un core ferromagnético y su circuito magnético equivalente. Elaboración propia.}}{16}{figure.caption.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Esquema geométrico del sistema. Elaboración propia.}}{18}{figure.caption.8}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Cañón de Gauss\citep {coilgun2024}.}}{8}{figure.caption.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Ecuaciones de Maxwell\citep {purcell2013electricidad}.}}{11}{figure.caption.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Visualización del campo magnético producido alrededor de un conductor por el que circula una corriente eléctrica.}}{12}{figure.caption.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Curva \textbf {\(\vec {C}\)} para la cual realizaremos los cálculos \citep {artpictures2023}.}}{12}{figure.caption.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Visualización del campo magnético de una bobina energizada \citep {northeastern2024electromagnets}.}}{14}{figure.caption.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Esquema cualitativo de la lanzadera electromagnética.}}{14}{figure.caption.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Esquema de una bobina con un núcleo ferromagnético y su circuito magnético equivalente.}}{16}{figure.caption.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Esquema geométrico del sistema. Elaboración propia.}}{17}{figure.caption.8}%
 \contentsline {figure}{\numberline {9}{\ignorespaces Secciones del sistema con una vista de planta. Elaboración propia.}}{18}{figure.caption.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Circuito magnético del sistema. Elaboración propia.}}{19}{figure.caption.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Aplicación de cálculos de MATLAB. Elaboración propia.}}{20}{figure.caption.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Reluctancias vs x. Elaboración propia.}}{20}{figure.caption.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Inducción vs x. Elaboración propia.}}{21}{figure.caption.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Fuerza vs x. Elaboración propia.}}{21}{figure.caption.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Geometría de la barra y bobina en 2D. Elaboración propia.}}{22}{figure.caption.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Mallado de la barra y bobina en 2D. Elaboración propia.}}{23}{figure.caption.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Detalle del mallado de la barra y bobina en 2D. Elaboración propia.}}{23}{figure.caption.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Visualización de los campos magnéticos con la bobina energizada y \(x=2/10 * h_c\). Elaboración propia.}}{24}{figure.caption.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Visualización de los campos magnéticos dentro del solenoide. Elaboración propia.}}{24}{figure.caption.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Fuerza (verde) y corriente (rojo) vs tiempo en la configuración 1. Elaboración propia.}}{25}{figure.caption.21}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Posición (verde) y velocidad (rojo) vs tiempo en la configuración 1. Elaboración propia.}}{25}{figure.caption.22}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Fuerza (rojo) y corriente (verde) vs tiempo en la configuración 2. Elaboración propia.}}{26}{figure.caption.23}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Posición (verde) y velocidad (rojo) vs tiempo en la configuración 2. Elaboración propia.}}{26}{figure.caption.24}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Fuerza (rojo) y corriente (verde) vs tiempo en la configuración 3. Elaboración propia.}}{27}{figure.caption.25}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Posición (verde) y velocidad (rojo) vs tiempo en la configuración 3. Elaboración propia.}}{27}{figure.caption.26}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Esquema conexiones del \textbf {MODELO SENSORES}. Elaboración propia.}}{30}{figure.caption.27}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Conexión del interrupor de disparo. Elaboración propia.}}{31}{figure.caption.28}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Colocación del sensor. Elaboración propia.}}{32}{figure.caption.29}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Esquema eléctrico de un divisor de tensiones. Elaboración propia.}}{32}{figure.caption.30}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Circuito magnético del sistema.}}{19}{figure.caption.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Aplicación de cálculos de MATLAB.}}{19}{figure.caption.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Reluctancias en función de la posición del vástago respecto a la bobina.}}{20}{figure.caption.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Inducción en función de la posición del vástago respecto a la bobina.}}{20}{figure.caption.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Fuerza en función de la posición del vástago respecto a la bobina.}}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Geometría de la barra y bobina en 2D.}}{22}{figure.caption.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Mallado de la barra y bobina en 2D.}}{23}{figure.caption.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Detalle del mallado de la barra y bobina en 2D.}}{23}{figure.caption.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Visualización de los campos magnéticos con la bobina energizada y \(x=2/10 * h_c\).}}{24}{figure.caption.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Visualización de los campos magnéticos dentro del solenoide.}}{24}{figure.caption.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Fuerza (verde) y corriente (rojo) en función del tiempo de la configuración 1.}}{25}{figure.caption.21}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Posición (verde) y velocidad (rojo) en función del tiempo de en la configuración 1.}}{25}{figure.caption.22}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Fuerza (rojo) y corriente (verde) en función del tiempo de la configuración 2.}}{26}{figure.caption.23}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Posición (verde) y velocidad (rojo) en función del tiempo de la configuración 2.}}{26}{figure.caption.24}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Fuerza (rojo) y corriente (verde) en función del tiempo de la configuración 3.}}{27}{figure.caption.25}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Posición (verde) y velocidad (rojo) en función del tiempo de la configuración 3.}}{27}{figure.caption.26}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Esquema conexiones de los sensores capacitivos.}}{30}{figure.caption.27}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Conexión del interrupor de disparo.}}{31}{figure.caption.28}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Colocación del sensor.}}{32}{figure.caption.29}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Esquema eléctrico de la conexión del SSR.}}{32}{figure.caption.30}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Imagen del relé de estado sólido \citep {rs2024ksj}.}}{33}{figure.caption.31}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Imagen del relé PRMA1A05 \citep {coto2024prma1a05b}.}}{33}{figure.caption.32}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Esquema eléctrico de un divisor de tensiones.}}{33}{figure.caption.33}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Esquemático de la PCB del proyecto.}}{34}{figure.caption.34}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Distribución de la placa del proyecto.}}{34}{figure.caption.35}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Sección central del solenoide.}}{35}{figure.caption.36}%

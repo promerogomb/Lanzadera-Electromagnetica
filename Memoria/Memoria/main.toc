@@ -3,19 +3,19 @@
 \setcounter {tocdepth}{-1}
 \setcounter {tocdepth}{3}
 \contentsline {section}{\numberline {1}Introducción}{8}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Objetivos y métodos}{9}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Motivación}{10}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Marco teórico}{11}{section.2}%
-\contentsline {section}{\numberline {3}Desarrollo}{17}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Desarrollo teórico}{17}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Simulaciones}{22}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Geometría}{22}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Simulaciones instantáneas}{23}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Simulaciones transitorias}{25}{subsubsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.3}Prototipo}{29}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Materiales}{30}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Sensores de movimiento}{30}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Circuito electrónico}{31}{subsubsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.4}Bobina}{32}{subsubsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.4}Desarrollo de la práctica}{33}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Discusión y conclusiones}{34}{section.4}%
+\contentsline {section}{\numberline {2}Objetivos y métodos}{9}{section.2}%
+\contentsline {section}{\numberline {3}Marco teórico}{11}{section.3}%
+\contentsline {section}{\numberline {4}Cálculo analítico de la fuerza de atracción}{17}{section.4}%
+\contentsline {section}{\numberline {5}Cálculo por Elementos Finitos de la fuerza de atracción}{22}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Geometría}{22}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Simulaciones instantáneas}{23}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Simulaciones transitorias}{25}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Desarrollo de un prototipo de lanzadera electromagnética}{29}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Materiales}{30}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Sensores de movimiento}{30}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Circuito electrónico}{31}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Bobina}{35}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Análisis de los resultados obtenidos}{37}{section.7}%
+\contentsline {section}{\numberline {8}Práctica propuesta}{38}{section.8}%
+\contentsline {section}{\numberline {9}Conclusiones}{39}{section.9}%
+\contentsline {section}{\numberline {10}Referencias}{40}{section.10}%

@@ -1,10 +1,10 @@
-\subsection{Simulaciones}
-\label{subsec:simulaciones}
+\section{Cálculo por Elementos Finitos de la fuerza de atracción}
+\label{sec:simulaciones}
 
 En esta sección, se describe el proceso de creación del modelo de la lanzadera electromagnética realizado utilizando ANSYS Maxwell. Este software de métodos finitos está especializado en el análisis de sistemas electromagnéticos. El objetivo de estas simulaciones es obtener una comprensión detallada del comportamiento del campo magnético generado por la bobina y su interacción con el proyectil ferromagnético en la lanzadera electromagnética. Se ha dividido el proceso en tres subapartados: creación de la geometría, simulaciones instantáneas y simulaciones transitorias. En la primera, se mostrará el proceso de creación de la geometría paramétrica en 2D y 3D, en la segunda y tercera se explicarán las condiciones de contorno y resultados de las simulaciones instantáneas y transitorias, respectivamente.
 
-\subsubsection{Geometría}
-El primer paso para realizar las simulaciones fue la creación de la geometría del sistema en ANSYS Maxwell. Para ello, se definieron las dimensiones y características de la bobina y el proyectil de manera paramétrica. Esto quiere decir que las dimensiones de los polígonos que conforman el modelo no son fijas, si no que están asociados a variables por lo que simular diferentes configuraciones se convierte en algo más sencillo. La geometría fue primeramente diseñada en 3D, pero también se obtuvo la sección central del archivo tridimensional para poder simular en 2D, lo que a priori permite menor tiempo de computación. Una vez creada la geometría, se definieron los diferentes materiales y las propiedades eléctricas y magnéticas. El material utilizado para los conductores del solenoide es cobre recocido, PVC para el soporte de la bobina y \textbf{FALTA EL ACERO} para el vástago. Con esto, se construye la geometría a continuación mostrada:
+\subsection{Geometría}
+El primer paso para realizar las simulaciones fue la creación de la geometría del sistema en ANSYS Maxwell. Para ello, se definieron las dimensiones y características de la bobina y el proyectil de manera paramétrica. Esto quiere decir que las dimensiones de los polígonos que conforman el modelo no son fijas, si no que están asociados a variables por lo que simular diferentes configuraciones se convierte en algo más sencillo. La geometría fue primeramente diseñada en 3D, pero también se obtuvo la sección central del archivo tridimensional para poder simular en 2D, lo que a priori permite menor tiempo de computación. Una vez creada la geometría, se definieron los diferentes materiales y las propiedades eléctricas y magnéticas. El material utilizado para los conductores del solenoide es cobre recocido, PVC para el soporte de la bobina y acero F114 para el vástago. Con esto, se construye la geometría a continuación mostrada:
 
 \begin{itemize}
     \item \textbf{Geometría en 3D}:
@@ -15,33 +15,33 @@ El primer paso para realizar las simulaciones fue la creación de la geometría 
     \begin{figure}[H]
         \centering
         \includegraphics[width=9cm]{FigurasMemoria/BarGeom.png}
-        \caption{Geometría de la barra y bobina en 2D. Elaboración propia.}
+        \caption{Geometría de la barra y bobina en 2D.}
         \label{fig:BarGeom} %Para referenciar -> \ref{fig:figNum}
     \end{figure}
     \item \textbf{Mallado en 2D}
     \begin{figure}[H]
         \centering
         \includegraphics[width=9cm]{FigurasMemoria/BarGeomMesh.png}
-        \caption{Mallado de la barra y bobina en 2D. Elaboración propia.}
+        \caption{Mallado de la barra y bobina en 2D.}
         \label{fig:BarGeomMesh} %Para referenciar -> \ref{fig:figNum}
     \end{figure}
     \begin{figure}[H]
         \centering
         \includegraphics[width=9cm]{FigurasMemoria/BarMeshDetail.png}
-        \caption{Detalle del mallado de la barra y bobina en 2D. Elaboración propia.}
+        \caption{Detalle del mallado de la barra y bobina en 2D.}
         \label{fig:GeomMeshDetail} %Para referenciar -> \ref{fig:figNum}
     \end{figure}
 \end{itemize}
 
 La bobina se ha generado de la forma mostrada en las figuras anteriores debido a que representar un número de espiras del orden de \(10^2\) de manera helicoidal y con varias capas es muy complicado en ANSYS, ya que no es un entorno de diseño en 3D. Al crear un cilindro con dimensiones apropiadas, se puede indicar al software que lo trate como un solenoide, asignándole un número de espiras y una corriente de excitación. El programa distribuye uniformemente el campo generado por la corriente en todo el volumen, lo que resulta en una aproximación muy válida \citep[p. 13]{ansoft2012maxwell}.
 
-\subsubsection{Simulaciones instantáneas}
+\subsection{Simulaciones instantáneas}
 ANSYS Maxwell permite realizar simulaciones de diferentes tipos, de las cuales tienen interés para este proyecto las magnetoestáticas y las transitorias. Como primera prueba para el modelo de la figura \textbf{FIGURA3D}, se realizó una simulación electroestática con una \(I_{cc}=3.5~A\) para poder observar los campos magnéticos del sistema, resultando en la siguiente figura:
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=14cm]{FigurasMemoria/fields8.PNG}
-    \caption{Visualización de los campos magnéticos con la bobina energizada y \(x=2/10 * h_c\). Elaboración propia.}
+    \caption{Visualización de los campos magnéticos con la bobina energizada y \(x=2/10 * h_c\).}
     \label{fig:fields8} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
@@ -50,7 +50,7 @@ Vemos que se puede apreciar perfectamente la forma descrita en las figuras \ref{
 \begin{figure}[H]
     \centering
     \includegraphics[width=3cm]{FigurasMemoria/fieldsDetail.jpg}
-    \caption{Visualización de los campos magnéticos dentro del solenoide. Elaboración propia.}
+    \caption{Visualización de los campos magnéticos dentro del solenoide.}
     \label{fig:fieldsDetail} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
@@ -65,12 +65,12 @@ Además de visualizar los campos, ANSYS Maxwell permite añadir distintas medida
         \(F_{ANSYS}\) & Data 2 & Data 3 & Data 4 & Data 5 \\
         \hline
     \end{tabular}
-    \caption{Fuerzas de atracción magnética en los diferentes ejes del espacio. Elaboración propia.}
+    \caption{Fuerzas de atracción magnética en los diferentes ejes del espacio.}
     \label{tab:fuerzas}
 \end{table}
 
-\subsubsection{Simulaciones transitorias}
-Una vez observados los campos de manera estacionaria, el siguiente paso es conseguir la variación de los valores de fuerza con la posición del vástago, además sin forzar este movimiento. Es decir, especificar la región de movimiento y los valores de alimentación de la bobina y dejar que ANSYS genere el movimiento y nos de información acerca de la fuerza y velocidad experimentadas por el vástago. Al realizar esto con el modelo 3D, ANSYS devolvía un error fatal probablemente debido a que los ordenaores en los que se estaba realiando la simulación no eran lo suficientemente potentes. Se recurrió entonces a la utilización exclusiva de la geometría en 2D, la que dio resultados tanto de movimiento como fuerza. Para llegar a los últimos resultados, se realizaron varias simulaciones con varias configuraciones temporales diferentes, las cuales se muestran a 
+\subsection{Simulaciones transitorias}
+Una vez observados los campos de manera estacionaria, el siguiente paso es conseguir la variación de los valores de fuerza con la posición del vástago, además sin forzar este movimiento. Es decir, especificar la región de movimiento y los valores de alimentación de la bobina y dejar que ANSYS genere el movimiento y nos de información acerca de la fuerza y velocidad experimentadas por el vástago. Al realizar esto con el modelo 3D, ANSYS devolvía un error fatal probablemente debido a que los ordenadores en los que se estaba realiando la simulación no eran lo suficientemente potentes. Se recurrió entonces a la utilización exclusiva de la geometría en 2D, la que dio resultados tanto de movimiento como fuerza. Para llegar a los últimos resultados, se realizaron varias simulaciones con varias configuraciones temporales diferentes, las cuales se muestran a 
 \subsection*{Configuración 1}
 La primera configuración transitoria utilizada es:
 \[
@@ -89,13 +89,13 @@ Las gráficas resultantes de fuerza-corriente y velocidad-posición son:
 \begin{figure}[H]
     \centering
     \includegraphics[width=13cm]{FigurasMemoria/S1CurrentForce.jpg}
-    \caption{Fuerza (verde) y corriente (rojo) vs tiempo en la configuración 1. Elaboración propia.}
+    \caption{Fuerza (verde) y corriente (rojo) en función del tiempo de la configuración 1.}
     \label{fig:S1CurrentForce} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[width=10cm]{FigurasMemoria/S1SpeedPosition.jpg}
-    \caption{Posición (verde) y velocidad (rojo) vs tiempo en la configuración 1. Elaboración propia.}
+    \caption{Posición (verde) y velocidad (rojo) en función del tiempo de en la configuración 1.}
     \label{fig:S1SpeedPosition} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 Como se puede observar en las figuras \ref{fig:S1CurrentForce} y \ref{fig:S1SpeedPosition}, \(T_{sim}\) es muy largo ya que la mayor parte del tiempo no ocurre nada. También es destacable que existen oscilaciones, lo que indica que la bobina está siendo alimentada durante demasiado tiempo y está siendo retenida en el centro.
@@ -119,13 +119,13 @@ Las gráficas resultantes de fuerza-corriente y velocidad-posición son:
 \begin{figure}[H]
     \centering
     \includegraphics[width=13cm]{FigurasMemoria/S2ForceCurrent.jpg}
-    \caption{Fuerza (rojo) y corriente (verde) vs tiempo en la configuración 2. Elaboración propia.}
+    \caption{Fuerza (rojo) y corriente (verde) en función del tiempo de la configuración 2.}
     \label{fig:S2ForceCurrent} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[width=13cm]{FigurasMemoria/S2SpeedPosition.jpg}
-    \caption{Posición (verde) y velocidad (rojo) vs tiempo en la configuración 2. Elaboración propia.}
+    \caption{Posición (verde) y velocidad (rojo) en función del tiempo de la configuración 2.}
     \label{fig:S2SpeedPosition} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 En la segunda configuración, se utilizó un timestep muy pequeño para poder observar con precisión el movimiento del vástago. Se observa más ajustado el tiempo de simulación, aunque el tiempo de alimentación de la bobina sigue siendo muy elevado ya que el vástago sigue oscilando, aunque ya solo lo hace una vez. 
@@ -148,15 +148,15 @@ Las gráficas resultantes de fuerza-corriente y velocidad-posición son:
 \begin{figure}[H]
     \centering
     \includegraphics[width=13cm]{FigurasMemoria/S3ForceCurrent.jpg}
-    \caption{Fuerza (rojo) y corriente (verde) vs tiempo en la configuración 3. Elaboración propia.}
+    \caption{Fuerza (rojo) y corriente (verde) en función del tiempo de la configuración 3.}
     \label{fig:S3ForceCurrent} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[width=13cm]{FigurasMemoria/S3SpeedPos.jpg}
-    \caption{Posición (verde) y velocidad (rojo) vs tiempo en la configuración 3. Elaboración propia.}
+    \caption{Posición (verde) y velocidad (rojo) en función del tiempo de la configuración 3.}
     \label{fig:S3SpeedPos} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
-Esta configuración proporciona unos resultados que aunque no sean verosímiles debido a la magnitud de la fuerza (\(F_{max}\approx 80~N\)), sí que tienen una forma que se corresponde con lo obtenido en el apartado de desarrollo analítico \ref{subsec:desarrolloteorico}, concretamente con la forma de la evolución de la fuerza frente a la posición del vástago que se puede observar en la figura \ref{fig:calcFsetupBase}. 
+Esta configuración proporciona unos resultados que aunque no sean verosímiles debido a la magnitud de la fuerza (\(F_{max}\approx 80~N\)), sí que tienen una forma que se corresponde con lo obtenido en el apartado de desarrollo analítico \ref{sec:analitico}, concretamente con la forma de la evolución de la fuerza frente a la posición del vástago que se puede observar en la figura \ref{fig:calcFsetupBase}. 
 
 Con esto se dará por finalizado el apartado de simulaciones. Aunque se ha encontrado una configuración que es coherente en cuanto al comportamiento del sistema, los resultados obtenidos no son precisos en términos de magnitud. Dado que no se ha logrado avanzar en la mejora de la precisión de los resultados, se ha decidido no continuar dedicando más tiempo a afinar esta configuración, ya que la calculadora proporciona valores más verosímiles de manera fiable.

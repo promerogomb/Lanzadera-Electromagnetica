@@ -22,6 +22,8 @@
 \usepackage{matlab-prettifier}
 \usepackage{xcolor}
 \usepackage{array}
+\usepackage{pdfpages}
+\usepackage{listings}
 
 
 % Preámbulo
@@ -43,12 +45,12 @@
 
 \spanishdecimal{.}
 
-%% Definición código MATLAB:
+%% Definición estilo C:
 \lstset{
-  language=Matlab,
+  language=C,
   basicstyle=\ttfamily\small,
   keywordstyle=\color{blue},
-  commentstyle=\color{green},
+  commentstyle=\color[rgb]{0,0.5,0},
   stringstyle=\color{red},
   numbers=left,
   numberstyle=\tiny\color{gray},
@@ -65,7 +67,7 @@
   breakatwhitespace=false,
   title=\lstname,
   escapeinside={},
-  morekeywords={},
+  morekeywords={setup, loop, pinMode, digitalWrite, delay, HIGH, LOW, INPUT, OUTPUT},
 }
 
 %% Estilos de letras
@@ -140,37 +142,49 @@
 \addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
 
 \newpage
-\input{introduccion.tex}
+\input{Intro.tex}
 
 \newpage
-\input{motivacionyobjetivos.tex}
+\input{ObjetivosMetodosMotivacion.tex}
 
 \newpage
-\input{marcoteorico.tex}
+\input{MarcoTeorico.tex}
 
 \newpage
-\input{desarrollo.tex}
-\input{desarrolloteorico.tex}
+\input{Analitico.tex}
 
 \newpage
-\input{simulaciones.tex}
+\input{Simulaciones.tex}
 
 \newpage
-\input{desarrolloprototipo.tex}
+\input{Prototipo.tex}
 
 \newpage
-\input{desarrollopractica.tex}
+\input{AnalisisResultados.tex}
 
 \newpage
-\section{Discusión y conclusiones}
+\input{Practica.tex}
+
+\newpage
+\input{Conclusiones.tex}
 
 \newpage
 \begin{flushleft}
-  \bibliographystyle{abbrvnat}
-  \bibliography{referencias}
+  \begingroup
+    \section{Referencias}
+    \renewcommand{\refname}{}
+    \bibliographystyle{unsrtnat}
+    \bibliography{referencias}
+  \endgroup
 \end{flushleft}
 
 \newpage
 \input{anexo1.tex}
+
+\newpage
+\input{anexo2.tex}
+
+\includepdf[pages=-]{sensorDatasheet.pdf}
+\includepdf[pages=1-5]{ssrDatasheet.pdf}
 
 \end{document}
