@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.24)  10 JUL 2024 14:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.24)  10 JUL 2024 15:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -677,31 +677,31 @@ LaTeX Info: Redefining \% on input line 1.
 \openout6 = `main.lot'.
 
  [7] (./Intro.tex
-<FigurasMemoria/fig1coilgunIntro.jpeg, id=250, 513.92pt x 317.185pt>
+<FigurasMemoria/fig1coilgunIntro.jpeg, id=252, 513.92pt x 317.185pt>
 File: FigurasMemoria/fig1coilgunIntro.jpeg Graphic file (type jpg)
 <use FigurasMemoria/fig1coilgunIntro.jpeg>
 Package pdftex.def Info: FigurasMemoria/fig1coilgunIntro.jpeg  used on input line 8.
 (pdftex.def)             Requested size: 199.16928pt x 122.92726pt.
  [8 <./FigurasMemoria/fig1coilgunIntro.jpeg>]) (./ObjetivosMetodosMotivacion.tex [9]) [10] (./MarcoTeorico.tex
-<FigurasMemoria/amperelaw.jpg, id=283, 1653.17625pt x 1235.61626pt>
+<FigurasMemoria/amperelaw.jpg, id=285, 1653.17625pt x 1235.61626pt>
 File: FigurasMemoria/amperelaw.jpg Graphic file (type jpg)
 <use FigurasMemoria/amperelaw.jpg>
 Package pdftex.def Info: FigurasMemoria/amperelaw.jpg  used on input line 34.
 (pdftex.def)             Requested size: 199.16928pt x 148.85202pt.
  [11]
-<FigurasMemoria/integralampere.png, id=292, 1009.7725pt x 603.25375pt>
+<FigurasMemoria/integralampere.png, id=294, 1009.7725pt x 603.25375pt>
 File: FigurasMemoria/integralampere.png Graphic file (type png)
 <use FigurasMemoria/integralampere.png>
 Package pdftex.def Info: FigurasMemoria/integralampere.png  used on input line 45.
 (pdftex.def)             Requested size: 256.0748pt x 152.98541pt.
  [12 <./FigurasMemoria/amperelaw.jpg> <./FigurasMemoria/integralampere.png>]
-<FigurasMemoria/electromagnet.png, id=303, 454.69875pt x 610.28pt>
+<FigurasMemoria/electromagnet.png, id=305, 454.69875pt x 610.28pt>
 File: FigurasMemoria/electromagnet.png Graphic file (type png)
 <use FigurasMemoria/electromagnet.png>
 Package pdftex.def Info: FigurasMemoria/electromagnet.png  used on input line 87.
 (pdftex.def)             Requested size: 170.71652pt x 229.13379pt.
  [13]
-<FigurasMemoria/esquemabasico.png, id=315, 877.2775pt x 612.2875pt>
+<FigurasMemoria/esquemabasico.png, id=317, 877.2775pt x 612.2875pt>
 File: FigurasMemoria/esquemabasico.png Graphic file (type png)
 <use FigurasMemoria/esquemabasico.png>
 Package pdftex.def Info: FigurasMemoria/esquemabasico.png  used on input line 98.
@@ -722,46 +722,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--135
  []
 
 [15]
-<FigurasMemoria/circuitoMagExplicacion.png, id=329, 1312.905pt x 594.22pt>
+<FigurasMemoria/circuitoMagExplicacion.png, id=331, 1312.905pt x 594.22pt>
 File: FigurasMemoria/circuitoMagExplicacion.png Graphic file (type png)
 <use FigurasMemoria/circuitoMagExplicacion.png>
 Package pdftex.def Info: FigurasMemoria/circuitoMagExplicacion.png  used on input line 146.
 (pdftex.def)             Requested size: 426.79135pt x 193.16455pt.
 ) [16 <./FigurasMemoria/circuitoMagExplicacion.png>] (./Analitico.tex
-<FigurasMemoria/esquemaDesTeor.jpg, id=336, 1738.495pt x 1113.15875pt>
+<FigurasMemoria/esquemaDesTeor.jpg, id=338, 1738.495pt x 1113.15875pt>
 File: FigurasMemoria/esquemaDesTeor.jpg Graphic file (type jpg)
 <use FigurasMemoria/esquemaDesTeor.jpg>
 Package pdftex.def Info: FigurasMemoria/esquemaDesTeor.jpg  used on input line 23.
 (pdftex.def)             Requested size: 284.52756pt x 182.16855pt.
  [17 <./FigurasMemoria/esquemaDesTeor.jpg>]
-<FigurasMemoria/areasFlujo.jpg, id=353, 1608.0075pt x 1607.00375pt>
+<FigurasMemoria/areasFlujo.jpg, id=355, 1608.0075pt x 1607.00375pt>
 File: FigurasMemoria/areasFlujo.jpg Graphic file (type jpg)
 <use FigurasMemoria/areasFlujo.jpg>
 Package pdftex.def Info: FigurasMemoria/areasFlujo.jpg  used on input line 46.
 (pdftex.def)             Requested size: 142.26378pt x 142.17201pt.
-<FigurasMemoria/circuitoMag.jpg, id=357, 1491.5725pt x 1213.53375pt>
+<FigurasMemoria/circuitoMag.jpg, id=359, 1491.5725pt x 1213.53375pt>
 File: FigurasMemoria/circuitoMag.jpg Graphic file (type jpg)
 <use FigurasMemoria/circuitoMag.jpg>
 Package pdftex.def Info: FigurasMemoria/circuitoMag.jpg  used on input line 62.
 (pdftex.def)             Requested size: 312.9803pt x 254.62741pt.
  [18 <./FigurasMemoria/areasFlujo.jpg>]
-<FigurasMemoria/calculadora.png, id=366, 1445.4pt x 903.375pt>
+<FigurasMemoria/calculadora.png, id=368, 1445.4pt x 903.375pt>
 File: FigurasMemoria/calculadora.png Graphic file (type png)
 <use FigurasMemoria/calculadora.png>
 Package pdftex.def Info: FigurasMemoria/calculadora.png  used on input line 72.
 (pdftex.def)             Requested size: 369.88582pt x 231.17775pt.
  [19 <./FigurasMemoria/circuitoMag.jpg> <./FigurasMemoria/calculadora.png>]
-<FigurasMemoria/calcRsetupBase.png, id=374, 2890.8pt x 1457.445pt>
+<FigurasMemoria/calcRsetupBase.png, id=376, 2890.8pt x 1457.445pt>
 File: FigurasMemoria/calcRsetupBase.png Graphic file (type png)
 <use FigurasMemoria/calcRsetupBase.png>
 Package pdftex.def Info: FigurasMemoria/calcRsetupBase.png  used on input line 91.
 (pdftex.def)             Requested size: 369.88582pt x 186.47226pt.
-<FigurasMemoria/calcBsetupBase.png, id=375, 2890.8pt x 1457.445pt>
+<FigurasMemoria/calcBsetupBase.png, id=377, 2890.8pt x 1457.445pt>
 File: FigurasMemoria/calcBsetupBase.png Graphic file (type png)
 <use FigurasMemoria/calcBsetupBase.png>
 Package pdftex.def Info: FigurasMemoria/calcBsetupBase.png  used on input line 98.
 (pdftex.def)             Requested size: 426.79135pt x 215.16031pt.
-<FigurasMemoria/calcFsetupBase.png, id=376, 2890.8pt x 1457.445pt>
+<FigurasMemoria/calcFsetupBase.png, id=378, 2890.8pt x 1457.445pt>
 File: FigurasMemoria/calcFsetupBase.png Graphic file (type png)
 <use FigurasMemoria/calcFsetupBase.png>
 Package pdftex.def Info: FigurasMemoria/calcFsetupBase.png  used on input line 105.
@@ -771,129 +771,135 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--115
 
  []
 
-<FigurasMemoria/dinamometro.jpeg, id=383, 1445.4pt x 1418.29875pt>
+<FigurasMemoria/dinamometro.jpeg, id=385, 1445.4pt x 1418.29875pt>
 File: FigurasMemoria/dinamometro.jpeg Graphic file (type jpg)
 <use FigurasMemoria/dinamometro.jpeg>
 Package pdftex.def Info: FigurasMemoria/dinamometro.jpeg  used on input line 118.
 (pdftex.def)             Requested size: 256.0748pt x 251.25745pt.
 ) [21 <./FigurasMemoria/calcFsetupBase.png (PNG copy)> <./FigurasMemoria/dinamometro.jpeg>] (./Simulaciones.tex
-<FigurasMemoria/BarGeom.png, id=388, 575.90157pt x 574.39594pt>
+<FigurasMemoria/BarGeom.png, id=390, 575.90157pt x 574.39594pt>
 File: FigurasMemoria/BarGeom.png Graphic file (type png)
 <use FigurasMemoria/BarGeom.png>
 Package pdftex.def Info: FigurasMemoria/BarGeom.png  used on input line 17.
 (pdftex.def)             Requested size: 256.0748pt x 255.40817pt.
-<FigurasMemoria/BarGeomMesh.png, id=389, 576.65437pt x 579.66562pt>
+<FigurasMemoria/BarGeomMesh.png, id=391, 576.65437pt x 579.66562pt>
 File: FigurasMemoria/BarGeomMesh.png Graphic file (type png)
 <use FigurasMemoria/BarGeomMesh.png>
 Package pdftex.def Info: FigurasMemoria/BarGeomMesh.png  used on input line 24.
 (pdftex.def)             Requested size: 256.0748pt x 257.4241pt.
  [22 <./FigurasMemoria/BarGeom.png>]
-<FigurasMemoria/BarMeshDetail.png, id=395, 916.1728pt x 380.17032pt>
+<FigurasMemoria/BarMeshDetail.png, id=397, 916.1728pt x 380.17032pt>
 File: FigurasMemoria/BarMeshDetail.png Graphic file (type png)
 <use FigurasMemoria/BarMeshDetail.png>
 Package pdftex.def Info: FigurasMemoria/BarMeshDetail.png  used on input line 30.
 (pdftex.def)             Requested size: 256.0748pt x 106.25552pt.
-<FigurasMemoria/fields8.PNG, id=397, 1072.75781pt x 655.69969pt>
+<FigurasMemoria/fields8.PNG, id=399, 1072.75781pt x 655.69969pt>
 File: FigurasMemoria/fields8.PNG Graphic file (type png)
 <use FigurasMemoria/fields8.PNG>
 Package pdftex.def Info: FigurasMemoria/fields8.PNG  used on input line 43.
 (pdftex.def)             Requested size: 398.33858pt x 243.47554pt.
  [23 <./FigurasMemoria/BarGeomMesh.png> <./FigurasMemoria/BarMeshDetail.png>]
-<FigurasMemoria/fieldsDetail.jpg, id=408, 339.2675pt x 699.61375pt>
+<FigurasMemoria/fieldsDetail.jpg, id=410, 339.2675pt x 699.61375pt>
 File: FigurasMemoria/fieldsDetail.jpg Graphic file (type jpg)
 <use FigurasMemoria/fieldsDetail.jpg>
 Package pdftex.def Info: FigurasMemoria/fieldsDetail.jpg  used on input line 52.
 (pdftex.def)             Requested size: 85.35826pt x 176.01323pt.
  [24 <./FigurasMemoria/fields8.PNG> <./FigurasMemoria/fieldsDetail.jpg>]
-<FigurasMemoria/S1CurrentForce.jpg, id=415, 1678.27pt x 691.58376pt>
+<FigurasMemoria/S1CurrentForce.jpg, id=417, 1678.27pt x 691.58376pt>
 File: FigurasMemoria/S1CurrentForce.jpg Graphic file (type jpg)
 <use FigurasMemoria/S1CurrentForce.jpg>
 Package pdftex.def Info: FigurasMemoria/S1CurrentForce.jpg  used on input line 91.
 (pdftex.def)             Requested size: 369.88582pt x 152.42326pt.
-<FigurasMemoria/S1SpeedPosition.jpg, id=416, 1927.2pt x 1084.05pt>
+<FigurasMemoria/S1SpeedPosition.jpg, id=418, 1927.2pt x 1084.05pt>
 File: FigurasMemoria/S1SpeedPosition.jpg Graphic file (type jpg)
 <use FigurasMemoria/S1SpeedPosition.jpg>
 Package pdftex.def Info: FigurasMemoria/S1SpeedPosition.jpg  used on input line 97.
 (pdftex.def)             Requested size: 284.52756pt x 160.03659pt.
  [25 <./FigurasMemoria/S1CurrentForce.jpg> <./FigurasMemoria/S1SpeedPosition.jpg>]
-<FigurasMemoria/S2ForceCurrent.jpg, id=424, 1655.18375pt x 647.41875pt>
+<FigurasMemoria/S2ForceCurrent.jpg, id=426, 1655.18375pt x 647.41875pt>
 File: FigurasMemoria/S2ForceCurrent.jpg Graphic file (type jpg)
 <use FigurasMemoria/S2ForceCurrent.jpg>
 Package pdftex.def Info: FigurasMemoria/S2ForceCurrent.jpg  used on input line 121.
 (pdftex.def)             Requested size: 369.88582pt x 144.67505pt.
-<FigurasMemoria/S2SpeedPosition.jpg, id=425, 1655.18375pt x 647.41875pt>
+<FigurasMemoria/S2SpeedPosition.jpg, id=427, 1655.18375pt x 647.41875pt>
 File: FigurasMemoria/S2SpeedPosition.jpg Graphic file (type jpg)
 <use FigurasMemoria/S2SpeedPosition.jpg>
 Package pdftex.def Info: FigurasMemoria/S2SpeedPosition.jpg  used on input line 127.
 (pdftex.def)             Requested size: 369.88582pt x 144.67505pt.
  [26 <./FigurasMemoria/S2ForceCurrent.jpg> <./FigurasMemoria/S2SpeedPosition.jpg>]
-<FigurasMemoria/S3ForceCurrent.jpg, id=430, 1685.29625pt x 840.13875pt>
+<FigurasMemoria/S3ForceCurrent.jpg, id=432, 1685.29625pt x 840.13875pt>
 File: FigurasMemoria/S3ForceCurrent.jpg Graphic file (type jpg)
 <use FigurasMemoria/S3ForceCurrent.jpg>
 Package pdftex.def Info: FigurasMemoria/S3ForceCurrent.jpg  used on input line 150.
 (pdftex.def)             Requested size: 369.88582pt x 184.38242pt.
-<FigurasMemoria/S3SpeedPos.jpg, id=431, 1685.29625pt x 840.13875pt>
+<FigurasMemoria/S3SpeedPos.jpg, id=433, 1685.29625pt x 840.13875pt>
 File: FigurasMemoria/S3SpeedPos.jpg Graphic file (type jpg)
 <use FigurasMemoria/S3SpeedPos.jpg>
 Package pdftex.def Info: FigurasMemoria/S3SpeedPos.jpg  used on input line 156.
 (pdftex.def)             Requested size: 369.88582pt x 184.38242pt.
 ) [27 <./FigurasMemoria/S3ForceCurrent.jpg> <./FigurasMemoria/S3SpeedPos.jpg>] [28] (./Prototipo.tex [29]
-<FigurasMemoria/esquemaSensor.png, id=448, 1079.03125pt x 543.02875pt>
+<FigurasMemoria/esquemaSensor.png, id=450, 1079.03125pt x 543.02875pt>
 File: FigurasMemoria/esquemaSensor.png Graphic file (type png)
 <use FigurasMemoria/esquemaSensor.png>
 Package pdftex.def Info: FigurasMemoria/esquemaSensor.png  used on input line 37.
 (pdftex.def)             Requested size: 284.52756pt x 143.18933pt.
  [30 <./FigurasMemoria/esquemaSensor.png>]
-<FigurasMemoria/conexionInterruptor.png, id=456, 874.26625pt x 482.80376pt>
+<FigurasMemoria/conexionInterruptor.png, id=458, 874.26625pt x 482.80376pt>
 File: FigurasMemoria/conexionInterruptor.png Graphic file (type png)
 <use FigurasMemoria/conexionInterruptor.png>
 Package pdftex.def Info: FigurasMemoria/conexionInterruptor.png  used on input line 56.
 (pdftex.def)             Requested size: 256.0748pt x 141.4166pt.
-<FigurasMemoria/esquemaJustDisparo.png, id=457, 820.06375pt x 381.425pt>
+<FigurasMemoria/esquemaJustDisparo.png, id=459, 820.06375pt x 381.425pt>
 File: FigurasMemoria/esquemaJustDisparo.png Graphic file (type png)
 <use FigurasMemoria/esquemaJustDisparo.png>
 Package pdftex.def Info: FigurasMemoria/esquemaJustDisparo.png  used on input line 65.
 (pdftex.def)             Requested size: 284.52756pt x 132.34254pt.
  [31 <./FigurasMemoria/conexionInterruptor.png>]
-<FigurasMemoria/conexionRele.png, id=464, 1079.03125pt x 599.23875pt>
+<FigurasMemoria/conexionRele.png, id=466, 1079.03125pt x 599.23875pt>
 File: FigurasMemoria/conexionRele.png Graphic file (type png)
 <use FigurasMemoria/conexionRele.png>
 Package pdftex.def Info: FigurasMemoria/conexionRele.png  used on input line 74.
 (pdftex.def)             Requested size: 284.52756pt x 158.01115pt.
-<FigurasMemoria/SSRrelay.jpeg, id=465, 664.4825pt x 803.0pt>
+<FigurasMemoria/SSRrelay.jpeg, id=467, 664.4825pt x 803.0pt>
 File: FigurasMemoria/SSRrelay.jpeg Graphic file (type jpg)
 <use FigurasMemoria/SSRrelay.jpeg>
 Package pdftex.def Info: FigurasMemoria/SSRrelay.jpeg  used on input line 84.
 (pdftex.def)             Requested size: 113.81102pt x 137.52518pt.
  [32 <./FigurasMemoria/esquemaJustDisparo.png> <./FigurasMemoria/conexionRele.png>]
-<FigurasMemoria/PRMArelay.jpeg, id=474, 642.4pt x 642.4pt>
+<FigurasMemoria/PRMArelay.jpeg, id=476, 642.4pt x 642.4pt>
 File: FigurasMemoria/PRMArelay.jpeg Graphic file (type jpg)
 <use FigurasMemoria/PRMArelay.jpeg>
 Package pdftex.def Info: FigurasMemoria/PRMArelay.jpeg  used on input line 91.
 (pdftex.def)             Requested size: 113.81102pt x 113.80379pt.
-<FigurasMemoria/divisorTensiones.png, id=477, 885.3075pt x 275.0275pt>
+<FigurasMemoria/divisorTensiones.png, id=479, 885.3075pt x 275.0275pt>
 File: FigurasMemoria/divisorTensiones.png Graphic file (type png)
 <use FigurasMemoria/divisorTensiones.png>
 Package pdftex.def Info: FigurasMemoria/divisorTensiones.png  used on input line 102.
 (pdftex.def)             Requested size: 284.52756pt x 88.39249pt.
  [33 <./FigurasMemoria/SSRrelay.jpeg> <./FigurasMemoria/PRMArelay.jpeg> <./FigurasMemoria/divisorTensiones.png>]
-<FigurasMemoria/esquematicoPCB.png, id=483, 1112.155pt x 531.9875pt>
+<FigurasMemoria/esquematicoPCB.png, id=485, 1112.155pt x 531.9875pt>
 File: FigurasMemoria/esquematicoPCB.png Graphic file (type png)
 <use FigurasMemoria/esquematicoPCB.png>
 Package pdftex.def Info: FigurasMemoria/esquematicoPCB.png  used on input line 122.
 (pdftex.def)             Requested size: 426.79135pt x 204.15425pt.
-<FigurasMemoria/placaPCB.png, id=484, 791.95876pt x 597.23125pt>
+<FigurasMemoria/placaPCB.png, id=486, 791.95876pt x 597.23125pt>
 File: FigurasMemoria/placaPCB.png Graphic file (type png)
 <use FigurasMemoria/placaPCB.png>
 Package pdftex.def Info: FigurasMemoria/placaPCB.png  used on input line 131.
-(pdftex.def)             Requested size: 369.88582pt x 278.93991pt.
+(pdftex.def)             Requested size: 355.65944pt x 268.2139pt.
  [34 <./FigurasMemoria/esquematicoPCB.png> <./FigurasMemoria/placaPCB.png>]
-<FigurasMemoria/esquemaBobinaREXT.png, id=492, 611.28375pt x 602.25pt>
+<FigurasMemoria/esquemaBobinaREXT.png, id=494, 611.28375pt x 602.25pt>
 File: FigurasMemoria/esquemaBobinaREXT.png Graphic file (type png)
 <use FigurasMemoria/esquemaBobinaREXT.png>
 Package pdftex.def Info: FigurasMemoria/esquemaBobinaREXT.png  used on input line 154.
 (pdftex.def)             Requested size: 199.16928pt x 196.22516pt.
- [35 <./FigurasMemoria/esquemaBobinaREXT.png>]) [36] (./Resultados.tex
+ [35 <./FigurasMemoria/esquemaBobinaREXT.png>]
+<FigurasMemoria/calculadoraDef.png, id=501, 1159.33125pt x 756.8275pt>
+File: FigurasMemoria/calculadoraDef.png Graphic file (type png)
+<use FigurasMemoria/calculadoraDef.png>
+Package pdftex.def Info: FigurasMemoria/calculadoraDef.png  used on input line 187.
+(pdftex.def)             Requested size: 270.30118pt x 176.45714pt.
+) [36 <./FigurasMemoria/calculadoraDef.png>] (./Resultados.tex
 File: FigurasMemoria/S3ForceCurrent.jpg Graphic file (type jpg)
 <use FigurasMemoria/S3ForceCurrent.jpg>
 Package pdftex.def Info: FigurasMemoria/S3ForceCurrent.jpg  used on input line 16.
@@ -949,7 +955,7 @@ LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 6
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )) [45] (./anexo2.tex [46])
-<sensorDatasheet.pdf, id=717, 597.23125pt x 845.1575pt>
+<sensorDatasheet.pdf, id=721, 597.23125pt x 845.1575pt>
 File: sensorDatasheet.pdf Graphic file (type pdf)
 <use sensorDatasheet.pdf>
 Package pdftex.def Info: sensorDatasheet.pdf  used on input line 192.
@@ -958,7 +964,7 @@ File: sensorDatasheet.pdf Graphic file (type pdf)
 <use sensorDatasheet.pdf>
 Package pdftex.def Info: sensorDatasheet.pdf  used on input line 192.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<sensorDatasheet.pdf, id=720, page=1, 597.23125pt x 845.1575pt>
+<sensorDatasheet.pdf, id=724, page=1, 597.23125pt x 845.1575pt>
 File: sensorDatasheet.pdf Graphic file (type pdf)
 <use sensorDatasheet.pdf, page 1>
 Package pdftex.def Info: sensorDatasheet.pdf , page1 used on input line 192.
@@ -983,7 +989,7 @@ Package pdftex.def Info: sensorDatasheet.pdf , page1 used on input line 192.
  [48
 
  <./sensorDatasheet.pdf>]
-<sensorDatasheet.pdf, id=767, page=2, 597.23125pt x 845.1575pt>
+<sensorDatasheet.pdf, id=771, page=2, 597.23125pt x 845.1575pt>
 File: sensorDatasheet.pdf Graphic file (type pdf)
 <use sensorDatasheet.pdf, page 2>
 Package pdftex.def Info: sensorDatasheet.pdf , page2 used on input line 192.
@@ -999,7 +1005,7 @@ Package pdftex.def Info: sensorDatasheet.pdf , page2 used on input line 192.
  [49
 
  <./sensorDatasheet.pdf>]
-<sensorDatasheet.pdf, id=780, page=3, 597.23125pt x 845.1575pt>
+<sensorDatasheet.pdf, id=784, page=3, 597.23125pt x 845.1575pt>
 File: sensorDatasheet.pdf Graphic file (type pdf)
 <use sensorDatasheet.pdf, page 3>
 Package pdftex.def Info: sensorDatasheet.pdf , page3 used on input line 192.
@@ -1017,7 +1023,7 @@ Package pdftex.def Info: sensorDatasheet.pdf , page3 used on input line 192.
  <./sensorDatasheet.pdf>]
 
 pdfTeX warning: pdflatex (file ./ssrDatasheet.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<ssrDatasheet.pdf, id=790, 597.51233pt x 845.0471pt>
+<ssrDatasheet.pdf, id=794, 597.51233pt x 845.0471pt>
 File: ssrDatasheet.pdf Graphic file (type pdf)
 <use ssrDatasheet.pdf>
 Package pdftex.def Info: ssrDatasheet.pdf  used on input line 193.
@@ -1035,7 +1041,7 @@ pdfTeX warning: pdflatex (file ./ssrDatasheet.pdf): PDF inclusion: found PDF ver
 
 
 pdfTeX warning: pdflatex (file ./ssrDatasheet.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<ssrDatasheet.pdf, id=793, page=1, 597.51233pt x 845.0471pt>
+<ssrDatasheet.pdf, id=797, page=1, 597.51233pt x 845.0471pt>
 File: ssrDatasheet.pdf Graphic file (type pdf)
 <use ssrDatasheet.pdf, page 1>
 Package pdftex.def Info: ssrDatasheet.pdf , page1 used on input line 193.
@@ -1061,7 +1067,7 @@ Package pdftex.def Info: ssrDatasheet.pdf , page1 used on input line 193.
  <./ssrDatasheet.pdf>]
 
 pdfTeX warning: pdflatex (file ./ssrDatasheet.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<ssrDatasheet.pdf, id=853, page=2, 597.51233pt x 845.0471pt>
+<ssrDatasheet.pdf, id=857, page=2, 597.51233pt x 845.0471pt>
 File: ssrDatasheet.pdf Graphic file (type pdf)
 <use ssrDatasheet.pdf, page 2>
 Package pdftex.def Info: ssrDatasheet.pdf , page2 used on input line 193.
@@ -1079,7 +1085,7 @@ Package pdftex.def Info: ssrDatasheet.pdf , page2 used on input line 193.
  <./ssrDatasheet.pdf>]
 
 pdfTeX warning: pdflatex (file ./ssrDatasheet.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<ssrDatasheet.pdf, id=875, page=3, 597.51233pt x 845.0471pt>
+<ssrDatasheet.pdf, id=879, page=3, 597.51233pt x 845.0471pt>
 File: ssrDatasheet.pdf Graphic file (type pdf)
 <use ssrDatasheet.pdf, page 3>
 Package pdftex.def Info: ssrDatasheet.pdf , page3 used on input line 193.
@@ -1097,7 +1103,7 @@ Package pdftex.def Info: ssrDatasheet.pdf , page3 used on input line 193.
  <./ssrDatasheet.pdf>]
 
 pdfTeX warning: pdflatex (file ./ssrDatasheet.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<ssrDatasheet.pdf, id=889, page=4, 597.51233pt x 845.0471pt>
+<ssrDatasheet.pdf, id=893, page=4, 597.51233pt x 845.0471pt>
 File: ssrDatasheet.pdf Graphic file (type pdf)
 <use ssrDatasheet.pdf, page 4>
 Package pdftex.def Info: ssrDatasheet.pdf , page4 used on input line 193.
@@ -1115,7 +1121,7 @@ Package pdftex.def Info: ssrDatasheet.pdf , page4 used on input line 193.
  <./ssrDatasheet.pdf>]
 
 pdfTeX warning: pdflatex (file ./ssrDatasheet.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<ssrDatasheet.pdf, id=899, page=5, 597.51233pt x 845.0471pt>
+<ssrDatasheet.pdf, id=903, page=5, 597.51233pt x 845.0471pt>
 File: ssrDatasheet.pdf Graphic file (type pdf)
 <use ssrDatasheet.pdf, page 5>
 Package pdftex.def Info: ssrDatasheet.pdf , page5 used on input line 193.
@@ -1146,18 +1152,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: AEBB3BCC6F3109EF7D5FB13EB49272FA;3173.
  ) 
 Here is how much of TeX's memory you used:
- 19167 strings out of 474116
- 307205 string characters out of 5743682
+ 19176 strings out of 474116
+ 307521 string characters out of 5743682
  2345187 words of memory out of 5000000
- 40911 multiletter control sequences out of 15000+600000
+ 40919 multiletter control sequences out of 15000+600000
  570503 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,17n,79p,1331b,2189s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (55 pages, 6823254 bytes).
+Output written on main.pdf (55 pages, 7216536 bytes).
 PDF statistics:
- 1061 PDF objects out of 1200 (max. 8388607)
- 839 compressed objects within 9 object streams
- 297 named destinations out of 1000 (max. 500000)
- 403 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1065 PDF objects out of 1200 (max. 8388607)
+ 841 compressed objects within 9 object streams
+ 298 named destinations out of 1000 (max. 500000)
+ 408 words of extra memory for PDF output out of 10000 (max. 10000000)
 

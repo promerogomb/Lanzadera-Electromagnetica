@@ -128,7 +128,7 @@ Teniendo en cuenta todas las etapas mencionadas en esta sección, se ha diseñad
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=13cm]{FigurasMemoria/placaPCB.png}
+    \includegraphics[width=12.5cm]{FigurasMemoria/placaPCB.png}
     \caption{Distribución de la placa del proyecto.}
     \label{fig:placaPCB} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
@@ -180,4 +180,11 @@ Comparando ahora con el valor expuesto en el apartado de cálculo analítico \re
 
 \[r_{ext~form}=0.01206~m\approx r_{c}=0.01064~m\]
 
-Observamos que los valores son bastante similares, con un error del 13\%. Esta diferencia se debe a que en la fórmula estamos asumiendo que el parámetro \textit{t} es igual para todas las capas, lo cual es muy difícil de lograr cuando se bobina un solenoide en la realidad. A pesar de esto, consideramos que el desarrollo proporciona un dato bastante preciso, por lo que se empleará en la práctica como camino para obtener \(r_{ext}\).
+Observamos que los valores son bastante similares, con un error del 13\%. Esta diferencia se debe a que en la fórmula estamos asumiendo que el parámetro \textit{t} es igual para todas las capas, lo cual es muy difícil de lograr cuando se bobina un solenoide en la realidad. A pesar de esto, consideramos que el desarrollo proporciona un dato bastante preciso, por lo que se empleará en la práctica como camino para obtener \(r_{ext}\). Se añadirá además al código de \textit{MatLab}\textregistered  la opción de poder calcular la fuerza de atracción a partir de este desarrollo. Esto resulta en la siguiente actualización de la interfaz de la calculadora:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=9.5cm]{FigurasMemoria/calculadoraDef.png}
+    \caption{Interfaz de la calculadora actualizada.}
+    \label{fig:calculadoraDef} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
