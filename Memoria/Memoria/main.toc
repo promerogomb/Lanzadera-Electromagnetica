@@ -15,7 +15,9 @@
 \contentsline {subsection}{\numberline {6.2}Sensores de movimiento}{30}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Circuito electrónico}{31}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Bobina}{35}{subsection.6.4}%
-\contentsline {section}{\numberline {7}Análisis de los resultados obtenidos}{37}{section.7}%
-\contentsline {section}{\numberline {8}Práctica propuesta}{38}{section.8}%
-\contentsline {section}{\numberline {9}Conclusiones}{39}{section.9}%
-\contentsline {section}{\numberline {10}Referencias}{40}{section.10}%
+\contentsline {section}{\numberline {7}Resultados}{37}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Validación de los modelos}{37}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Resultados del prototipo}{38}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Práctica propuesta}{41}{section.8}%
+\contentsline {section}{\numberline {9}Conclusiones}{42}{section.9}%
+\contentsline {section}{\numberline {10}Referencias}{43}{section.10}%

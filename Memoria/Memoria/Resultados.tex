@@ -1,0 +1,149 @@
+\section{Resultados}
+\label{sec:resultados}
+\subsection{Validación de los modelos}
+\label{subsec:validacionModelos}
+
+Esta sección se centrará en validar los diferentes modelos obtenidos en las secciones anteriores, específicamente la calculadora desarrollada en el cálculo analítico (\ref{sec:analitico}) y el modelo de cálculo por elementos finitos (\ref{sec:simulaciones}).
+
+Los resultados de ambos modelos se presentan en forma de gráficas que muestran la evolución de la fuerza de atracción magnética. En el caso del cálculo analítico, la fuerza se expresa en función de la posición del vástago, mientras que en el modelo de elementos finitos, se expresa en función del tiempo. Aunque estas parecen ser variables independientes diferentes, ambas gráficas pueden considerarse análogas, ya que la única variable que varía en el sistema físico es la posición del vástago, midiéndola directamente en el primer modelo y observando su evolución temporal en el otro.
+
+Esto implica que la evolución de la fuerza en ambas gráficas debería ser muy similar. Aunque se ha mencionado anteriormente que la magnitud del cálculo mediante elementos finitos no es precisa, podemos comparar las gráficas de las figuras \ref{fig:calcFsetupBase} y \ref{fig:S3ForceCurrent} para comprobar que, efectivamente, la evolución del parámetro de fuerza de atracción sigue el mismo patrón.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{minipage}{0.85\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{FigurasMemoria/S3ForceCurrent.jpg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.9\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{FigurasMemoria/calcFsetupBase.png}
+    \end{minipage}
+    \caption{Comparación de las figuras \ref{fig:calcFsetupBase} y \ref{fig:S3ForceCurrent}.}
+    \label{fig:comparacionF}
+\end{figure}
+
+Como observamos en esta figura, la evolución de ambas gráficas muestra una curva ascendente, alcanzando el valor máximo de fuerza en el último momento de alimentación de la bobina. La gráfica de la figura \ref{fig:calcFsetupBase} no decrece porque no está computado lo que ocurre después de que \textit{x} llegue a su valor máximo. Sin embargo, este máximo del parámetro de posición del vástago coincide con el cese de la alimentación de la bobina, por lo que la fuerza se haría cero instantes después.
+
+Como última observación, se puede notar en la gráfica del cálculo por elementos finitos que, al estar en un orden de magnitud de tiempo tan pequeño, ocurre un estado transitorio desde que la fuente deja de proporcionar corriente a la bobina hasta que esta realmente deja de emitir campo magnético. Esto se debe a la expresión de la evolución de la tensión y corriente en un solenoide:
+
+\[V_L=L\frac{\partial i}{\partial t}\]
+
+Lo que indica que existe una resistencia a la desaparición de la corriente en estos dispositivos debido a su tendencia de retener campo magnético. \textbf{REFERENCIA}
+
+Dado que el modelo analítico proporciona una aproximación mucho más certera tanto del valor de la fuerza como de su evolución, se concluye que ha sido exitoso su desarrollo y será el que se presente a los alumnos como método de comprobación de su elección de parámetros en el apartado de la práctica (\ref{sec:practica}).
+
+\subsection{Resultados del prototipo}
+\label{subsec:prototipoResults}
+
+Los resultados del prototipo consisten en una serie de mediciones con diferentes geometrías de bobinas y valores de alimentación de las mismas. Se detallarán a continuación las diferentes configuraciones probadas y se discutirá si se puede explicar efectivamente las variaciones con el modelo propuesto en el apartado anterior. Las geometrías de las bobinas que se van a probar son:
+
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5pt}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{Configuración} & \textbf{N} & \textbf{\(h_c\) [m]} & \textbf{\(r_{ext}\) [m]} & \textbf{\(r_{int}\) [m]} & \textbf{\(r_{cu}\) [m]} & \textbf{\(l_{fe}\) [m]} & \textbf{\(r_{fe}\) [m]} \\
+        \hline
+        Base & 500 & 0,5321 & 0,0164 & 0,006035 & 0,0008 & 0,096 & 0,003045 \\
+        1 & 700 & NAN & NAN & NAN & NAN & NAN & NAN \\
+        2 & NAN & NAN & NAN & NAN & NAN & NAN & NAN \\
+        3 & NAN & NAN & NAN & NAN & NAN & NAN & NAN \\
+        4 & NAN & NAN & NAN & NAN & NAN & NAN & NAN \\
+        \hline
+    \end{tabular}
+    \caption{Geometrías a probar.}
+    \label{tab:geometrias}
+\end{table}
+
+\subsubsection*{Configuración base}
+
+\textbf{IMAGEN SOLENOIDE}
+
+\newpage
+
+\newgeometry{left=1.5cm, right=1.5cm, top=0.7cm, bottom=2cm}
+
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5pt}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \textbf{Alimentación} & \textbf{Tensión [V]} & \textbf{Resistencia [\(\Omega\)]} & \textbf{Corriente [A]}\\
+        \hline
+        1 & 13,1 & 3,5 & 3,74 \\
+        2 & 20,0 & 3,5 & 5,71 \\
+        3 & 29,7 & 3,5 & 8,49\\
+        \hline
+    \end{tabular}
+    \caption{Denominación de las diferentes alimentaciones.}
+    \label{tab:alimentacionesBase}
+\end{table}
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5pt}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \textbf{Alimentación} & \textbf{Tiempo [ms]} & \textbf{Velocidad [ms\(^{-1}\)]} & \textbf{Aceleración [ms\(^{-2}\)]} \\
+        \hline
+        1 & 27 & 2,56 & 94,79 \\
+        1 & 22 & 3,14 & 142,77 \\
+        1 & 24 & 2,88 & 119,97 \\
+        1 & 38 & 1,82 & 47,85 \\
+        1 & 25 & 2,76 & 110,56 \\
+        1 & 33 & 2,09 & 63,45 \\
+        1 & 24 & 2,88 & 119,97 \\
+        1 & 28 & 2,47 & 88,14 \\
+        1 & 25 & 2,76 & 110,56 \\
+        1 & 31 & 2,23 & 71,90 \\
+        \hdashline[2pt/5pt]
+        2 & 18 & 3,84 & 213,27 \\
+        2 & 18 & 3,84 & 213,27 \\
+        2 & 18 & 3,84 & 213,27 \\
+        2 & 21 & 3,29 & 156,69 \\
+        2 & 19 & 3,64 & 191,41 \\
+        2 & 25 & 2,76 & 110,56 \\
+        2 & 18 & 3,84 & 213,27 \\
+        2 & 25 & 2,76 & 110,56 \\
+        2 & 17 & 4,06 & 239,10 \\
+        2 & 22 & 3,14 & 142,77 \\
+        \hdashline[2pt/5pt]
+        3 & 21 & 3,29 & 156,69 \\
+        3 & 20 & 3,46 & 172,75 \\
+        3 & 20 & 3,46 & 172,75 \\
+        3 & 19 & 3,64 & 191,41 \\
+        3 & 21 & 3,29 & 156,69 \\
+        3 & 23 & 3,00 & 130,62 \\
+        3 & 22 & 3,14 & 142,77 \\
+        3 & 20 & 3,46 & 172,75 \\
+        3 & 22 & 3,14 & 142,77 \\
+        3 & 23 & 3,00 & 130,62 \\
+        \hline
+    \end{tabular}
+    \caption{Datos tomados con la bobina base y las alimentaciones de la tabla \ref{tab:alimentacionesBase}.}
+    \label{tab:datosBase}
+\end{table}
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5pt}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \textbf{Alimentación} & \textbf{Vel. Media [ms\(^{-1}\)]} & \textbf{Ac. Media [ms\(^{-2}\)]} & \textbf{Fuerza [N]} \\
+        \hline
+        1 & 2,53 & 92,49 & 1,76 \\
+        2 & 3,47 & 174,31 & 3,31 \\
+        3 & 3,28 & 155,8 & 2,96 \\
+        \hline
+    \end{tabular}
+    \caption{Resultados del disparo con la bobina base y las alimentaciones de la tabla \ref{tab:alimentacionesBase}.}
+    \label{tab:resultadosBase}
+\end{table}
+
+\restoregeometry
+
+Con estos resultados, podemos terminar de validar la simulación ejecutada para obtener las figuras \ref{fig:calcRsetupBase}, \ref{fig:calcBsetupBase} y \ref{fig:calcFsetupBase}. Pondremos ahora a prueba la calculadora final, descrita en el subapartado del prototipo \ref{subsec:bobina}, en la que se incluye la modificación del parámetro \(r_{cu}\) para realizar los cálculos. También se pondrá a prueba como se comporta el modelo frente a variaciones de diferentes parámetros.

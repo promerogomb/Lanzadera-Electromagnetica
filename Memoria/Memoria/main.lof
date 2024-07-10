@@ -13,24 +13,26 @@
 \contentsline {figure}{\numberline {12}{\ignorespaces Reluctancias en función de la posición del vástago respecto a la bobina.}}{20}{figure.caption.12}%
 \contentsline {figure}{\numberline {13}{\ignorespaces Inducción en función de la posición del vástago respecto a la bobina.}}{20}{figure.caption.13}%
 \contentsline {figure}{\numberline {14}{\ignorespaces Fuerza en función de la posición del vástago respecto a la bobina.}}{21}{figure.caption.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Geometría de la barra y bobina en 2D.}}{22}{figure.caption.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Mallado de la barra y bobina en 2D.}}{23}{figure.caption.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Detalle del mallado de la barra y bobina en 2D.}}{23}{figure.caption.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Visualización de los campos magnéticos con la bobina energizada y \(x=2/10 * h_c\).}}{24}{figure.caption.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Visualización de los campos magnéticos dentro del solenoide.}}{24}{figure.caption.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Fuerza (verde) y corriente (rojo) en función del tiempo de la configuración 1.}}{25}{figure.caption.21}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Posición (verde) y velocidad (rojo) en función del tiempo de en la configuración 1.}}{25}{figure.caption.22}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Fuerza (rojo) y corriente (verde) en función del tiempo de la configuración 2.}}{26}{figure.caption.23}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Posición (verde) y velocidad (rojo) en función del tiempo de la configuración 2.}}{26}{figure.caption.24}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Fuerza (rojo) y corriente (verde) en función del tiempo de la configuración 3.}}{27}{figure.caption.25}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Posición (verde) y velocidad (rojo) en función del tiempo de la configuración 3.}}{27}{figure.caption.26}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Esquema conexiones de los sensores capacitivos.}}{30}{figure.caption.27}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Conexión del interrupor de disparo.}}{31}{figure.caption.28}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Colocación del sensor.}}{32}{figure.caption.29}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Esquema eléctrico de la conexión del SSR.}}{32}{figure.caption.30}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Imagen del relé de estado sólido \citep {rs2024ksj}.}}{33}{figure.caption.31}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Imagen del relé PRMA1A05 \citep {coto2024prma1a05b}.}}{33}{figure.caption.32}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Esquema eléctrico de un divisor de tensiones.}}{33}{figure.caption.33}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Esquemático de la PCB del proyecto.}}{34}{figure.caption.34}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Distribución de la placa del proyecto.}}{34}{figure.caption.35}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Sección central del solenoide.}}{35}{figure.caption.36}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Dato experimental de fuerza con la bobina alimentada.}}{21}{figure.caption.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Geometría de la barra y bobina en 2D.}}{22}{figure.caption.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Mallado de la barra y bobina en 2D.}}{23}{figure.caption.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Detalle del mallado de la barra y bobina en 2D.}}{23}{figure.caption.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Visualización de los campos magnéticos con la bobina energizada y \(x=2/10 * h_c\).}}{24}{figure.caption.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Visualización de los campos magnéticos dentro del solenoide.}}{24}{figure.caption.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Fuerza (verde) y corriente (rojo) en función del tiempo de la configuración 1.}}{25}{figure.caption.22}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Posición (verde) y velocidad (rojo) en función del tiempo de en la configuración 1.}}{25}{figure.caption.23}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Fuerza (rojo) y corriente (verde) en función del tiempo de la configuración 2.}}{26}{figure.caption.24}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Posición (verde) y velocidad (rojo) en función del tiempo de la configuración 2.}}{26}{figure.caption.25}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Fuerza (rojo) y corriente (verde) en función del tiempo de la configuración 3.}}{27}{figure.caption.26}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Posición (verde) y velocidad (rojo) en función del tiempo de la configuración 3.}}{27}{figure.caption.27}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Esquema conexiones de los sensores capacitivos.}}{30}{figure.caption.28}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Conexión del interrupor de disparo.}}{31}{figure.caption.29}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Colocación del sensor.}}{32}{figure.caption.30}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Esquema eléctrico de la conexión del SSR.}}{32}{figure.caption.31}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Imagen del relé de estado sólido \citep {rs2024ksj}.}}{33}{figure.caption.32}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Imagen del relé PRMA1A05 \citep {coto2024prma1a05b}.}}{33}{figure.caption.33}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Esquema eléctrico de un divisor de tensiones.}}{33}{figure.caption.34}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Esquemático de la PCB del proyecto.}}{34}{figure.caption.35}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Distribución de la placa del proyecto.}}{34}{figure.caption.36}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Sección central del solenoide.}}{35}{figure.caption.37}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Comparación de las figuras \ref {fig:calcFsetupBase} y \ref {fig:S3ForceCurrent}.}}{37}{figure.caption.38}%
