@@ -1,4 +1,273 @@
 \section{Práctica propuesta}
 \label{sec:practica}
 
-En este apartado se desarrollarán los criterios que se van a emplear para utilizar todo lo aprendido en el momento y confeccionar así una práctica universitaria para los alumnos de Sistemas Eléctricos de tercer año de ingeniería eléctrica.
+Se presenta a continuación el planteamiento de la práctica a realizar por los alumnos de la asignatura de Sistemas Eléctricos I.
+
+\newpage
+
+\section*{Diseño y optimización de una lanzadera electromagnética}
+
+\subsection*{Objetivo}
+
+El objetivo de esta práctica es que los estudiantes diseñen y construyan la bobina de una lanzadera electromagnética optimizando su geometría y alimentación para lograr la mayor fuerza de atracción magnética y por ende velocidad del proyectil. Se deberán aplicar conocimientos teórico-prácticos de electromagnetismo en tres entornos: MatLab, ANSYS Maxwell y laboratorio.
+
+\subsection*{Marco teórico}
+
+En esta sección se desarrollarán los principios teóricos que permiten el funcionamiento de las lanzaderas electromagnéticas. Para entender estos principios, es esencial comprender los fundamentos del electromagnetismo, el concepto de bobina y su papel en la generación de campos magnéticos.
+
+El comportamiento de las ondas electromagnéticas está definido por las ecuaciones de Maxwell, descritas a continuación:
+\begin{figure}[H]
+    \centering
+    \[
+    \vec{\nabla}\cdot \vec{E}= \frac{\rho}{\epsilon_0}~~~~~~\vec{\nabla}\cdot \vec{B}= 0
+    \]
+    \[
+    \vec{\nabla}\times\vec{E}=-\frac{\partial\vec{B}}{\partial t}~~~~~~\vec{\nabla}\times \vec{B}=\mu_0\vec{J}+\mu_0\epsilon_0\frac{\partial \vec{E}}{\partial t}
+    \]
+\end{figure}
+
+En el caso de esta práctica, la ley de mayor interés es la de Ampère. Esta es la ley que define la relación entre un campo magnético y uno eléctrico, y partir de su forma diferencial expresada en las ecuaciones de Maxwell, se puede desarrollar la ley integral de Ampère como:
+
+\begin{quote}
+    "La integral de línea del campo magnético \(\mathbf{B}\) alrededor de un lazo cerrado es igual a \(\mu_0\) multiplicado por la corriente total \(I_{enc}\) que pasa a través de cualquier superficie delimitada por el lazo. Matemáticamente, esto se expresa como:
+    \[
+    \oint_{\partial S} \mathbf{B} \cdot d\mathbf{l} = \mu_0 I_{enc}
+    \]
+    donde \(\mu_0\) es la permeabilidad del vacío."
+\end{quote}
+
+Esta ley es esencial porque proporciona el punto de partida de la práctica. Debido a que el componente principal de una lanzadera es una bobina, desde la ley integral de Ampère se puede deducir la expresión del campo magnético generado por la misma:
+
+\[B=\mu_0\mu_r\frac{NI}{L}\]
+
+\noindent Siendo:\\
+\\ \(B\) valor del campo magnético en [T].\\
+\(\mu_0\) valor de la permeabilidad del vacío. Constante e igual a \(4\pi*10^{-7}\) [Hm\(^-1\)].\\
+\(\mu_r\) valor de la permeabilidad relativa del núcleo de la bobina.\\
+\(N\) número de espiras del solenoide.\\
+\(I\) corriente de alimentación de la bobina [A].\\
+\(L\) longitud de la bobina [m].\\
+
+Todo esto además de la ecuación de campo magnético de Gauss (\(\vec{\nabla}\cdot\vec{B} = 0\)) nos lleva a que el campo magnético alrededor de una bobina tiene la siguiente forma y polaridad:
+
+\begin{figure}[H]
+    \centering %\raggedleft \raggedright
+    \includegraphics[width=6cm]{FigurasMemoria/electromagnet.png}
+    \caption{Visualización del campo magnético de una bobina energizada.}
+    \label{fig:electromagnet2} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+
+Por ende, si a la situación que observamos en la figura anterior, le añadimos un elemento de material ferromagnético en uno de los extremos del solenoide, este se verá atraído hasta su centro. Aprovechando este suceso, podemos controlar la alimentación de la bobina para que solamente esté energizada durante el tiempo necesario para atraer el vástago al punto deseado. Una vez que el vástago alcance el centro de la bobina, cortaremos la alimentación para que deje de ser atraído y continúe su movimiento por inercia. El objetivo final de la práctica es predecir cuál va a ser la fuerza ejercida por la bobina sobre el proyectil mediante software, optimizar la geometría para conseguir la mayor densidad energética posible y comprobar las predicciones en el banco de pruebas.
+
+\subsection*{Modelo de la bobina y parámetros iniciales}
+
+El modelo del sistema con el que trabajaremos durante los siguientes apartados consta de las siguientes variables:
+
+\begin{itemize}
+    \item \textbf{Parámetros geométricos}:
+    \begin{enumerate}[label=\alph*., leftmargin=*, itemindent=1em]
+        \item \(r_{cext}\) y \(r_{cint} \): radios exterior e interior de la bobina, respectivamente [m].
+        \item \(l_c\): altura de la bobina [m].
+        \item \(D_{cu}\): diámetro de la sección del conductor [m].
+        \item \(r_{fe}\): radio del vástago [m].
+        \item \(l_{fe}\): longitud del vástago [m].
+        \item \(k_{disp}\): parámetro multiplicador para obtener la sección de dispersión.
+    \end{enumerate}
+    \item \textbf{Parámetros eléctricos}:
+    \begin{enumerate}[label=\alph*., leftmargin=*, itemindent=1em]
+        \item \(N\): número de espiras.
+        \item \(I_{cc}\): corriente de alimentación del solenoide [A].
+        \item \(\mu_0 = 4\pi*10^{-7}\): permeabilidad del vacío [Hm\(^{-1}\)]. 
+        \item \(\mu_{fe}\): permeabilidad relativa del vástago ferromagnético.
+    \end{enumerate}
+\end{itemize}
+
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=10cm]{FigurasMemoria/esquemaDesTeor.jpg}
+    \caption{Esquema geométrico del sistema.}
+    \label{fig:esquemaGeomPractica} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+
+El primer paso de esta práctica será elegir la geometría de la bobina inicial sobre la que se realizarán los cálculos de los modelos y las pruebas iniciales. Para ello, se debe rellenar la tabla \ref{tab:bobIniPractica} con valores dentro de los intervalos especificados y teniendo en cuenta las siguientes condiciones:
+
+\begin{itemize}
+    \item \(r_{cext} = r_{cint} + \frac{ND_{cu}^2}{l_c}\)
+    \item \(r_{cext} \leq XXX\)
+    \item \(l_c \leq XXX\)
+    \item \(l_c \leq l_{fe}\)
+\end{itemize}
+
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5pt}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        \hbox{} & \textbf{\(D_{cu}\) [m]} & \textbf{\(r_{cint}\) [m]} & \textbf{\(l_c\) [m]} & \textbf{\(r_{fe}\) [m]} & \textbf{\(l_{fe}\) [m]} & \textbf{N} \\
+        \hline
+        \textbf{Valor mínimo} & XX & XX & 0.5 & XX & XX & 1 \\
+        \textbf{Valor máximo} & XX & XX & XX & XX & XX & - \\
+        \textbf{Valor elegido} &  &  &  &  &  &  \\
+        \hline
+    \end{tabular}
+    \caption{Valores iniciales para la bobina de la lanzadera.}
+    \label{tab:bobIniPractica}
+\end{table}
+
+
+\subsection*{Modelo analítico en MatLAB}
+
+El objetivo de esta parte es computar el modelo de la figura \ref{fig:esquemaGeomPractica} en MatLAB para que devuelva unas gráficas con la evolución de la fuerza de atracción experimentada por el vástago en función de su posición.
+
+Para ello, será necesario realizar el circuito magnético equivalente del sistema. Dicho circuito estará compuesto por las siguientes reluctancias, que deben ser desarrolladas por el alumno:
+
+\[\mathcal{R} = \frac{l_{caract}}{\mu_r\mu_0 S_{efect}}\]
+
+\begin{itemize}
+    \item \(\mathcal{R}_{disp~c}\): Será la reluctancia de dispersión de la bobina. No es dependiente de \textit{x}.
+    \item \(\mathcal{R}_{Fe}\): Será la reluctancia correspondiente al vástago. No es dependiente de \textit{x}.
+    \item \(\mathcal{R}_{\phi}\): Será la reluctancia correspondiente al camino del flujo magnético que abraza todo el sistema. Es dependiente de \textit{x}.
+    \item \(\mathcal{R}_{aire~c}\): Será la reluctancia correspondiente al volumen de aire que hay dentro de la bobina. Es dependiente de \textit{x}.
+\end{itemize}
+
+Una vez elegidas las longitudes y secciones efectivas de cada una de las reluctancias expresadas, se podrá calcular la inducción magnética según:
+
+\[B = \frac{NI}{\sum\mathcal{R}}\]
+
+Y la expresión de la fuerza de atracción magnética sobre un cuerpo \textit{T} cualquiera es:
+
+\[F_T = \frac{1}{2} \frac{B_T^2*S_{efect~T}}{\mu_0}\]
+
+Teniendo en cuenta que \textit{x} es la posición del extremo del vástago, que su intervalo de interés para la práctica es \(x\in [0, l_c]\) y que el circuito magnético cambia para cada valor de \textit{x}, se pide diseñar el código y rellenar las figuras \ref{fig:grafReluctPractica}, \ref{fig:grafInducPractica} y \ref{fig:grafFuerzaPractica} con los los valores obtenidos. El resultado puede ser algo como:
+
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=7cm]{FigurasMemoria/calculadoraSinPista.png}
+    \caption{Aplicación de ejemplo.}
+    \label{fig:calculadoraSinPista} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+
+\newpage
+
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=0.75\textwidth]{FigurasMemoria/grafReluctPractica.png}
+    \caption{Reluctancia en función de \textit{x}.}
+    \label{fig:grafReluctPractica} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=0.75\textwidth]{FigurasMemoria/grafInducPractica.png}
+    \caption{Inducción magnética en función de \textit{x}.}
+    \label{fig:grafInducPractica} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=0.75\textwidth]{FigurasMemoria/grafFuerzaPractica.png}
+    \caption{Fuerza de atracción magnética en función de \textit{x}.}
+    \label{fig:grafFuerzaPractica} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+
+\subsection*{Modelo de elementos finitos en ANSYS Maxwell}
+
+\textbf{ESTA SECCIÓN NO SE SI INCLUIRLA EN LA PRÁCTICA DE LOS ALUMNOS, PERO LA DESCRIBO POR SI TE PARECE QUE ESTÁ BIEN}
+
+El software ANSYS Maxwell o ANSYS Electronics, es una rama del software de simulación por elementos finitos ANSYS, utilizado para realizar simulaciones electromagnéticas tanto instantáneas como transitorias. Este apartado de la práctica consistirá en definir la geometría de la tabla \ref{tab:bobIniPractica} en ANSYS para conseguir dos objetivos: visualizar los campos magnéticos y obtener un valor para la fuerza de atracción. Como este es un software con el que el alumno no está familiarizado, se presenta a continuación una guía para poder realizar esta parte de la práctica:
+
+\subsubsection*{Creación del proyecto}
+
+El primer paso será abrir ANSYS Maxwell e inicializar el proyecto. Para ello, pulsaremos la tecla de menú de inicio (\faWindows{}) y escribiremos ``ANSYS Maxwell''. Pulsaremos aceptar en las ventanas que aparezcan hasta que salga lo siguiente:
+
+\textbf{IMAGEN DE INICIO AM}
+
+Ahora abriremos un nuevo proyecto en 3D clicando en la siguiente parte del menú:
+
+\textbf{IMAGEN/ES DE CREACIÓN DE PROYECTO 3D}
+
+El siguiente paso será empezar a definir la geometría. Esto hará de manera paramétrica, es decir, asignando a variables las medidas de los polígonos que utilicemos, lo que nos permitirá cambiar de solenoide fácilmente o realizar pruebas en distintos dispositivos que montemos en el laboratorio. Las variables o parámetros serán los mismos que los expuestos en el apartado de "Modelo de la bobina y geometría inicial". Para incluir estos parámetros, nos dirigiremos al menú de "Variables", localizado en la ventana de abajo a la izquierda. Las variables se añaden de la siguiente manera:
+
+\textbf{IMAGEN DE ADICIÓN DE PARÁMETROS DEL SISTEMA}
+
+En ANSYS Maxwell, hay dos maneras de representar una bobina. Para inductores electrónicos, que generalmente tienen pocas espiras y una trayectoria muy definida, se puede crear una función helicoidal que represente la bobina de manera fidedigna a la realidad, pero se convierte en algo imposible cuando se trata de una bobina en el orden de magnitud en el que trabajaremos en esta práctica, pues hay muchas capas de conductores que no son uniformes, con radios diferentes entre capa y capa y número de conductores distinto, lo que convierte la tarea de describir la función en algo innecesariamente difícil. En cambio, ANSYS permite generar un cilindro, especificar unos terminales, una resistencia y un número de espiras para tratarlo como un solenoide con los conductores distribuidos de manera homogénea en su volumen. Esto es muy conveniente, ya que simplifica el proceso a los siguientes pasos:
+
+\textbf{IMAGENÉS DE COMO GENERAR EL CILINDRO BOBINA} (fig:cilindroAnsys)
+
+Una vez generado el cilindro que representa la bobina, el siguiente paso es generar otro cilindro de manera análoga en el centro del primero, que se corresponderá con el vástago. Lo único que debemos de tener en cuenta a la hora de definir el vástago, es que es útil definir su posición en función de la altura de la bobina, para que después podamos ver con facilidad la evolución de los campos en función de la posición. También será necesario hacer clic izquierdo sobre la geometría seleccionada y añadirle el parámetro de fuerza. A continuación se muestran unas imágenes que explican el proceso de creación del vástago:
+
+\textbf{IMÁGENES DE COMO GENERAR EL CILINDRO VÁSTAGO}
+
+El siguiente paso es añadir las cualidades de bobina al cilindro de la figura %\ref{fig:cilindroAnsys}
+para lo cual tendremos que realizar una sección en uno de los planos verticales, la cual se corresponderá con uno de los terminales de la bobina... \textbf{TERMINAR LA EXPLICACIÓN NO ME ACUERDO DE CABEZA}
+
+\textbf{IMÁGENES DE CREACIÓN DE TERMINALES}
+
+El siguiente paso necesario es definir una región de aire para poder dar las condiciones de contorno al sistema. Para ello pulsaremos el botón de \textit{region} en el menú del modelo, y definiremos un cubo con un 500\% de offset partiendo del origen de coordenadas. Luego seleccionaremos sus bordes y le asignaremos la condición de contorno de \textit{insulating}.
+
+\textbf{IMÁGENES DE CREACIÓN DE LA REGION}
+
+Para simular el comportamiento del sistema correctamente, será necesario definir también los materiales de cada una de las geometrías que hemos definido. Para ello, seleccionamos la geometría y buscamos su material, el cual será \textit{annealed copper} para la bobina y \textit{Steel ENG 100GJL} para el vástago.
+
+\textbf{IMÁGENES DE SELECCIÓN DE MATERIAL}
+
+Para poder obtener la visualización del flujo electromagnético a través del aire, tendremos que añadir un eje de coordenadas relativo al la sección del extremo superior de la bobina para poder dibujar un cuadrado que seccione al solenoide y a la barra por la mitad. Es importante definir este cuadrado como \textit{non-model}, para que no interfiera con las interacciones electromagnéticas del modelo. 
+
+\textbf{IMÁGENES DE GENERACIÓN DEL CUADRADO DE VISUALIZACIÓN}
+
+
+Por último antes de empezar a simular, debemos definir el tipo de solución que estamos buscando. Para ello, pulsaremos el apartado de \textit{Setup} con el botón izquierdo del ratón... \textbf{TERMINAR CON ANSYS DELANTE}
+
+\textbf{IMÁGENES DE CREACIÓN DEL SETUP}
+
+Con este último paso, debería estar todo listo para realizar la primera simulación. De todas formas, para comprobarlo, iremos al apartado de \textit{Simulation} y pulsaremos el tick verde que dice \textit{Verify}. Si todo sale en verde, podemos pulsar \textit{Analyze All} y ANSYS empezará a ejecutar la simulación, lo cual sabremos por la aparición de una barra verde en la esquina inferior derecha de la pantalla que indica el progreso. Cuando termine, tendremos que ir al apartado de \textit{Solution}, y buscar \textbf{NO RECUERDO EL NOMBRE DEL BOTÓN} para obtener el valor de fuerza de atracción que ANSYS ha calculado para la posición simulada. También podremos obtener la forma del campo magnético si seleccionamos el cuadrado que secciona la geometría, pulsamos el botón derecho del ratón, y navegamos por el menú que aparece siguiendo la ruta \(\text{Fields} \rightarrow B \rightarrow \text{B vector}\).
+
+Una vez explicado el proceso de cómo realizar las simulaciones, se pide que se modifique el valor de la posición del vástago imitando el eje de abscisas de la figura \ref{fig:grafFuerzaPractica} y se rellene la siguiente tabla y gráfica con los diferentes valores del parámetro:
+
+\begin{table}[ht]
+    \centering
+    \setlength{\tabcolsep}{5pt}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{|c|*{12}{>{\centering\arraybackslash}X|}}
+        \hline
+        \textbf{Fuerza} & \(l_c\) & \(\frac{9}{10} l_c\) & \(\frac{8}{10} l_c\) & \(\frac{7}{10} l_c\) & \(\frac{6}{10} l_c\) & \(\frac{5}{10} l_c\) & \(\frac{4}{10} l_c\) & \(\frac{3}{10} l_c\) & \(\frac{2}{10} l_c\) & \(\frac{1}{10} l_c\) & 0 \\
+        \hline
+        \(F_x\) &  &  &  &  &  &  &  &  &  &  &  \\
+        \(F_y\) &  &  &  &  &  &  &  &  &  &  &  \\
+        \(F_z\) &  &  &  &  &  &  &  &  &  &  &  \\
+        \(F_{total}\) &  &  &  &  &  &  &  &  &  &  &  \\
+        \hline
+    \end{tabularx}
+    \caption{Valores obtenidos en las simulaciones.}
+    \label{tab:simulacionesPractica1}
+\end{table}
+
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=\textwidth]{FigurasMemoria/grafPosAnsysPractica.png}
+    \caption{Fuerza de atracción magnética en función de la posición del vástago.}
+    \label{fig:grafPosAnsysPractica} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+
+Nótese que los valores de posición varían desde \(l_c\) a 0 debido a que se definen las posiciones de la geometría desde el origen de coordenadas. Esto implica que, en el entorno de ANSYS, \(x_{min} = l_c\) y \(x_{max} = 0\). 
+
+\subsection*{Pruebas en el laboratorio}
+
+En el laboratorio de electricidad se encuentra el \textit{banco de pruebas}, un montaje modular que nos permitirá tomar medidas de la fuerza y velocidad de la bobina.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=8cm]{FigurasMemoria/prototipoFinal.jpeg}
+    \caption{Imagen del banco de pruebas definitivo.}
+    \label{fig:prototipoFinal} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+
+El objetivo esta sección de la práctica es validar los modelos teóricos realizados anteriormente mediante la construcción y prueba de el solenoide de la \ref{tab:bobIniPractica}. Los medios para conseguir esto será emplear el circuito electrónico de la figura \ref{fig:esquematicoPCBPractica}, que se encuentra montado en el banco junto a un arduino, para tomar las medidas de velocidad de salida del vástago. Para las de fuerza, se empleará el dinamómetro.
+
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=8cm]{FigurasMemoria/esquematicoPCB.png}
+    \caption{Esquemático del circuito electrónico.}
+    \label{fig:esquematicoPCBPractica} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
