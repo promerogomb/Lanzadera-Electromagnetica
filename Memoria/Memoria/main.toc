@@ -19,5 +19,5 @@
 \contentsline {subsection}{\numberline {7.1}Validación de los modelos}{38}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Resultados del prototipo}{39}{subsection.7.2}%
 \contentsline {section}{\numberline {8}Práctica propuesta}{41}{section.8}%
-\contentsline {section}{\numberline {9}Conclusiones}{51}{section.9}%
-\contentsline {section}{\numberline {10}Referencias}{52}{section.10}%
+\contentsline {section}{\numberline {9}Conclusiones}{52}{section.9}%
+\contentsline {section}{\numberline {10}Referencias}{53}{section.10}%

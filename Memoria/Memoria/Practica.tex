@@ -96,6 +96,7 @@ El primer paso de esta práctica será elegir la geometría de la bobina inicial
     \item \(r_{cext} \leq XXX\)
     \item \(l_c \leq XXX\)
     \item \(l_c \leq l_{fe}\)
+    \item El valor de \(r_{cint}\) dependerá del cilindro sobre el que se vaya a bobinar el solenoide. Elegirlo del laboratorio y tomar la medida. \textbf{O HABLO CON JOSE A VER QUE TIENE EN EL LAB Y LO DEJAMOS FIJO}
 \end{itemize}
 
 \begin{table}[H]
@@ -108,6 +109,7 @@ El primer paso de esta práctica será elegir la geometría de la bobina inicial
         \hline
         \textbf{Valor mínimo} & XX & XX & 0.5 & XX & XX & 1 \\
         \textbf{Valor máximo} & XX & XX & XX & XX & XX & - \\
+        \hline
         \textbf{Valor elegido} &  &  &  &  &  &  \\
         \hline
     \end{tabular}
@@ -258,16 +260,63 @@ En el laboratorio de electricidad se encuentra el \textit{banco de pruebas}, un 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=8cm]{FigurasMemoria/prototipoFinal.jpeg}
-    \caption{Imagen del banco de pruebas definitivo.}
-    \label{fig:prototipoFinal} %Para referenciar -> \ref{fig:figNum}
+    \includegraphics[width=10cm]{FigurasMemoria/prototipoFinalPractica.jpeg}
+    \caption{Banco de pruebas.}
+    \label{fig:prototipoFinalPractica} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
-El objetivo esta sección de la práctica es validar los modelos teóricos realizados anteriormente mediante la construcción y prueba de el solenoide de la \ref{tab:bobIniPractica}. Los medios para conseguir esto será emplear el circuito electrónico de la figura \ref{fig:esquematicoPCBPractica}, que se encuentra montado en el banco junto a un arduino, para tomar las medidas de velocidad de salida del vástago. Para las de fuerza, se empleará el dinamómetro.
+El objetivo esta sección de la práctica es validar los modelos teóricos realizados anteriormente mediante la construcción y prueba de el solenoide de la \ref{tab:bobIniPractica}. Los medios para conseguir esto será emplear montaje de la figura \ref{fig:prototipoFinalPractica}, el cual cuenta con un circuito electrónico que controla los disparos de la bobina así como las mediciones de velocidad del vástago. Las medidas de fuerza se tomarán mediante el uso del dinamómetro.
 
-\begin{figure}[H]
-    \centering 
-    \includegraphics[width=8cm]{FigurasMemoria/esquematicoPCB.png}
-    \caption{Esquemático del circuito electrónico.}
-    \label{fig:esquematicoPCBPractica} %Para referenciar -> \ref{fig:figNum}
-\end{figure}
+\textbf{DESPUÉS DE ESCRIBIR TODO ESTO, ME DOY CUENTA DE UNA COSA. ¿CÓMO VAN A SELECCIONAR LA CORRIENTE SI NO TIENEN MANERA DE MEDIR LA RESISTENCIA DE LA BOBINA ANTES DE MONTARLA? YO LO PRIMERO QUE HICÉ FUERON LAS PRUEBAS EXPERIMENTALES, POR LO QUE SABÍA LA CORRIENTE CON LA QUE TRABAJABA. ¿SE LO PONGO ASÍ?}
+
+Para realizar las mediciones de velocidad, habrá que seguir los siguientes pasos:
+
+
+\begin{enumerate}
+    \item Bobinar el solenoide sobre el cilindro escogido en el apartado 1 de la práctica.
+    \item Comprobar que el valor \(r_{cext}\) no difiere mucho del calculado analíticamente. Si es así introducir el valor experimental de \(r_{cext}\) en la calculadora.
+    \item Acoplar el solenoide al banco de pruebas.
+    \item Asegurar que hay un sensor de movimiento justo en la salida del solenoide.
+    \item Asegurar que el switch integrado al lado del relé de estado sólido cierra el circuito en el PIN2 del arduino.
+    \item Alimentar el sistema:
+    \begin{enumerate}
+        \item Conectar el circuito eléctronico (terminales de la izquierda) a una tensión de 15 VDC.
+        \item Conectar el arduino a un PC o portátil.
+        \item Conectar los terminales del relé de estado sólido (terminales de la derecha) a la tensión necesaria para obtener la corriente necesaria.
+    \end{enumerate}
+    \item Abrir el IDE de arduino.
+    \item Subir el programa encontrado en ``URL'' a la placa.
+    \item Abrir el \textit{Serial Plotter}.
+    \item Colocar el vástago al borde de la bobina.
+    \item Pulsar el botón rojo.
+    \item Observar la diferencia temporal en el \textit{Serial}.
+\end{enumerate}
+
+Una vez obtenida la diferencia temporal, se deberá medir la distancia entre los centros de los sensores para poder completar los cálculos siguiendo el siguiente procedimiento. El primer paso será calcular la velocidad de salida:
+
+\[v_{vas}=\frac{d_{sens}}{\Delta t}\]
+
+Conocida la velocidad, podemos calcular la aceleración a partir de la fórmula de la distancia recorrida para un movimiento rectilíneo uniformemente acelerado (con \(v_0 = 0~\text{ms}^{-1}\)):
+
+\[d = v_0 * \Delta t + \frac{1}{2}*a*(\Delta t)^2 \rightarrow a = \frac{2d}{(\Delta t)^2}\]
+
+Y desde aquí podemos obtener el valor de la fuerza según la segunda ley de Newton:
+
+\[F=m*a\]
+
+Una vez presentados ambos procedimientos, se pide rellenar la siguiente tabla:
+
+\begin{table}[H]
+    \centering
+    \begin{adjustbox}{max width=\textwidth,center}
+        \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{Distancia} & \textbf{Tiempo} & \textbf{Velocidad} & \textbf{Aceleración} & \textbf{Fuerza} & \textbf{Fuerza calculadora} & \textbf{Fuerza ANSYS} \\
+          &  &  &  &  &  &  \\
+          &  &  &  &  &  &  \\
+        \hline
+        \end{tabular}
+    \end{adjustbox}
+    \caption{Resultados finales.}
+    \label{tab:resultadosFinales}
+\end{table}

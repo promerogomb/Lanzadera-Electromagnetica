@@ -3,37 +3,36 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
 Database file #1: referencias.bib
-Warning--empty year in oersted2024
 You've used 13 entries,
             2481 wiz_defined-function locations,
-            624 strings with 6300 characters,
-and the built_in function-call counts, 3578 in all, are:
-= -- 308
+            625 strings with 6304 characters,
+and the built_in function-call counts, 3579 in all, are:
+= -- 309
 > -- 121
 < -- 12
 + -- 60
 - -- 34
 * -- 172
-:= -- 561
+:= -- 562
 add.period$ -- 47
 call.type$ -- 13
 change.case$ -- 25
 chr.to.int$ -- 13
-cite$ -- 14
+cite$ -- 13
 duplicate$ -- 189
 empty$ -- 384
 format.name$ -- 51
-if$ -- 778
+if$ -- 779
 int.to.chr$ -- 1
 int.to.str$ -- 14
 missing$ -- 2
 newline$ -- 81
 num.names$ -- 39
-pop$ -- 153
+pop$ -- 150
 preamble$ -- 1
 purify$ -- 13
 quote$ -- 0
-skip$ -- 143
+skip$ -- 145
 stack$ -- 0
 substring$ -- 26
 swap$ -- 28
@@ -41,8 +40,7 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 88
-warning$ -- 1
+warning$ -- 0
 while$ -- 26
 width$ -- 0
-write$ -- 180
-(There was 1 warning)
+write$ -- 181
