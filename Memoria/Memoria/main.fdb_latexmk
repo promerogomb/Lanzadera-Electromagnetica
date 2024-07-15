@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1720972151.15657 "main.aux" "main.bbl" "main" 1720972158.81591 0
-  "./referencias.bib" 1720972142.73919 3354 8a322e59fb85f9629494ebbff43cfca4 ""
+["bibtex main"] 1721034485.01034 "main.aux" "main.bbl" "main" 1721034492.68379 0
+  "./referencias.bib" 1720972177.34251 3354 8a322e59fb85f9629494ebbff43cfca4 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/natbib/unsrtnat.bst" 1233624470 24550 a41a6405f4de768c43e871d9fbce2bc8 ""
-  "main.aux" 1720972158.00321 22126 fa1e30b14981c02d22385bbaed698763 "pdflatex"
+  "main.aux" 1721034491.80981 22648 75fdba0af38cba618c0a95fca97da3c2 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1720972151.40355 "/Users/pjose/Desktop/PFG/Memoria/Memoria/main.tex" "main.pdf" "main" 1720972158.81621 0
+["pdflatex"] 1721034485.26669 "/Users/pjose/Desktop/PFG/Memoria/Memoria/main.tex" "main.pdf" "main" 1721034492.68413 0
   "/Users/pjose/Desktop/PFG/Memoria/Memoria/main.tex" 1720972062.53533 3766 30dbc011a4fc47e35391a35d87ca97d9 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc" 1463430686 2437 443c81fb50993bacedc5f9a206c322b0 ""
@@ -229,19 +229,19 @@
   "Intro.tex" 1720438120.9331 3175 7f02e2306a8bc2009f20a1201de629b6 ""
   "MarcoTeorico.tex" 1720865024.08604 12024 5474d300552b3833e8170d68e76470ae ""
   "ObjetivosMetodosMotivacion.tex" 1720440333.26622 4847 c91da85835d09c537a58bf38876c4808 ""
-  "Practica.tex" 1720972075.56337 21600 ddac1537c8732edbb81113baef9386f4 ""
+  "Practica.tex" 1721034477.10885 24403 73dad80dc2b864dda211fe0443c4cc49 ""
   "Prototipo.tex" 1720956208.92286 15436 5cf398f02add8e6cbc2380f091779961 ""
   "Resultados.tex" 1720964829.46913 9626 2178a690afeefe8dd74ed72ecf6bb99b ""
   "Simulaciones.tex" 1720597508.20697 10821 717b0eb99e22a9e552cf0a2bce9f43a8 ""
   "anexo1.tex" 1720512844.22725 3200 c95b5ee1d9b4332b4d3b96d204c6a315 ""
   "anexo2.tex" 1720513896.26617 2466 8d80b23e5747abe3aa7718f90a22761b ""
-  "main.aux" 1720972158.00321 22126 fa1e30b14981c02d22385bbaed698763 "pdflatex"
-  "main.bbl" 1720972151.39444 3225 212e4149b9ada011280b1524cc3bb563 "bibtex main"
-  "main.lof" 1720972158.01139 6459 ffaeef3aa64c1c73c944ae3068d54388 "pdflatex"
-  "main.lot" 1720972158.01151 1097 dd77c7751b6c36e38ccb640e4ca54158 "pdflatex"
-  "main.out" 1720972158.01047 3173 aebb3bcc6f3109ef7d5fb13eb49272fa "pdflatex"
+  "main.aux" 1721034491.80981 22648 75fdba0af38cba618c0a95fca97da3c2 "pdflatex"
+  "main.bbl" 1721034485.25754 3225 212e4149b9ada011280b1524cc3bb563 "bibtex main"
+  "main.lof" 1721034491.81644 6564 f9e52fdddb36def188d7eb2942fc189f "pdflatex"
+  "main.lot" 1721034491.8166 1224 7e251307933bf1b0ac0d7b8c833dd088 "pdflatex"
+  "main.out" 1721034491.81582 3173 aebb3bcc6f3109ef7d5fb13eb49272fa "pdflatex"
   "main.tex" 1720972062.53533 3766 30dbc011a4fc47e35391a35d87ca97d9 ""
-  "main.toc" 1720972158.0112 1713 50f8da9da507d7b57a89171f68960941 "pdflatex"
+  "main.toc" 1721034491.81636 1713 3730f87828c78b7e0c36d15d4e025b53 "pdflatex"
   "portada.tex" 1717425519.89348 635 70096f595347e83c5271a0a3693f1445 ""
   "resumen.tex" 1717666289.93506 2703 5d398707b18c26013ecb4793c36d879a ""
   "sensorDatasheet.pdf" 1720433468.9535 122135 a07a4839edbcedc6f0adbd0a303b21b7 ""

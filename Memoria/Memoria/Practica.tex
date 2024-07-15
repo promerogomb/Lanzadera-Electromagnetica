@@ -320,3 +320,70 @@ Una vez presentados ambos procedimientos, se pide rellenar la siguiente tabla:
     \caption{Resultados finales.}
     \label{tab:resultadosFinales}
 \end{table}
+
+
+\subsection*{Ejercicios adicionales}
+
+Se plantean a continuación una serie de ejercicios y cuestiones adicionales por secciones para mejorar la comprensión de la práctica.
+
+\subsubsection*{Marco teórico}
+
+\begin{itemize}
+    \item ¿Cuáles son las ecuaciones de Maxwell relevantes para esta práctica y qué representan?
+    \vspace{3cm}
+    \item ¿Cómo es el valor de \(B\) en los extremos del solenoide frente a su centro?
+    \vspace{3cm}
+    \item Define con tus propias palabras lo que expresan las distintas ecuaciones de Maxwell:
+    \begin{itemize}
+        \item \(\vec{\nabla}\cdot \vec{E}= \frac{\rho}{\epsilon_0}\):
+        \vspace{1cm}
+        \item \(\vec{\nabla}\cdot \vec{B}=0\): 
+        \vspace{1cm}
+        \item \(\vec{\nabla}\times\vec{E}=-\frac{\partial\vec{B}}{\partial t}\):
+        \vspace{1cm}
+        \item:\(\vec{\nabla}\times \vec{B}=\mu_0\vec{J}+\mu_0\epsilon_0\frac{\partial \vec{E}}{\partial t}\):
+        \vspace{1cm}
+    \end{itemize}
+\end{itemize}
+
+\subsubsection*{Modelo analítico en MatLAB}
+
+\begin{itemize}
+    \item ¿Por qué se analiza solamente el valor de la fuerza de atracción en \(x \in [0, l_c]\)?
+    \vspace{2cm}
+    \item Describe de manera justificada pero cualitativa lo que ocurre con la fuerza de atracción magnética al realizar las siguientes variaciones en algunos de los parámetros del solenoide:
+    \begin{itemize}
+        \item Aumentamos \(l_c\):
+        \item Aumentamos \(N\):
+        \item Disminuimos \(r_{fe}\):
+        \item Disminuimos \(r_{cu}\):
+    \end{itemize}
+    \item Elige una nueva configuración geométrica para la bobina, simúlala en tu modelo de MatLAB, compárala con los resultados de la figura \ref{fig:grafFuerzaPractica} y discute la razón de la variación en el resultado. Los valores elegidos deben seguir respetando las restricciones impuestas.
+    
+    \begin{table}[H]
+        \centering
+        \setlength{\tabcolsep}{5pt}
+        \renewcommand{\arraystretch}{1.2}
+        \begin{tabular}{|c|c|c|c|c|c|c|}
+            \hline
+            \hbox{} & \textbf{\(D_{cu}\) [m]} & \textbf{\(r_{cint}\) [m]} & \textbf{\(l_c\) [m]} & \textbf{\(r_{fe}\) [m]} & \textbf{\(l_{fe}\) [m]} & \textbf{N} \\
+            \hline
+            \textbf{Valor inicial} &  &  &  &  &  &  \\
+            \hline
+            \textbf{Valor nuevo} &  &  &  &  &  &  \\
+            \hline
+        \end{tabular}
+        \caption{Valores iniciales para la bobina de la lanzadera.}
+        \label{tab:bobIniPractica}
+    \end{table}
+
+    \begin{figure}[H]
+        \centering 
+        \includegraphics[width=0.75\textwidth]{FigurasMemoria/grafFuerzaPractica.png}
+        \caption{Comparación de fuerzas.}
+        \label{fig:grafFuerzaPracticaEjercicio} %Para referenciar -> \ref{fig:figNum}
+    \end{figure}
+    
+\end{itemize}
+
+
