@@ -3,7 +3,9 @@
 \setcounter {tocdepth}{-1}
 \setcounter {tocdepth}{3}
 \contentsline {section}{\numberline {1}Introducción}{9}{section.1}%
-\contentsline {section}{\numberline {2}Objetivos y métodos}{10}{section.2}%
+\contentsline {section}{\numberline {2}Objetivos y motivación del proyecto}{10}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Objetivos y métodos}{10}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Motivación}{11}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Marco teórico}{12}{section.3}%
 \contentsline {section}{\numberline {4}Cálculo analítico de la fuerza de atracción}{18}{section.4}%
 \contentsline {section}{\numberline {5}Cálculo por Elementos Finitos de la fuerza de atracción}{23}{section.5}%
@@ -20,4 +22,4 @@
 \contentsline {subsection}{\numberline {7.2}Resultados del prototipo}{39}{subsection.7.2}%
 \contentsline {section}{\numberline {8}Práctica propuesta}{41}{section.8}%
 \contentsline {section}{\numberline {9}Conclusiones}{54}{section.9}%
-\contentsline {section}{\numberline {10}Referencias}{55}{section.10}%
+\contentsline {section}{\numberline {10}Referencias}{56}{section.10}%

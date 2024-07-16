@@ -4,7 +4,7 @@
 En esta sección, se describe el proceso de creación del modelo de la lanzadera electromagnética realizado utilizando ANSYS Maxwell. Este software de métodos finitos está especializado en el análisis de sistemas electromagnéticos. El objetivo de estas simulaciones es obtener una comprensión detallada del comportamiento del campo magnético generado por la bobina y su interacción con el proyectil ferromagnético en la lanzadera electromagnética. Se ha dividido el proceso en tres subapartados: creación de la geometría, simulaciones instantáneas y simulaciones transitorias. En la primera, se mostrará el proceso de creación de la geometría paramétrica en 2D y 3D, en la segunda y tercera se explicarán las condiciones de contorno y resultados de las simulaciones instantáneas y transitorias, respectivamente.
 
 \subsection{Geometría}
-El primer paso para realizar las simulaciones fue la creación de la geometría del sistema en ANSYS Maxwell. Para ello, se definieron las dimensiones y características de la bobina y el proyectil de manera paramétrica. Esto quiere decir que las dimensiones de los polígonos que conforman el modelo no son fijas, si no que están asociados a variables por lo que simular diferentes configuraciones se convierte en algo más sencillo. La geometría fue primeramente diseñada en 3D, pero también se obtuvo la sección central del archivo tridimensional para poder simular en 2D, lo que a priori permite menor tiempo de computación. Una vez creada la geometría, se definieron los diferentes materiales y las propiedades eléctricas y magnéticas. El material utilizado para los conductores del solenoide es cobre recocido, PVC para el soporte de la bobina y acero F114 para el vástago. Con esto, se construye la geometría a continuación mostrada:
+El primer paso para realizar las simulaciones fue la creación de la geometría del sistema en ANSYS Maxwell. Para ello, se definieron las dimensiones y características de la bobina y el proyectil de manera paramétrica. Esto quiere decir que las dimensiones de los polígonos que conforman el modelo no son fijas, si no que están asociadas a variables por lo que simular diferentes configuraciones se convierte en algo más sencillo. La geometría fue primeramente diseñada en 3D, pero también se obtuvo la sección central del archivo tridimensional para poder simular en 2D, lo que permite realizar las simulaciones con un menor tiempo de computación. Una vez creada la geometría, se definieron los diferentes materiales y sus propiedades electromagnéticas. El material utilizado para los conductores del solenoide es cobre recocido, PVC para el soporte de la bobina y acero F114 para el vástago. Con esto, se modela la geometría a continuación mostrada:
 
 \begin{itemize}
     \item \textbf{Geometría en 3D}:
@@ -33,15 +33,15 @@ El primer paso para realizar las simulaciones fue la creación de la geometría 
     \end{figure}
 \end{itemize}
 
-La bobina se ha generado de la forma mostrada en las figuras anteriores debido a que representar un número de espiras del orden de \(10^2\) de manera helicoidal y con varias capas es muy complicado en ANSYS, ya que no es un entorno de diseño en 3D. Al crear un cilindro con dimensiones apropiadas, se puede indicar al software que lo trate como un solenoide, asignándole un número de espiras y una corriente de excitación. El programa distribuye uniformemente el campo generado por la corriente en todo el volumen, lo que resulta en una aproximación muy válida \citep[p. 13]{ansoft2012maxwell}.
+La bobina (cilindro ocre), se ha generado de la manera mostrada y no con un polígono helicoidal debido a que el orden de magnitud de espiras (\(10^2\)) y el orden de magnitud de las medidas (\(10^{-3}\)) convierte esto en una muy compleja tarea, ya que ANSYS Maxwell no es un entorno de diseño en 3D. Al crear un cilindro con dimensiones apropiadas, se puede indicar al software que lo trate como un solenoide, asignándole un número de espiras y una corriente de excitación. El programa distribuye uniformemente el campo generado por la corriente en todo el volumen, lo que resulta en una aproximación muy válida de un solenoide, sin necesidad de crear una geometría extremadamente compleja \citep[p. 13]{ansoft2012maxwell}.
 
 \subsection{Simulaciones instantáneas}
-ANSYS Maxwell permite realizar simulaciones de diferentes tipos, de las cuales tienen interés para este proyecto las magnetoestáticas y las transitorias. Como primera prueba para el modelo de la figura \textbf{FIGURA3D}, se realizó una simulación electroestática con una \(I_{cc}=3.5~A\) para poder observar los campos magnéticos del sistema, resultando en la siguiente figura:
+ANSYS Maxwell permite realizar simulaciones de diferentes tipos, de las cuales tienen interés para este proyecto las magnetoestáticas y las transitorias. Como primera prueba para el modelo de la figura \textbf{FIGURA3D}, se realizó una simulación electroestática con una \(I_{cc}=3.65~A\) para poder observar los campos magnéticos del sistema, resultando en la siguiente figura:
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=14cm]{FigurasMemoria/fields8.PNG}
-    \caption{Visualización de los campos magnéticos con la bobina energizada y \(x=2/10 * h_c\).}
+    \caption{Visualización de los campos magnéticos con la bobina energizada y \(x=8/10 * h_c\).}
     \label{fig:fields8} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 

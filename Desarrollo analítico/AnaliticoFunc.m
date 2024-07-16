@@ -54,11 +54,11 @@ end
 % Reluctancias R[H^-1]
 figure;
 hold on;
-plot(x, R_dispc, 'r', 'DisplayName', 'R_{dispc}');
-plot(x, R_B, 'g', 'DisplayName', 'R_{bar}');
-plot(x, R_phi, 'b', 'DisplayName', 'R_{phi}');
-plot(x, R_airc, 'b', 'DisplayName', 'R_{airc}');
-plot(x, R_total, 'k', 'DisplayName', 'R_{total}');
+plot(x, R_dispc, 'r', 'DisplayName', 'R_{dispc}', 'LineWidth', 2);
+plot(x, R_B, 'g', 'DisplayName', 'R_{bar}', 'LineWidth', 2);
+plot(x, R_phi, 'b', 'DisplayName', 'R_{phi}', 'LineWidth', 2);
+plot(x, R_airc, 'm', 'DisplayName', 'R_{airc}', 'LineWidth', 2);
+plot(x, R_total, 'k', 'DisplayName', 'R_{total}', 'LineWidth', 2);
 xlabel('Posición del vástago [m]');
 ylabel('Reluctancias [H^-1]');
 title('Reluctancias vs posición');
@@ -69,7 +69,7 @@ hold off;
 
 % Inducción magnética B[T]
 figure;
-plot(x, B, 'LineWidth', 2);
+plot(x, B, 'r', 'LineWidth', 2);
 xlabel('Posición del vástago [m]');
 ylabel('Inducción magnética [T]');
 title('Inducción magnética vs posición');

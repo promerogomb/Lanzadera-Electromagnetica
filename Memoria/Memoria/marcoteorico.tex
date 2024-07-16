@@ -3,23 +3,19 @@
 
 En esta sección se desarrollarán los principios teóricos que permiten el funcionamiento de las lanzaderas electromagnéticas. Para entender estos principios, es esencial comprender los fundamentos del electromagnetismo, el concepto de bobina, su relación con la generación de campos magnéticos y la forma de modelar estos.
 
-El electromagnetismo es una rama fundamental de la física que estudia las interacciones entre los campos eléctricos y magnéticos. Su desarrollo ha sido crucial para el avance de la tecnología, desde la generación y transmisión de electricidad hasta las comunicaciones inalámbricas. Aunque la raza humana conoce los fenómenos eléctricos y magnéticos desde la historia antigua, estos no fueron estudiados hasta el siglo XVII, y se consideraban fenómenos independientes hasta que Hans Christian Ørsted descubrió en 1820 que una corriente eléctrica puede generar un campo magnético. Mientras el físico danés preparaba los equipos para dar una conferencia en la Universidad de Copenhague, observó que la aguja de una brújula cercana se desviaba cuando la corriente fluía a través de un alambre conductor. Este accidental descubrimiento le llevó a publicar el artículo CIRCA EFFECTUM CONFLICTUS ELECTRICI IN ACUM MAGNETICAM, en el que se describieron los fenómenos electromagnéticos por primera vez, aunque de manera cualitativa. En la siguiente década, Ampère y Faraday describirían matemáticamente el descubrimiento de Ørsted, dando lugar al electromagnetismo como lo conocemos hoy en día\citep{oersted2024}.
+El electromagnetismo es una rama fundamental de la física que estudia las interacciones entre los campos eléctricos y magnéticos. Su desarrollo ha sido crucial para el avance de la tecnología, desde la generación y transmisión de electricidad hasta las comunicaciones inalámbricas. Aunque la raza humana conoce los fenómenos eléctricos y magnéticos desde la historia antigua, estos no fueron estudiados hasta el siglo XVII, y se consideraban fenómenos independientes hasta que Hans Christian Ørsted descubrió en 1820 que una corriente eléctrica puede generar un campo magnético. Mientras el físico danés preparaba los equipos para dar una conferencia en la Universidad de Copenhague, observó que la aguja de una brújula cercana se desviaba cuando la corriente fluía a través de un alambre conductor. Este accidental descubrimiento le llevó a publicar el artículo ``CIRCA EFFECTUM CONFLICTUS ELECTRICI IN ACUM MAGNETICAM'', en el que se describieron los fenómenos electromagnéticos por primera vez, aunque de manera cualitativa. En la siguiente década, Ampère y Faraday describirían matemáticamente el descubrimiento de Ørsted, dando lugar al electromagnetismo como lo conocemos hoy en día\citep{oersted2024}.
 
 El trabajo de James Clerk Maxwell en la década de 1860 unificó estos descubrimientos en un marco teórico coherente. Maxwell formuló un conjunto de ecuaciones que describen cómo los campos eléctricos y magnéticos interactúan y se propagan. Estas ecuaciones, conocidas como las ecuaciones de Maxwell, son la base del electromagnetismo clásico.
 
 \begin{figure}[H]
-    \centering
-    \[
-    \vec{\nabla}\cdot \vec{E}= \frac{\rho}{\epsilon_0}~~~~~~\vec{\nabla}\cdot \vec{B}= 0
-    \]
-    \[
-    \vec{\nabla}\times\vec{E}=-\frac{\partial\vec{B}}{\partial t}~~~~~~\vec{\nabla}\times \vec{B}=\mu_0\vec{J}+\mu_0\epsilon_0\frac{\partial \vec{E}}{\partial t}
-    \]
-    \caption{Ecuaciones de Maxwell\citep{purcell2013electricidad}.}
-    \label{fig:maxwell_equations}
+    \centering %\raggedleft \raggedright
+    \[\vec{\nabla}\cdot \vec{E} = \frac{\rho}{\epsilon_0}~~~~~~\vec{\nabla}\cdot \vec{B} = 0\]
+    \[\vec{\nabla}\times\vec{E} = -\frac{\partial\vec{B}}{\partial t}~~~~~~\vec{\nabla}\times \vec{B} = \mu_0\vec{J}+\mu_0\epsilon_0\frac{\partial \vec{E}}{\partial t}\]
+    \caption{Ecuaciones de Maxwell \citep{purcell2013electricidad}.}
+    \label{fig:ecuacionesMaxwell} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
-En el caso de este proyecto, la ley de Maxwell de mayor interés es la de Ampère. Esta ley es la que define la relación entre un campo magnético y uno eléctrico, y partir de las ecuaciones anteriores se puede definir la ley integral de Ampère como:
+En el caso de este proyecto, la ley de Maxwell de mayor interés es la de Ampère. Esta ley es la que define la relación entre un campo magnético y uno eléctrico, y a partir de las ecuaciones anteriores, se puede definir la ley integral de Ampère como:
 
 \begin{quote}
     "La integral de línea del campo magnético \(\mathbf{B}\) alrededor de un lazo cerrado es igual a \(\mu_0\) multiplicado por la corriente total \(I_{enc}\) que pasa a través de cualquier superficie delimitada por el lazo. Matemáticamente, esto se expresa como:
@@ -36,7 +32,7 @@ En el caso de este proyecto, la ley de Maxwell de mayor interés es la de Ampèr
     \label{fig:amperelaw} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
-Para entender mejor el funcionamiento de la lanzadera electromagnética, es esencial analizar el componente principal: la \textbf{bobina}. Una bobina, o solenoide, es un conductor enrollado de manera cilíndrica alrededor de un núcleo de material ferrítico. El número de vueltas que da el conductor alrededor del núcleo se define como espiras y se denota como \textit{N}. El núcleo posee un parámetro físico llamado permeabilidad relativa \(\mu_r\), que indica su capacidad para permitir el paso del flujo magnético. En el caso de que el núcleo sea aire, como se muestra en la figura \ref{fig:integralampere}, la permeabilidad relativa tomará el valor de 1.
+El siguiente paso para comprender de forma integral el funcionamiento de la lanzadera electromagnética es analizar el componente principal: la \textbf{bobina}. Una bobina, o solenoide, es un conductor enrollado de manera cilíndrica alrededor de un núcleo de material ferrítico. El número de vueltas que da el conductor alrededor del núcleo se define como espiras y se denota como \textit{N}. El núcleo posee un parámetro físico llamado permeabilidad relativa \(\mu_r\), que indica su capacidad para permitir el paso del flujo magnético. En el caso de que el núcleo sea aire, como se muestra en la figura \ref{fig:integralampere}, la permeabilidad relativa tomará el valor de 1.
 
 Para llegar a una expresión del campo magnético alrededor de un solenoide, partiremos de la ley integral de Ampère. Consideraremos un solenoide con \textit{N} espiras y longitud \textit{l}, a través del cual pasa una corriente \textit{I}. Elegimos una trayectoria rectangular \(\vec{C}\) que va parcialmente dentro y fuera del solenoide, la cual es conveniente porque simplifica los cálculos del campo magnético.
 
@@ -101,7 +97,7 @@ La figura \ref{fig:esquemabasico} a continuación es un esquema sencillo en el q
 \end{figure}
 
 \newpage
-Antes de finalizar el marco teórico, es necesario definir la manera en la que se va a representar el sistema de manera computable. Para ello, se utiliza el análisis del circuito magnético del sistema. Un circuito magnético se puede analizar de manera análoga a un circuito eléctrico, utilizando los conceptos de reluctancia, fuerza magnetomotriz (FMM) y flujo magnético. A continuación, se describen estos conceptos y sus relaciones entre sí.
+Antes de finalizar el marco teórico, es necesario definir la manera en la que se va a representar el sistema de manera computable. Para ello, se utilizará el análisis del circuito magnético del sistema. Un circuito magnético se puede analizar de manera análoga a un circuito eléctrico, utilizando los conceptos de reluctancia, fuerza magnetomotriz (FMM) y flujo magnético. A continuación, se describen estos conceptos y sus relaciones entre sí.
 
 \begin{itemize}
     \item \textbf{Reluctancia}
@@ -121,7 +117,7 @@ Antes de finalizar el marco teórico, es necesario definir la manera en la que s
     \[\mathcal{F}=NI\]
     
     Donde:\\
-    \(N\) es el número de vueltas de la bobina \([v]\).\\
+    \(N\) es el número de espiras de la bobina \([v]\).\\
     \(I\) es la corriente de alimentación de la bobina \([A]\).\\
 
     \item \textbf{Flujo Magnético}
@@ -145,5 +141,5 @@ Como expresa la ley de Hopkinson, los conceptos de reluctancia, FMM y flujo magn
         \centering %\raggedleft \raggedright
         \includegraphics[width=\textwidth]{FigurasMemoria/circuitoMagExplicacion.png}
         \caption{Esquema de una bobina con un núcleo ferromagnético y su circuito magnético equivalente.}
-        \label{fig:esquemabasico} %Para referenciar -> \ref{fig:figNum}
+        \label{fig:circuitoMagExplicacion} %Para referenciar -> \ref{fig:figNum}
     \end{figure}

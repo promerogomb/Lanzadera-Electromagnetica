@@ -277,7 +277,7 @@ Para realizar las mediciones de velocidad, habrá que seguir los siguientes paso
     \item Comprobar que el valor \(r_{cext}\) no difiere mucho del calculado analíticamente. Si es así introducir el valor experimental de \(r_{cext}\) en la calculadora.
     \item Acoplar el solenoide al banco de pruebas.
     \item Asegurar que hay un sensor de movimiento justo en la salida del solenoide.
-    \item Asegurar que el switch integrado al lado del relé de estado sólido cierra el circuito en el PIN2 del arduino.
+    \item Asegurar que el switch acoplado al relé de estado sólido cierra el circuito en el PIN2 del arduino.
     \item Alimentar el sistema:
     \begin{enumerate}
         \item Conectar el circuito eléctronico (terminales de la izquierda) a una tensión de 15 VDC.
@@ -285,7 +285,8 @@ Para realizar las mediciones de velocidad, habrá que seguir los siguientes paso
         \item Conectar los terminales del relé de estado sólido (terminales de la derecha) a la tensión necesaria para obtener la corriente necesaria.
     \end{enumerate}
     \item Abrir el IDE de arduino.
-    \item Subir el programa encontrado en ``URL'' a la placa.
+    \item Acceder al repositorio \href{URL}{github.com/promerogomb/Codigo-Control-Lanzadera/} y descargar el código.
+    \item Subir el código a la placa Arduino.
     \item Abrir el \textit{Serial Plotter}.
     \item Colocar el vástago al borde de la bobina.
     \item Pulsar el botón rojo.
@@ -324,14 +325,14 @@ Una vez presentados ambos procedimientos, se pide rellenar la siguiente tabla:
 
 \subsection*{Ejercicios adicionales}
 
-Se plantean a continuación una serie de ejercicios y cuestiones adicionales por secciones para mejorar la comprensión de la práctica.
+Se plantean a continuación una serie de ejercicios y cuestiones adicionales para asegurar la comprensión completa de la práctica.
 
-\subsubsection*{Marco teórico}
+\subsubsection*{Conceptos}
 
 \begin{itemize}
     \item ¿Cuáles son las ecuaciones de Maxwell relevantes para esta práctica y qué representan?
     \vspace{3cm}
-    \item ¿Cómo es el valor de \(B\) en los extremos del solenoide frente a su centro?
+    \item ¿Cómo es el valor de \(B\) en los extremos del solenoide frente a su centro? ¿Y la forma del campo?
     \vspace{3cm}
     \item Define con tus propias palabras lo que expresan las distintas ecuaciones de Maxwell:
     \begin{itemize}
@@ -346,7 +347,7 @@ Se plantean a continuación una serie de ejercicios y cuestiones adicionales por
     \end{itemize}
 \end{itemize}
 
-\subsubsection*{Modelo analítico en MatLAB}
+\subsubsection*{Variaciones de parámetros}
 
 \begin{itemize}
     \item ¿Por qué se analiza solamente el valor de la fuerza de atracción en \(x \in [0, l_c]\)?
@@ -374,7 +375,7 @@ Se plantean a continuación una serie de ejercicios y cuestiones adicionales por
             \hline
         \end{tabular}
         \caption{Valores iniciales para la bobina de la lanzadera.}
-        \label{tab:bobIniPractica}
+        \label{tab:bobIniPractica2}
     \end{table}
 
     \begin{figure}[H]

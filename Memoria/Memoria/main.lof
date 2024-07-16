@@ -1,6 +1,6 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {figure}{\numberline {1}{\ignorespaces Cañón de Gauss\citep {coilgun2024}.}}{9}{figure.caption.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Ecuaciones de Maxwell\citep {purcell2013electricidad}.}}{12}{figure.caption.2}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Ecuaciones de Maxwell \citep {purcell2013electricidad}.}}{12}{figure.caption.2}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Visualización del campo magnético producido alrededor de un conductor por el que circula una corriente eléctrica.}}{13}{figure.caption.3}%
 \contentsline {figure}{\numberline {4}{\ignorespaces Curva \textbf {\(\vec {C}\)} para la cual realizaremos los cálculos \citep {artpictures2023}.}}{13}{figure.caption.4}%
 \contentsline {figure}{\numberline {5}{\ignorespaces Visualización del campo magnético de una bobina energizada \citep {northeastern2024electromagnets}.}}{15}{figure.caption.5}%
@@ -9,7 +9,7 @@
 \contentsline {figure}{\numberline {8}{\ignorespaces Esquema geométrico del sistema.}}{18}{figure.caption.8}%
 \contentsline {figure}{\numberline {9}{\ignorespaces Secciones del sistema con una vista de planta.}}{19}{figure.caption.9}%
 \contentsline {figure}{\numberline {10}{\ignorespaces Circuito magnético del sistema.}}{20}{figure.caption.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Aplicación de cálculos de MATLAB.}}{20}{figure.caption.11}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Aplicación de cálculos de \textit {MatLAB}\textregistered .}}{20}{figure.caption.11}%
 \contentsline {figure}{\numberline {12}{\ignorespaces Reluctancias en función de la posición del vástago respecto a la bobina.}}{21}{figure.caption.12}%
 \contentsline {figure}{\numberline {13}{\ignorespaces Inducción en función de la posición del vástago respecto a la bobina.}}{21}{figure.caption.13}%
 \contentsline {figure}{\numberline {14}{\ignorespaces Fuerza en función de la posición del vástago respecto a la bobina.}}{22}{figure.caption.14}%
@@ -17,7 +17,7 @@
 \contentsline {figure}{\numberline {16}{\ignorespaces Geometría de la barra y bobina en 2D.}}{23}{figure.caption.16}%
 \contentsline {figure}{\numberline {17}{\ignorespaces Mallado de la barra y bobina en 2D.}}{24}{figure.caption.17}%
 \contentsline {figure}{\numberline {18}{\ignorespaces Detalle del mallado de la barra y bobina en 2D.}}{24}{figure.caption.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Visualización de los campos magnéticos con la bobina energizada y \(x=2/10 * h_c\).}}{25}{figure.caption.19}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Visualización de los campos magnéticos con la bobina energizada y \(x=8/10 * h_c\).}}{25}{figure.caption.19}%
 \contentsline {figure}{\numberline {20}{\ignorespaces Visualización de los campos magnéticos dentro del solenoide.}}{25}{figure.caption.20}%
 \contentsline {figure}{\numberline {21}{\ignorespaces Fuerza (verde) y corriente (rojo) en función del tiempo de la configuración 1.}}{26}{figure.caption.22}%
 \contentsline {figure}{\numberline {22}{\ignorespaces Posición (verde) y velocidad (rojo) en función del tiempo de en la configuración 1.}}{26}{figure.caption.23}%
