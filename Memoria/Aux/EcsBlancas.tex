@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath} % Paquete para ecuaciones avanzadas
+\usepackage{xcolor}  % Paquete para colores
+
+% Configurar fondo negro y texto blanco
+\pagecolor{black}
+\definecolor{blueEXCA}{HTML}{0c8599}
+\definecolor{orangeEXCA}{HTML}{f08c00}
+\color{white}
+
+\begin{document}
+
+\section*{Ley Integral de Ampère}
+
+\huge
+\[\oint \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{enc}}\]
+
+\[\vec{\nabla}\cdot \vec{E} = \frac{\rho}{\epsilon_0}~~~~~~\vec{\nabla}\cdot \vec{B} = 0\]
+
+\[\vec{\nabla}\times\vec{E} = -\frac{\partial\vec{B}}{\partial t}~~~~~~\vec{\nabla}\times \vec{B} = \mu_0\vec{J}+\mu_0\epsilon_0\frac{\partial \vec{E}}{\partial t}\]
+
+
+\[\vec{\nabla}\times \vec{B} = \mu_0\vec{J}+\mu_0\epsilon_0\frac{\partial \vec{E}}{\partial t} \rightarrow \oint \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{enc}}\]
+
+
+\[B = \mu_0\mu_r\frac{NI}{L}\]
+
+
+\[=NI\]
+
+\[=\frac{l_{carac}}{\mu_0\mu_r S_{eff}}\]
+
+\[=\mathcal{F}/\mathcal{R}\]
+
+\[\mathcal{R}_{\phi}=\frac{(l_c+l_{fe})-x}{\mu_0*S_{disp}}\]
+
+\[\mathcal{R}_{fe}=\frac{l_{fe}}{\mu_0\mu_r*S_{fe}}\]
+
+\[\mathcal{R}_{disp~c}=\frac{l_c}{\mu_0*S_{disp}}\]
+
+\[\mathcal{R}_{aire~c}=\frac{l_c-x}{\mu_0*S_c}\]
+
+\[\sum \mathcal{R}=\mathcal{R}_{\phi}+\mathcal{R}_{fe}+\mathcal{R}_{disp~c}+\mathcal{R}_{aire~c} \rightarrow \phi = \frac{NI}{\sum \mathcal{R}} \]
+
+\[B_T=\frac{\phi}{S_T}\rightarrow F_T=\frac{1}{2}\frac{B_T^2*S_T}{\mu_0}\]
+
+\end{document}
