@@ -32,6 +32,9 @@
 \usepackage{arydshln}
 \usepackage{fontawesome}
 \usepackage{adjustbox}
+\usepackage{background}
+\usepackage{tikz}
+\usepackage{placeins}
 
 % Preámbulo
 \geometry{
@@ -51,6 +54,7 @@
 }
 
 \spanishdecimal{.}
+\definecolor{maroon}{RGB}{128, 0, 0}
 
 %% Definición estilo C:
 \lstset{
@@ -126,6 +130,10 @@
 
 \newpage
 \thispagestyle{empty}
+\null
+
+\newpage
+\thispagestyle{empty}
 \input{Agradecimientos.tex}
 
 \newpage
@@ -189,6 +197,9 @@
 
 \newpage
 \input{anexo2.tex}
+
+\newpage
+\input{anexo3.tex}
 
 \includepdf[pages=-]{sensorDatasheet.pdf}
 \includepdf[pages=1-5]{ssrDatasheet.pdf}

@@ -1,22 +1,8 @@
-\section{Cálculo analítico de la fuerza de atracción}
+\section{Cálculo analítico de la fuerza de atracción entre el vástago y la bobina}
 \label{sec:analitico}
-En la sección de desarrollo teórico trataré de proporcionar un procedimiento mediante el cual los alumnos que realicen la práctica sean capaces de optimizar la velocidad y fuerza del proyectil a partir de los parámetros eléctricos y geométricos que definen el sistema. Estos parámetros de entrada serán:
-\begin{itemize}
-    \item \textbf{Parámetros geométricos}:
-    \begin{enumerate}[label=\alph*., leftmargin=*, itemindent=1em]
-        \item \(r_{cext}\) y \(r_{cint} \): radios exterior e interior de la bobina, respectivamente.
-        \item \(l_c\): altura de la bobina.
-        \item \(r_{fe}\): radio del vástago.
-        \item \(l_{fe}\): longitud del vástago.
-        \item \(k_{disp}\): parámetro multiplicador para obtener la sección de dispersión. La dispersión es la parte del flujo que abraza a la bobina y a la barra.
-    \end{enumerate}
-    \item \textbf{Parámetros electromagnéticos}:
-    \begin{enumerate}[label=\alph*., leftmargin=*, itemindent=1em]
-        \item \(N\): número de espiras.
-        \item \(I_{cc}\): corriente de alimentación del solenoide.
-        \item \(\mu_{fe}\): permeabilidad relativa del vástago ferromagnético.
-    \end{enumerate}
-\end{itemize}
+
+\subsection{Definición del sistema}
+En la sección de desarrollo teórico se proporcionará un procedimiento mediante el cual los alumnos que realicen la práctica sean capaces de optimizar la velocidad y fuerza del proyectil a partir de los parámetros eléctricos y geométricos que definen el sistema. En este epígrafe buscaremos desarrollar la fórmula cualitativa del cálculo de la fuerza de atracción entre los elementos, a partir de las siguientes variables de entrada:
 
 \begin{figure}[H]
     \centering 
@@ -25,7 +11,26 @@ En la sección de desarrollo teórico trataré de proporcionar un procedimiento 
     \label{fig:esquemaDesTeor} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
-El objetivo de este desarrollo es crear un programa en MATLAB al que se le proporcionen estos datos, y con ellos calcule automáticamente la fuerza que experimentará el proyectil a través del circuito magnético del sistema. Como se muestra en la figura \ref{fig:electromagnet} el valor de \(B\) varía a lo largo del solenoide, por lo tanto, además de los parámetros constantes dados, será necesario parametrizar también la posición del vástago en cada momento (\(x\) en la figura \ref{fig:esquemaDesTeor}) y calcular la fuerza que experimenta en cada una de esas posiciones.
+\begin{itemize}
+    \item \textbf{Parámetros geométricos de la figura \ref{fig:esquemaDesTeor}}:
+    \begin{itemize}
+        \item \(r_{cext}\) y \(r_{cint} \): radios exterior e interior de la bobina, respectivamente.
+        \item \(l_c\): altura de la bobina.
+        \item \(r_{fe}\): radio del vástago.
+        \item \(l_{fe}\): longitud del vástago.
+        \item \(k_{disp}\): parámetro multiplicador para obtener la sección de dispersión. La dispersión es la parte del flujo que abraza a la bobina y a la barra.
+    \end{itemize}
+    \item \textbf{Parámetros electromagnéticos de la figura \ref{fig:esquemaDesTeor}}:
+    \begin{itemize}
+        \item \(N\): número de espiras.
+        \item \(I_{cc}\): corriente de alimentación del solenoide.
+        \item \(\mu_{fe}\): permeabilidad relativa del vástago ferromagnético.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Cálculo de la fuerza de atracción ejercida por la bobina sobre el vástago}
+
+El objetivo de este desarrollo es crear un programa en MATLAB\textsuperscript{\textregistered} al que se le proporcionen estos datos, y con ellos calcule automáticamente la fuerza que experimentará el proyectil a través del circuito magnético del sistema. Como se muestra en la figura \ref{fig:electromagnet} el valor de \(B\) varía a lo largo del solenoide, por lo tanto, además de los parámetros constantes dados, será necesario parametrizar también la posición del vástago en cada momento (\(x\) en la figura \ref{fig:esquemaDesTeor}) y calcular la fuerza que experimenta en cada una de esas posiciones.
 
 El primer paso será partir de las fórmulas del circuito magnético definidas en el apartado de marco teórico (\ref{sec:marcoteorico}) y para ello la primera tarea es realizar un análisis de las diferentes reluctancias del sistema, con el objetivo de computar así la inducción magnética, la cual nos permitirá obtener la fuerza de atracción que experimenta el vástago, que según Nicolás Jerez \citep{jerez2016resueltos} viene dada por la expresión:
 
@@ -47,6 +52,8 @@ Teniendo clara la relación entre inducción y fuerza, el siguiente paso es defi
     \caption{Secciones del sistema con una vista de planta.}
     \label{fig:areasFlujo} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
+\newpage
+\subsection{Definición del circuito mágnetico}
 
 Teniendo en cuenta las fórmulas en la sección del marco teórico (\ref{sec:marcoteorico}) y lo expuesto en la figura \ref{fig:areasFlujo}, podemos concluir que existen cuatro principales reluctancias en el sistema de la figura \ref{fig:esquemaDesTeor}:
 
@@ -64,25 +71,28 @@ Teniendo en cuenta las fórmulas en la sección del marco teórico (\ref{sec:mar
     \label{fig:circuitoMag} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
+\subsection{Desarrollo del cálculo en MATLAB\textsuperscript{\textregistered}}
 
-Con el circuito magnético definido, el siguiente paso es programar las relaciones presentadas en esta sección en \textit{MatLAB}\textregistered y graficar los resultados en función de la posición. El programa en \textit{MatLAB}\textregistered constará de tres secciones: definición, cálculos y graficación. El código se puede encontrar en el anexo 1. El producto de este código es una ``calculadora'' que devuelve la evolución de la fuerza con el parámetro \(x\), y queda así:
+Con el circuito magnético definido, el siguiente paso es programar las relaciones presentadas en esta sección en MATLAB\textsuperscript{\textregistered}\(~\) y graficar los resultados en función de la posición. El programa en MATLAB\textsuperscript{\textregistered}\(~\)constará de tres secciones: definición, cálculos y graficación. El código se puede encontrar en el anexo 1. El producto de este código es una ``calculadora'' que devuelve la evolución de la fuerza con el parámetro \(x\), y queda así:
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{FigurasMemoria/calculadora.png}
-    \caption{Aplicación de cálculos de \textit{MatLAB}\textregistered.}
+    \caption{Aplicación de cálculos de MATLAB\textsuperscript{\textregistered}.}
     \label{fig:calculadora} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
 \newpage
 
+\subsection{Resultado obtenido para una geometría dada}
+
 Los valores escritos en las variables del sistema que se pueden ver en la figura \ref{fig:calculadora} se correponden con la bobina de ejemplo que se ha utilizado para crear el proyecto. Dicha bobina tiene la siguiente geometría:
 
 \[
 \begin{array}{c}
-    \mu_0 = 4\pi \times 10^{-7}~~~~~~\mu_{fe} = 5000~~~~~~N = 500 ~~~~~~ k_{disp} = 2 \\
-    l_{fe} = 0.096m~~~~~~r_{fe} = 0.003045m \\
-    l_c = 0.05321m~~~~~~r_{cext} = 0.01064m~~~~~~r_{cint}=0.006035 
+    \mu_0 = 4\pi \times 10^{-7}~~~~~~\mu_{fe} = 5000~~~~~~\text{N} = 500~~~~~~k_{disp} = 2 \\
+    l_{fe} = 96~\text{mm}~~~~~~r_{fe} = 3.045~\text{mm} \\
+    l_c = 53.21~\text{mm}~~~~~~r_{cext} = 10.64~\text{mm}~~~~~~r_{cint}=6.035~\text{mm} 
 \end{array}
 \]
 
@@ -91,35 +101,22 @@ Con esta configuración, la forma de las gráficas obtenidas es:
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{FigurasMemoria/calcRsetupBase.jpg}
-    \caption{Reluctancias en función de la posición del vástago respecto a la bobina.}
+    \caption{Reluctancias en función de la posición del vástago evaluada como el parámetro \(x\) de la figura \ref{fig:esquemaDesTeor}.}
     \label{fig:calcRsetupBase} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{FigurasMemoria/calcBsetupBase.jpg}
-    \caption{Inducción en función de la posición del vástago respecto a la bobina.}
+    \caption{Inducción en función de la posición del vástago evaluada como el parámetro \(x\) de la figura \ref{fig:esquemaDesTeor}.}
     \label{fig:calcBsetupBase} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{FigurasMemoria/calcFsetupBase.jpg}
-    \caption{Fuerza en función de la posición del vástago respecto a la bobina.}
+    \caption{Fuerza en función de la posición del vástago evaluada como el parámetro \(x\) de la figura \ref{fig:esquemaDesTeor}.}
     \label{fig:calcFsetupBase} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
-Estas figuras serán discutidas en el apartado de análisis de resultados (\ref{sec:resultados}).
-
-\subsubsection*{Prueba inicial}
-
-Antes de continuar con el desarrollo, se ha realizado una prueba con un dinamómetro sobre la bobina de prueba especificada anteriormente, para verificar los resultados de la figura \ref{fig:calcFsetupBase} y poder continuar con las simulaciones y prototipo con una referencia. Se ha obtenido el siguiente resultado:
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=9cm]{FigurasMemoria/dinamometro.jpeg}
-    \caption{Dato experimental de fuerza con la bobina alimentada.}
-    \label{fig:dinamometro} %Para referenciar -> \ref{fig:figNum}
-\end{figure}
-
-\[F_{barra}=2.4~N~\forall I_{cc}=3.5~A\]
+\noindent Estas figuras serán discutidas en el apartado de análisis de resultados (\ref{sec:resultados}).

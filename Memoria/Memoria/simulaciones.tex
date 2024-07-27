@@ -1,16 +1,35 @@
 \section{Cálculo por Elementos Finitos de la fuerza de atracción}
 \label{sec:simulaciones}
 
-En esta sección, se describe el proceso de creación del modelo de la lanzadera electromagnética realizado utilizando ANSYS Maxwell. Este software de métodos finitos está especializado en el análisis de sistemas electromagnéticos. El objetivo de estas simulaciones es obtener una comprensión detallada del comportamiento del campo magnético generado por la bobina y su interacción con el proyectil ferromagnético en la lanzadera electromagnética. Se ha dividido el proceso en tres subapartados: creación de la geometría, simulaciones instantáneas y simulaciones transitorias. En la primera, se mostrará el proceso de creación de la geometría paramétrica en 2D y 3D, en la segunda y tercera se explicarán las condiciones de contorno y resultados de las simulaciones instantáneas y transitorias, respectivamente.
+En esta sección, se describe el proceso de creación del modelo de la lanzadera electromagnética realizado utilizando ANSYS Maxwell\textsuperscript{\textregistered}. Este software de métodos finitos está especializado en el análisis de sistemas electromagnéticos. El objetivo de estas simulaciones es obtener una comprensión detallada del comportamiento del campo magnético generado por la bobina y su interacción con el proyectil ferromagnético en la lanzadera electromagnética. Se ha dividido el proceso en tres subapartados: creación de la geometría, simulaciones instantáneas y simulaciones transitorias. En la primera, se mostrará el proceso de creación de la geometría paramétrica en 2D y 3D, en la segunda y tercera se explicarán las condiciones de contorno y resultados de las simulaciones instantáneas y transitorias, respectivamente. En el Anexo III se detalla el procedimiento de creación de la geometría y realización de simulaciones.
 
 \subsection{Geometría}
-El primer paso para realizar las simulaciones fue la creación de la geometría del sistema en ANSYS Maxwell. Para ello, se definieron las dimensiones y características de la bobina y el proyectil de manera paramétrica. Esto quiere decir que las dimensiones de los polígonos que conforman el modelo no son fijas, si no que están asociadas a variables por lo que simular diferentes configuraciones se convierte en algo más sencillo. La geometría fue primeramente diseñada en 3D, pero también se obtuvo la sección central del archivo tridimensional para poder simular en 2D, lo que permite realizar las simulaciones con un menor tiempo de computación. Una vez creada la geometría, se definieron los diferentes materiales y sus propiedades electromagnéticas. El material utilizado para los conductores del solenoide es cobre recocido, PVC para el soporte de la bobina y acero F114 para el vástago. Con esto, se modela la geometría a continuación mostrada:
+El primer paso para realizar las simulaciones fue la creación de la geometría del sistema en ANSYS Maxwell\textsuperscript{\textregistered}. Para ello, se definieron las dimensiones y características de la bobina y el proyectil de manera paramétrica. Esto quiere decir que las dimensiones de los polígonos que conforman el modelo no son fijas, si no que están asociadas a variables por lo que simular diferentes configuraciones se convierte en algo más sencillo. La geometría fue primeramente diseñada en 3D, pero también se obtuvo la sección central del archivo tridimensional para poder simular en 2D, lo que permite realizar las simulaciones con un menor tiempo de computación. Una vez creada la geometría, se definieron los diferentes materiales y sus propiedades electromagnéticas. El material utilizado para los conductores del solenoide es cobre recocido, PVC para el soporte de la bobina y acero F114 para el vástago. Con esto, se modela la geometría a continuación mostrada:
 
 \begin{itemize}
     \item \textbf{Geometría en 3D}:
-    %insertar geom 3D
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=7cm]{FigurasMemoria/geom3d.png}
+        \caption{Geometría de la barra y bobina en 3D.}
+        \label{fig:geom3d} %Para referenciar -> \ref{fig:figNum}
+    \end{figure}
     \item \textbf{Mallado en 3D}:
-    %insertar mallado 3D
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=7cm]{FigurasMemoria/mesh3d.png}
+        \caption{Mallado de la barra y bobina en 3D.}
+        \label{fig:mesh3d} %Para referenciar -> \ref{fig:figNum}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=9cm]{FigurasMemoria/meshDetail3d.png}
+        \caption{Detalle del mallado de la barra y bobina en 3D.}
+        \label{fig:meshDetail3d} %Para referenciar -> \ref{fig:figNum}
+    \end{figure}
+
+    \vspace{5cm}
+    
     \item \textbf{Geometría en 2D}:
     \begin{figure}[H]
         \centering
@@ -33,15 +52,15 @@ El primer paso para realizar las simulaciones fue la creación de la geometría 
     \end{figure}
 \end{itemize}
 
-La bobina (cilindro ocre), se ha generado de la manera mostrada y no con un polígono helicoidal debido a que el orden de magnitud de espiras (\(10^2\)) y el orden de magnitud de las medidas (\(10^{-3}\)) convierte esto en una muy compleja tarea, ya que ANSYS Maxwell no es un entorno de diseño en 3D. Al crear un cilindro con dimensiones apropiadas, se puede indicar al software que lo trate como un solenoide, asignándole un número de espiras y una corriente de excitación. El programa distribuye uniformemente el campo generado por la corriente en todo el volumen, lo que resulta en una aproximación muy válida de un solenoide, sin necesidad de crear una geometría extremadamente compleja \citep[p. 13]{ansoft2012maxwell}.
+La bobina (cilindro ocre), se ha generado de la manera mostrada y no con un polígono helicoidal debido a que el orden de magnitud de espiras (\(10^2\)) y el orden de magnitud de las medidas (\(10^{-3}\)) convierte esto en una muy compleja tarea, ya que ANSYS Maxwell\textsuperscript{\textregistered} no es un entorno de diseño en 3D. Al crear un cilindro con dimensiones apropiadas, se puede indicar al software que lo trate como un solenoide, asignándole un número de espiras y una corriente de excitación. El programa distribuye uniformemente el campo generado por la corriente en todo el volumen, lo que resulta en una aproximación muy válida de un solenoide, sin necesidad de crear una geometría extremadamente compleja \citep[p. 13]{ansoft2012maxwell}.
 
 \subsection{Simulaciones instantáneas}
-ANSYS Maxwell permite realizar simulaciones de diferentes tipos, de las cuales tienen interés para este proyecto las magnetoestáticas y las transitorias. Como primera prueba para el modelo de la figura \textbf{FIGURA3D}, se realizó una simulación electroestática con una \(I_{cc}=3.65~A\) para poder observar los campos magnéticos del sistema, resultando en la siguiente figura:
+ANSYS Maxwell\textsuperscript{\textregistered} permite realizar simulaciones de diferentes tipos, de las cuales tienen interés para este proyecto las magnetoestáticas y las transitorias. Como primera prueba para el modelo de la figura \ref{fig:geom3d}, se realizó una simulación electroestática con una \(I_{cc}=3.65~A\) para poder observar los campos magnéticos del sistema, resultando en la siguiente figura:
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=14cm]{FigurasMemoria/fields8.PNG}
-    \caption{Visualización de los campos magnéticos con la bobina energizada y \(x=8/10 * h_c\).}
+    \caption{Visualización de los campos magnéticos con la bobina energizada con \(I_{cc}=3.5~\text{A}\) y \(x=8/10 * h_c\).}
     \label{fig:fields8} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
@@ -54,7 +73,7 @@ Vemos que se puede apreciar perfectamente la forma descrita en las figuras \ref{
     \label{fig:fieldsDetail} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
-Además de visualizar los campos, ANSYS Maxwell permite añadir distintas medidas a la simulación, entre las que se encuentra la fuerza de atracción magnética. Realizando la simulación de nuevo para la configuración en 3D, se obtiene que la fuerza es igual a:
+Además de visualizar los campos, ANSYS Maxwell\textsuperscript{\textregistered} permite añadir distintas medidas a la simulación, entre las que se encuentra la fuerza de atracción magnética. Realizando la simulación de nuevo para la configuración en 3D, se obtiene que la fuerza es igual a:
 
 \begin{table}[h]
     \centering
@@ -70,7 +89,7 @@ Además de visualizar los campos, ANSYS Maxwell permite añadir distintas medida
 \end{table}
 
 \subsection{Simulaciones transitorias}
-Una vez observados los campos de manera estacionaria, el siguiente paso es conseguir la variación de los valores de fuerza con la posición del vástago, además sin forzar este movimiento. Es decir, especificar la región de movimiento y los valores de alimentación de la bobina y dejar que ANSYS genere el movimiento y nos de información acerca de la fuerza y velocidad experimentadas por el vástago. Al realizar esto con el modelo 3D, ANSYS devolvía un error fatal probablemente debido a que los ordenadores en los que se estaba realiando la simulación no eran lo suficientemente potentes. Se recurrió entonces a la utilización exclusiva de la geometría en 2D, la que dio resultados tanto de movimiento como fuerza. Para llegar a los últimos resultados, se realizaron varias simulaciones con varias configuraciones temporales diferentes, las cuales se muestran a 
+Una vez observados los campos de manera estacionaria, el siguiente paso es conseguir la variación de los valores de fuerza con la posición del vástago, además sin forzar este movimiento. Es decir, especificar la región de movimiento y los valores de alimentación de la bobina y dejar que ANSYS Maxwell\textsuperscript{\textregistered} genere el movimiento y nos de información acerca de la fuerza y velocidad experimentadas por el vástago. Al realizar esto con el modelo 3D, ANSYS Maxwell\textsuperscript{\textregistered} devolvía un error fatal probablemente debido a que los ordenadores en los que se estaba realiando la simulación no eran lo suficientemente potentes. Se recurrió entonces a la utilización exclusiva de la geometría en 2D, la que dio resultados tanto de movimiento como fuerza. Para llegar a los últimos resultados, se realizaron varias simulaciones con varias configuraciones temporales diferentes, las cuales se muestran a continuación:
 \subsection*{Configuración 1}
 La primera configuración transitoria utilizada es:
 \[

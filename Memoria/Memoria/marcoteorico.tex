@@ -1,5 +1,7 @@
-\section{Marco teórico}
+\section{Marco teórico: Obtención de un circuito magnético}
 \label{sec:marcoteorico}
+
+\subsection{Leyes de Maxwell}
 
 En esta sección se desarrollarán los principios teóricos que permiten el funcionamiento de las lanzaderas electromagnéticas. Para entender estos principios, es esencial comprender los fundamentos del electromagnetismo, el concepto de bobina, su relación con la generación de campos magnéticos y la forma de modelar estos.
 
@@ -14,6 +16,8 @@ El trabajo de James Clerk Maxwell en la década de 1860 unificó estos descubrim
     \caption{Ecuaciones de Maxwell \citep{purcell2013electricidad}.}
     \label{fig:ecuacionesMaxwell} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
+
+\subsection{Ley de Ampère}
 
 En el caso de este proyecto, la ley de Maxwell de mayor interés es la de Ampère. Esta ley es la que define la relación entre un campo magnético y uno eléctrico, y a partir de las ecuaciones anteriores, se puede definir la ley integral de Ampère como:
 
@@ -31,6 +35,8 @@ En el caso de este proyecto, la ley de Maxwell de mayor interés es la de Ampèr
     \caption{Visualización del campo magnético producido alrededor de un conductor por el que circula una corriente eléctrica.}
     \label{fig:amperelaw} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
+
+\subsection{Campo magnético generado por una bobina}
 
 El siguiente paso para comprender de forma integral el funcionamiento de la lanzadera electromagnética es analizar el componente principal: la \textbf{bobina}. Una bobina, o solenoide, es un conductor enrollado de manera cilíndrica alrededor de un núcleo de material ferrítico. El número de vueltas que da el conductor alrededor del núcleo se define como espiras y se denota como \textit{N}. El núcleo posee un parámetro físico llamado permeabilidad relativa \(\mu_r\), que indica su capacidad para permitir el paso del flujo magnético. En el caso de que el núcleo sea aire, como se muestra en la figura \ref{fig:integralampere}, la permeabilidad relativa tomará el valor de 1.
 
@@ -50,7 +56,9 @@ La integral de línea del campo magnético \textit{B} en la trayectoria rectangu
     \item Dos segmentos perpendiculares al eje del solenoide, cada uno de longitud \textit{w}.
 \end{itemize}
 
-Debido a la simetría y a la longitud considerable del solenoide, podemos asumir que el campo magnético fuera del solenoide es despreciable. Esta suposición se basa en que, en un solenoide idealmente infinito, la línea que va por fuera del solenoide no interfiere significativamente con ninguna línea de campo magnético, salvo en los extremos, donde la influencia es mínima. Además, los segmentos perpendiculares de la trayectoria elegida sólo interfieren con el campo magnético en los extremos del solenoide, donde su contribución también es insignificante. Por lo tanto, asumimos que el campo magnético dentro del solenoide es uniforme y paralelo a su eje. Así, la integral se simplifica a:
+Debido a la simetría del sistema, la longitud considerable del solenoide y el hecho de que el aire es un material con baja permeabilidad magnética ((\(\mu_{r~aire}\approx1\rightarrow\mu_{aire}=\mu_{r~aire}\cdot\mu_0\approx\mu_0\))), podemos asumir que el campo magnético fuera del solenoide es despreciable en comparación con el interior. Esto implica que la trayectoria exterior de \(\vec C\) no interfiere significativamente con ninguna línea de campo magnético, salvo en los extremos, donde la influencia es mínima debido a la baja permeabilidad.
+
+Además, los segmentos perpendiculares de la trayectoria elegida solo interfieren con el campo magnético en los extremos del solenoide, donde su contribución también es insignificante. Por lo tanto, asumimos que el campo magnético dentro del solenoide es uniforme y paralelo a su eje. Así, la integral de línea del campo magnético en la trayectoria \(\vec C\) se simplifica a:
 
 \begin{center}
     \[\oint_{\vec{C}}\vec{B} \vec{dl}=BL\]
@@ -76,12 +84,16 @@ Con lo que se obtien los dos términos de la ecuación integral de Ampère, por 
 
 Que es la expresión para la inducción electromagnética en una longitud arbitraria \textit{L} de un solenoide.
 
-El siguiente punto de interés es la forma del campo magnético del solenoide. La geometría del mismo juega un papel crucial en la distribución del campo magnético. Debido a su forma cilíndrica y a la disposición de las espiras, el campo magnético generado en el interior del solenoide es casi uniforme y paralelo al eje del cilindro, variando solo en los extremos donde se curva hacia el núcleo para cumplir la ley de Gauss para el campo magnético (\(\vec{\nabla}\cdot\vec{B} = 0\)). Esta uniformidad del campo magnético es una característica deseable en muchas aplicaciones, como en el diseño de inductores o transformadores. En nuestro caso, la uniformidad del campo nos va a permitir acelerar el proyectil de la lanzadera de manera rectilínea hacia el centro de la bobina.\citep{purcell2013electricidad} \citep{griffiths2005}\citep{tipler2008}.
+El siguiente punto de interés es la forma del campo magnético del solenoide. La geometría del solenoide juega un papel crucial en la distribución del campo magnético. Debido a su forma cilíndrica y a la disposición de las espiras, el campo magnético generado en el interior del solenoide es casi uniforme y paralelo al eje del cilindro, variando solo en los extremos donde se curva hacia el núcleo para cumplir la ley de Gauss para el campo magnético (\(\vec{\nabla}\cdot\vec{B} = 0\)).
+
+Esta uniformidad del campo magnético simplifica el análisis electromagnético de elementos inductivos, como en el diseño de motores o transformadores. Sin embargo, en la práctica, un análisis completo y correcto debe considerar los flujos dispersos que rodean a los solenoides, los cuales corresponden a la parte del campo que fluye a través del aire.
+
+En nuestro caso específico, la uniformidad del campo magnético nos permitirá acelerar el proyectil de la lanzadera de manera rectilínea hacia el centro de la bobina, lo que es esencial para el funcionamiento eficiente del sistema.
 
 \begin{figure}[H]
     \centering %\raggedleft \raggedright
     \includegraphics[width=6cm]{FigurasMemoria/electromagnet.png}
-    \caption{Visualización del campo magnético de una bobina energizada \citep{northeastern2024electromagnets}.}
+    \caption{Visualización del campo magnético de una bobina energizada \citep{northeastern2024electromagnets}. \(B_{max}\) corresponde al punto de mayor valor de inducción electromagnética.}
     \label{fig:electromagnet} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
@@ -97,6 +109,7 @@ La figura \ref{fig:esquemabasico} a continuación es un esquema sencillo en el q
 \end{figure}
 
 \newpage
+\subsection{Circuito magnético}
 Antes de finalizar el marco teórico, es necesario definir la manera en la que se va a representar el sistema de manera computable. Para ello, se utilizará el análisis del circuito magnético del sistema. Un circuito magnético se puede analizar de manera análoga a un circuito eléctrico, utilizando los conceptos de reluctancia, fuerza magnetomotriz (FMM) y flujo magnético. A continuación, se describen estos conceptos y sus relaciones entre sí.
 
 \begin{itemize}
@@ -140,6 +153,6 @@ Como expresa la ley de Hopkinson, los conceptos de reluctancia, FMM y flujo magn
     \begin{figure}[H]
         \centering %\raggedleft \raggedright
         \includegraphics[width=\textwidth]{FigurasMemoria/circuitoMagExplicacion.png}
-        \caption{Esquema de una bobina con un núcleo ferromagnético y su circuito magnético equivalente.}
+        \caption{Esquema de una bobina con un núcleo ferromagnético y su circuito magnético equivalente, donde \(R_{total}\) es el sumatorio de las reluctancias de cada uno de ramales que forman el núcleo, además de las reluctancias de dispersión.}
         \label{fig:circuitoMagExplicacion} %Para referenciar -> \ref{fig:figNum}
     \end{figure}

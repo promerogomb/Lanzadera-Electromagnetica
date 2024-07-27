@@ -1,0 +1,49 @@
+\section*{Anexo III. Procedimiento de creación del modelo de elementos finitos en ANSYS Maxwell\textsuperscript{\textregistered}}
+
+El software ANSYS Maxwell\textsuperscript{\textregistered} o ANSYS Electronics\textsuperscript{\textregistered}, es una rama del software de simulación por elementos finitos ANSYS\textsuperscript{\textregistered}, utilizado para realizar simulaciones electromagnéticas tanto instantáneas como transitorias. Este apartado de la práctica consistirá en definir la geometría de la tabla \ref{tab:bobIniPractica} en ANSYS Maxwell\textsuperscript{\textregistered} para conseguir dos objetivos: visualizar los campos magnéticos y obtener un valor para la fuerza de atracción. Como este es un software con el que el alumno no está familiarizado, se presenta a continuación una guía para poder realizar esta parte de la práctica:
+
+\subsubsection*{Creación del proyecto}
+
+El primer paso será abrir ANSYS Maxwell\textsuperscript{\textregistered} e inicializar el proyecto. Para ello, pulsaremos la tecla de menú de inicio (\faWindows{}) y escribiremos ``ANSYS Maxwell\textsuperscript{\textregistered}''. Pulsaremos aceptar en las ventanas que aparezcan hasta que salga lo siguiente:
+
+\textbf{IMAGEN DE INICIO AM}
+
+Ahora abriremos un nuevo proyecto en 3D clicando en la siguiente parte del menú:
+
+\textbf{IMAGEN/ES DE CREACIÓN DE PROYECTO 3D}
+
+El siguiente paso será empezar a definir la geometría. Esto hará de manera paramétrica, es decir, asignando a variables las medidas de los polígonos que utilicemos, lo que nos permitirá cambiar de solenoide fácilmente o realizar pruebas en distintos dispositivos que montemos en el laboratorio. Las variables o parámetros serán los mismos que los expuestos en el apartado de "Modelo de la bobina y geometría inicial". Para incluir estos parámetros, nos dirigiremos al menú de "Variables", localizado en la ventana de abajo a la izquierda. Las variables se añaden de la siguiente manera:
+
+\textbf{IMAGEN DE ADICIÓN DE PARÁMETROS DEL SISTEMA}
+
+En ANSYS Maxwell\textsuperscript{\textregistered}, hay dos maneras de representar una bobina. Para inductores electrónicos, que generalmente tienen pocas espiras y una trayectoria muy definida, se puede crear una función helicoidal que represente la bobina de manera fidedigna a la realidad, pero se convierte en algo imposible cuando se trata de una bobina en el orden de magnitud en el que trabajaremos en esta práctica, pues hay muchas capas de conductores que no son uniformes, con radios diferentes entre capa y capa y número de conductores distinto, lo que convierte la tarea de describir la función en algo innecesariamente difícil. En cambio, ANSYS Maxwell\textsuperscript{\textregistered} permite generar un cilindro, especificar unos terminales, una resistencia y un número de espiras para tratarlo como un solenoide con los conductores distribuidos de manera homogénea en su volumen. Esto es muy conveniente, ya que simplifica el proceso a los siguientes pasos:
+
+\textbf{IMAGENÉS DE COMO GENERAR EL CILINDRO BOBINA} (fig:cilindroAnsys)
+
+Una vez generado el cilindro que representa la bobina, el siguiente paso es generar otro cilindro de manera análoga en el centro del primero, que se corresponderá con el vástago. Lo único que debemos de tener en cuenta a la hora de definir el vástago, es que es útil definir su posición en función de la altura de la bobina, para que después podamos ver con facilidad la evolución de los campos en función de la posición. También será necesario hacer clic izquierdo sobre la geometría seleccionada y añadirle el parámetro de fuerza. A continuación se muestran unas imágenes que explican el proceso de creación del vástago:
+
+\textbf{IMÁGENES DE COMO GENERAR EL CILINDRO VÁSTAGO}
+
+El siguiente paso es añadir las cualidades de bobina al cilindro de la figura %\ref{fig:cilindroAnsys}
+para lo cual tendremos que realizar una sección en uno de los planos verticales, la cual se corresponderá con uno de los terminales de la bobina... \textbf{TERMINAR LA EXPLICACIÓN NO ME ACUERDO DE CABEZA}
+
+\textbf{IMÁGENES DE CREACIÓN DE TERMINALES}
+
+El siguiente paso necesario es definir una región de aire para poder dar las condiciones de contorno al sistema. Para ello pulsaremos el botón de \textit{region} en el menú del modelo, y definiremos un cubo con un 500\% de offset partiendo del origen de coordenadas. Luego seleccionaremos sus bordes y le asignaremos la condición de contorno de \textit{insulating}.
+
+\textbf{IMÁGENES DE CREACIÓN DE LA REGION}
+
+Para simular el comportamiento del sistema correctamente, será necesario definir también los materiales de cada una de las geometrías que hemos definido. Para ello, seleccionamos la geometría y buscamos su material, el cual será \textit{annealed copper} para la bobina y \textit{Steel ENG 100GJL} para el vástago.
+
+\textbf{IMÁGENES DE SELECCIÓN DE MATERIAL}
+
+Para poder obtener la visualización del flujo electromagnético a través del aire, tendremos que añadir un eje de coordenadas relativo al la sección del extremo superior de la bobina para poder dibujar un cuadrado que seccione al solenoide y a la barra por la mitad. Es importante definir este cuadrado como \textit{non-model}, para que no interfiera con las interacciones electromagnéticas del modelo. 
+
+\textbf{IMÁGENES DE GENERACIÓN DEL CUADRADO DE VISUALIZACIÓN}
+
+
+Por último antes de empezar a simular, debemos definir el tipo de solución que estamos buscando. Para ello, pulsaremos el apartado de \textit{Setup} con el botón izquierdo del ratón... \textbf{TERMINAR CON ANSYS DELANTE}
+
+\textbf{IMÁGENES DE CREACIÓN DEL SETUP}
+
+Con este último paso, debería estar todo listo para realizar la primera simulación. De todas formas, para comprobarlo, iremos al apartado de \textit{Simulation} y pulsaremos el tick verde que dice \textit{Verify}. Si todo sale en verde, podemos pulsar \textit{Analyze All} y ANSYS Maxwell\textsuperscript{\textregistered} empezará a ejecutar la simulación, lo cual sabremos por la aparición de una barra verde en la esquina inferior derecha de la pantalla que indica el progreso. Cuando termine, tendremos que ir al apartado de \textit{Solution}, y buscar \textbf{NO RECUERDO EL NOMBRE DEL BOTÓN} para obtener el valor de fuerza de atracción que ANSYS Maxwell\textsuperscript{\textregistered} ha calculado para la posición simulada. También podremos obtener la forma del campo magnético si seleccionamos el cuadrado que secciona la geometría, pulsamos el botón derecho del ratón, y navegamos por el menú que aparece siguiendo la ruta \(\text{Fields} \rightarrow B \rightarrow \text{B vector}\).

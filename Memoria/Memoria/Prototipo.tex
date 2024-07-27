@@ -9,27 +9,43 @@ El siguiente apartado detalla los pasos específicos seguidos en el desarrollo d
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{FigurasMemoria/prototipoFinal.jpeg}
+    \includegraphics[width=\textwidth]{FigurasMemoria/prototipoFinal.jpg}
     \caption{Imagen del banco de pruebas definitivo.}
     \label{fig:prototipoFinal} %Para referenciar -> \ref{fig:figNum}
 \end{figure}
 
 \newpage
 
+\subsection{Prueba inicial}
+
+Antes de continuar con el desarrollo del prototipo, se ha realizado una prueba con un dinamómetro sobre la bobina de prueba especificada anteriormente para poder validar los resultados obtenidos en los apartados anteriores respecto a una referencia. El resultado obtenido es el siguiente:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=9cm]{FigurasMemoria/dinamometro.jpg}
+    \caption{Dato experimental de fuerza con la bobina alimentada.}
+    \label{fig:dinamometro} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
+
+\[F_{barra}=2~\text{N}~\forall I_{cc}=3.5~\text{A}\]
+
 \subsection{Estructura}
 \label{subsec:estructura}
 Para construir una estructura estable para el banco de pruebas, se utilizaron perfiles técnicos estructurales de aluminio como el que se presenta en la siguiente figura:
 
-\textbf{FIGURA DE LOS PERFILES DE ALUMINIO}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=6cm]{FigurasMemoria/perfiles.jpg}
+    \caption{Perfiles de aluminio utilizados en la estructura.}
+    \label{fig:perfiles} %Para referenciar -> \ref{fig:figNum}
+\end{figure}
 
 La ventaja de utilizar estos perfiles es que se puede modificar de manera muy sencilla la distribución de las diferentes partes del montaje, las cuales consisten en: dos parejas de perfiles en \textbf{T} que sirven de apoyo para el resto de la estructura, un perfil inferior que es en el que se coloca la bobina y un perfil superior que es en el que se colocan los sensores de movimiento y el circuito electrónico.
-
-\textbf{FIGURA DEL BANCO SOLO CON LOS PERFILES}
 
 \subsection{Sensores de movimiento}
 \label{subsec:sensoresmov}
 
-Los sensores de movimiento utilizados para el proyecto tienen como objetivo proporcionar la diferencia temporal que se utilizará para el cálculo de la velocidad de salida del vástag. Los sensores que se han empleado son sensores de carácter capacitivo, lo que significa que detectan la presencia de un objeto delante de ellos por el cambio de la capacidad con la superficie del sensor. Colocando dos de estos dispositivos a una distancia conocida \textit{d} y obteniendo la diferencia temporal \(\Delta t\) de activación de la señal mediante una placa arduino conectada al sistema, es trivial calcular la velocidad del vástago según la fórmula:
+Los sensores de movimiento utilizados para el proyecto tienen como objetivo proporcionar la diferencia temporal que se utilizará para el cálculo de la velocidad de salida del vástago. Los sensores que se han empleado son sensores de carácter capacitivo, lo que significa que detectan la presencia de un objeto delante de ellos por el cambio de la capacidad con la superficie del sensor. Colocando dos de estos dispositivos a una distancia conocida \textit{d} y obteniendo la diferencia temporal \(\Delta t\) de activación de la señal mediante una placa arduino conectada al sistema, es trivial calcular la velocidad del vástago según la fórmula:
 
 \[v_{vas}=\frac{d}{\Delta t}\]
 
@@ -138,7 +154,7 @@ Teniendo en cuenta todas las etapas mencionadas en esta sección, se ha diseñad
 
 El relé \textit{U3} que se observa en los esquemas es el PRMA1A05. Esta PCB irá conectada a un Arduino Leonardo en los pines de salida que se observan en la figura \ref{fig:esquematicoPCB}, y el código de control se encuentra en el Anexo II.
 
-\subsection{Bobina}
+\subsection{Diseño de la bobina}
 \label{subsec:bobina}
 
 Los solenoides que se prueben en el prototipo deben de cumplir las siguientes especificaciones:
@@ -169,21 +185,21 @@ El número de capas será por tanto el número de espiras entre este valor:
 
 Y el radio exterior queda:
 
-\[r_{ext}=r_{int}+mD_{cu}=r_int+\frac{ND_{cu}^2}{l_c}=r_{int}+4\frac{Nr_{cu}^2}{l_c}\]
+\[r_{ext}=r_{int}+mD_{cu}=r_{int}+\frac{ND_{cu}^2}{l_c}=r_{int}+4\frac{Nr_{cu}^2}{l_c}\]
 
 Podemos comprobar la efectividad de la fórmula con la bobina de prueba del proyecto, para la que:
 
-\[N=500~~~~~~r_{cu}=0.8~mm~~~~~~r_{int}=0.006035~m~~~~~~l_c=0.05312~m\]
+\[N=500~~~~~~r_{cu}=0.8~mm~~~~~~r_{int}=6.035~\text{mm}~~~~~~l_c=53.12~\text{mm}\]
 
 Sustituyendo en la fórmula obtenida:
 
-\[r_{ext~form}=0.006035+\frac{500*(0.8*10^{-3})^2}{0.05312}=0.01206~m\]
+\[r_{ext~form}=0.006035+\frac{500*(0.8*10^{-3})^2}{0.05312}=0.01206~\text{m}=12.06~\text{mm}\]
 
 Comparando ahora con el valor expuesto en el apartado de cálculo analítico \ref{sec:analitico}:
 
-\[r_{ext~form}=0.01206~m\approx r_{c}=0.01064~m\]
+\[r_{ext~form}=12.06~\text{mm}\approx r_{c}=10.64~\text{mm}\]
 
-Observamos que los valores son bastante similares, con un error del 13\%. Esta diferencia se debe a que en la fórmula estamos asumiendo que el parámetro \textit{t} es igual para todas las capas, lo cual es muy difícil de lograr cuando se bobina un solenoide en la realidad. A pesar de esto, consideramos que el desarrollo proporciona un dato bastante preciso, por lo que se empleará en la práctica como camino para obtener \(r_{ext}\). Se añadirá además al código de \textit{MatLab}\textregistered  la opción de poder calcular la fuerza de atracción a partir de este desarrollo. Esto resulta en la siguiente actualización de la interfaz de la calculadora:
+Observamos que los valores son bastante similares, con un error del 13\%. Esta diferencia se debe a que en la fórmula estamos asumiendo que el parámetro \textit{t} es igual para todas las capas, lo cual es muy difícil de lograr cuando se bobina un solenoide en la realidad. A pesar de esto, consideramos que el desarrollo proporciona un dato bastante preciso, por lo que se empleará en la práctica como camino para obtener \(r_{ext}\). Se añadirá además al código de MATLAB\textsuperscript{\textregistered}  la opción de poder calcular la fuerza de atracción a partir de este desarrollo. Esto resulta en la siguiente actualización de la interfaz de la calculadora:
 
 \begin{figure}[H]
     \centering
