@@ -130,13 +130,13 @@ Los resultados del prototipo consisten en una serie de mediciones con diferentes
     \centering
     \setlength{\tabcolsep}{5pt}
     \renewcommand{\arraystretch}{1.2}
-    \begin{tabular}{|c|c|c|c|}
+    \begin{tabular}{|c|c|c|c|c|}
         \hline
-        \textbf{Alimentación} & \textbf{Vel. Media [ms\(^{-1}\)]} & \textbf{Ac. Media [ms\(^{-2}\)]} & \textbf{Fuerza [N]} \\
+        \textbf{Alimentación} & \textbf{Vel. Media [ms\(^{-1}\)]} & \textbf{Ac. Media [ms\(^{-2}\)]} & \textbf{Fuerza [N]} & \textbf{Fuerza calculada [N]}\\
         \hline
-        1 & 2,53 & 92,49 & 1,76 \\
-        2 & 3,47 & 174,31 & 3,31 \\
-        3 & 3,28 & 155,8 & 2,96 \\
+        1 & 2,53 & 92,49 & 1,76 &  1,35\\
+        2 & 3,47 & 174,31 & 3,31 & 3,68\\
+        3 & 3,28 & 155,8 & 2,96 &  8,31\\
         \hline
     \end{tabular}
     \caption{Resultados del disparo con la bobina base y las alimentaciones de la tabla \ref{tab:alimentacionesBase}.}
@@ -144,4 +144,6 @@ Los resultados del prototipo consisten en una serie de mediciones con diferentes
 \end{table}
 \restoregeometry
 
-Con estos resultados, podemos terminar de validar la simulación ejecutada para obtener las figuras \ref{fig:calcRsetupBase}, \ref{fig:calcBsetupBase} y \ref{fig:calcFsetupBase}.
+Analizando las tablas anteriores, podemos observar que a medida que se incrementa la corriente (de 3.74 A en la alimentación 1 a 8.49 A en la alimentación 3), la fuerza calculada también aumenta considerablemente (de 1.35 N a 8.31 N) como es de esperar. Sin embargo, la fuerza medida no sigue el mismo patrón de incremento lineal. Aunque sí aumenta con la corriente, la relación no es directamente proporcional, sugiriendo posibles pérdidas o ineficiencias en el sistema.
+
+Con estos resultados, podemos terminar de validar la simulación ejecutada para obtener las figuras \ref{fig:calcRsetupBase}, \ref{fig:calcBsetupBase} y \ref{fig:calcFsetupBase} y asegurar que el modelo de MATLAB\textsuperscript{\textregistered} proporciona resultados verosímiles con los que se pueden realizar predicciones acertadas.

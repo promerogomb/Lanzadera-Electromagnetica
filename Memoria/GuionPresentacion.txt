@@ -1,0 +1,139 @@
+Introducción:
+
+    (Diap. 2)
+    - Una lanzadera es una máquina eléctrica que aprovecha los principios del electromagnetismo para acelerar proyectiles.
+    - Se origina en el S.XIX y la primera es desarrollada por Kristian Birkeland a principios del S.XX.
+    - Su principal aplicación es militar pero también encontramos aplicaciones industriales, espaciales y médicas.
+
+Objetivos y motivaciones:
+
+    (Diap. 4)
+    - El proyecto tiene cuatro objetivos principales:
+        · El desarrollo de dos modelos digitales que permitan predecir el comportamiento del sistema.
+        · El desarrollo de un prototipo funcional de lanzadera.
+        · El diseño de una práctica universitaria, que es el objetivo principal y en el que desembocan el resto de secciones del proyecto.
+
+    (Diap. 5)
+    - Las motivaciones de este proyecto son:
+        · La vanguardia tecnológica del tema.
+        · La aplicación de la teoría que permite el proyecto.
+        · Las competencias técnicas que permite desarrollar el trabajo de laboratorio a realizar.
+        · La innovación educativa que proporciona la práctica.
+    - Con esto quedaría definido y justificado el proyecto, con lo que podremos empezar a explicar los diferentes desarrollos que se han realizado en pro de conseguir los objetivos.
+
+Marco Teórico:
+
+    (Diap. 8)
+    - El electromagnetismo es una rama fundamental de la física que estudia las interacciones entre los campos eléctricos y magnéticos. Su desarrollo ha sido crucial para el avance de la tecnología, desde la generación y transmisión de electricidad hasta las comunicaciones inalámbricas.
+    - Los resultados de los descubrimientos individuales de Ampere, Gauss, Lenz y Faraday se recogen de manera unificada en las leyes de Maxwell, que proporcionan un entendimiento global del electromagnetismo.
+    - Para este proyecto, la ley de mayor relevancia es la de Ampere, que es la que describe la relación entre un campo eléctrico y magnético. 
+
+    (Diap. 9)
+    - La ley de Ampere se puede escribir de manera integral de la siguiente forma y se visualiza según esta figura, donde podemos ver la trayectoria del campo magnético en un conductor energizado.
+
+    (Diap. 10)
+    - Por último, es esencial para el proyecto conocer lo que es una bobina. Una bobina o solenoide se define como un conductor de cobre enrollado N veces sobre un poliedro que puede ser de diferentes materiales, denominándose núcleo si es de material ferrítico.
+    - Explicar fórmula.
+
+    (Diap. 11)
+    - ¿Cómo se emplean estos principios en una lanzadera? Pues se aprovecha el campo magnético generado por la bobina al suministrarle corriente para atraer a un proyectil de material ferromagnético que se encuentra colocado en el alcance de dico campo. Antes de que se alineen los centros, se cortará la corriente para que el proyectil ya no sea atraído por la bobina sino que continúe su movimiento hacia delante debido a la inercia.
+
+    (Diap. 12)
+    - ¿Cómo se modela el sistema? Empleando los principos de los circuitos magnéticos. EXPLICAR CIRCUITO MAGNÉTICO.
+
+Modelos Digitales:
+
+    (Diap. 14)
+    - Los modelos digitales van a ser dos:
+        · A partir de un desarrollo manual de las fórmulas matemáticas que describen el sistema, se creará una aplicación en MATLAB que permitirá realizar predicciones sobre la fuerza de atracción magnética.
+        · Se creará también la geometría del sistema en ANSYS Maxwell y se buscarán los mismos valores empleando el método de los elementos finitos.
+    
+    MATLAB
+        (Diap. 15)
+        - El cálculo analítico de la fuerza de atracción se realizará a partir de estas variables de entrada. EXPLICAR MODELO.
+        - La vista de planta proporciona las secciones efectivas de los diferentes elementos, con lo que podremos calcular las diferentes reluctancias.
+
+        (Diap. 16)
+        - EXPLICAR RELUCTANCIAS
+
+        (Diap. 17)
+        - EXPLICAR PROCEDIMIENTO DE OBTENCIÓN DE FUERZA.
+
+        (Diap. 18)
+        - DEMOSTRAR APLICACIÓN
+
+    ANSYS
+        (Diap. 19)
+        - ANSYS Maxwell es un software cálculo por elementos finitos que permite obtener de manera numérica y visual la relación entre los diferentes campos electromagnéticos de una geometría dada de manera intantánea y transitoria.
+
+        (Diap. 20)
+        - Para llevar a cabo este modelo, el primer paso es diseñar la geometría, que queda como se ve en esta diapositiva. Esta diapositiva presenta la geometría en 3D sobre la que se realizarán las simulaciones instantáneas. Se puede observar también un detalle del mallado, que proporciona los elementos finitos sobre los que se realizan los cálculos.
+        - Realizando una configuración de alimentación de la bobina con una corriente de 3.65 A sobre esta geometría, obtenemos la siguiente evolución de los campos magnéticos.
+
+        (Diap. 21)
+        - Dejar que se reproduzca el GIF y un poco de paja de lo que se ve.
+
+        (Diap. 22)
+        - Para realizar las simulaciones transitorias, se debe pasar la geometría a 2D porque la memoria de los ordenadores de la universidad no es suficiente para ejecutar todos los cálculos necesarios en 3D. Por ello, se ha diseñado lo que se puede ver en pantalla, sobre lo que se ejecutarán los transitorios.
+        - Vemos un mallado mucho más preciso, debido a que estos cálculos necesitan de una mayor precisión.
+
+        (Diap. 23)
+        - El resultado de estas simulaciones no es tan visual, sino que el software nos proporciona gráficas que representan la evolución de los parámetros de corriente y fuerza; y posición y velocidad.
+        - Podemos ver que en las dos primeras configuraciones simuladas, el vástago oscila sobre la bobina. Esto implica que se está alimentando al solenoide durante demasiado tiempo, por lo que se ajustó el tiempo para obtener el resultado final.
+
+        (Diap. 24)
+        - Con la configuración expresada en pantalla, podemos ver que la posición del vástago solo aumenta, expresando que solo avanza hacia delante. Más tarde se analizará en profundidad lo observado en esta diapositiva, aunque sí cabe mencionar que la magnitud de la fuerza es errónea pues ronda los 80 N.
+
+Prototipo de lanzadera:
+
+    (Diap. 26)
+    - El prototipo debe de ocuparse de tres tareas:
+        · Medición: se debe medir de manera directa o indirecta la fuerza con la que se mueve el proyectil.
+        · Disparo: el prototipo se encarga de controlar el disparo del proyectil.
+        · Alimentación: el prototipo debe de proporcionar la estructura necesaria para realizar la alimentación electrónica y de potencia.
+    Todo esto se conseguirá mediante una estructura sólida y un circuito electrónico.
+
+    (Diap. 27)
+    - Los sensores de movimientos son del tipo capacitivo, y proporcionan un HIGH cuando la capacidad de su superficie exterior con el aire varía, indicando que hay un objeto delante. Se colocarán dos sensores.
+    - Su esquema de conexión es el siguiente, y lo que hará el circuito electrónico del prototipo es detectar la diferencia temporal de los HIGHS para realizar el siguiente procdeimiento de cálculo.
+
+    (Diap. 28)
+    - A partir del dato de tiempo, se puede calcular la fuerza de la siguiente manera.
+
+    (Diap. 29)
+    - El mecanismo de disparo consistirá en un pulsador que dará la orden de inicio de disparo a la placa que empezará a alimentar a la bobina para que acelere el vástago.
+
+    (Diap. 30)
+    - Sin embargo, el cese del disparo no es tan obvio, y será necesario asegurar que el vástago es más largo que la bobina y que uno de los sensores está justo a la salida de la misma, para que antes de que se alineen los centros, la placa electrónica pueda dejar de alimentar a la bobina, evitando la oscilación del vástago.
+
+    (Diap. 31)
+    - Combinando todos estos elementos, se ha diseñado el siguiente esquemático para imprimir una PCB que permita gestionar todas las etapas necesarias del prototipo.
+    - Se ven en J1, J2 y J3 los terminales de alimentación de la PCB y de los sensores.
+    - Se ha incluido un divisor de tensiones ya que la tensión HIGH de los sensores es igual a la de entrada, que al ser 15 V impide que el arduino la pueda leer directamente.
+    - El control de potencia se realiza mediante un relé.
+
+    (Diap. 32)
+    - Esta es la placa física final.
+
+    (Diap. 33)
+    - Este es el prototipo final.
+
+    (Diap. 34)
+    - EXPLICAR LAS PARTES DEL PROTOTIPO.
+
+Resultados
+
+    (Diap. 36)
+    - Hablar de que aunque una sea X y otra T no importa porque cambia lo mismo.
+    - Como observamos en esta figura, la evolución de ambas gráficas muestra una curva ascendente, alcanzando el valor máximo de fuerza en el último momento de alimentación de la bobina
+    - La gráfica de MATLAB no decrece porque no se computa x > l_c. Esto no pasa en ANSYS, donde se puede observar el transitorio propio de la bobina.
+    - Dado que el modelo analítico proporciona una aproximación mucho más certera tanto del valor de la fuerza como de su evolución, se concluye que ha sido exitoso su desarrollo y será el que se presente a los alumnos como modelo del sistema.
+
+    (Diap. 37)
+    - Se ha probado tres configuraciones de alimentación para una bobina, obteniendo los siguientes datos
+    - Analizando las tablas anteriores, podemos observar que a medida que se incrementa la corriente (de 3.74 A en la alimentación 1 a 8.49 A en la alimentación 3), la fuerza calculada también aumenta considerablemente (de 1.35 N a 8.31 N) como es de esperar. Sin embargo, la fuerza medida no sigue el mismo patrón de incremento lineal. Aunque sí aumenta con la corriente, la relación no es directamente proporcional, lo que sugiere pérdidas o ineficiencias en el sistema.
+    - Vemos también que cuando el sistema físico funciona adecuadamente, la desviación con los datos proporcionados por el modelo de matlab están bastante cerca de la realidad, validando una vez más el funcionamiento del mismo.
+
+Conclusiones
+
+    este trabajo ha logrado combinar con éxito teoría, simulación y práctica para el diseño y desarrollo de una lanzadera electromagnética. Los resultados obtenidos en los diferentes ámbitos del proyecto validan cada uno de ellos, proporcionando una solución teórico-práctica general del sistema, el cual ha sido abordado de manera efectiva y desde varias perspectivas. Lo que este trabajo deja pendiente de cara al futuro es la optimización del modelo de elementos finitos, que ha fallado a la hora de proporcionar resultados magnitudinalmente precisos

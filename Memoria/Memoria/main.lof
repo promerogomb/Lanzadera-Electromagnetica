@@ -13,40 +13,40 @@
 \contentsline {figure}{\numberline {12}{\ignorespaces Reluctancias en función de la posición del vástago evaluada como el parámetro \(x\) de la figura \ref {fig:esquemaDesTeor}.}}{22}{figure.caption.12}%
 \contentsline {figure}{\numberline {13}{\ignorespaces Inducción en función de la posición del vástago evaluada como el parámetro \(x\) de la figura \ref {fig:esquemaDesTeor}.}}{22}{figure.caption.13}%
 \contentsline {figure}{\numberline {14}{\ignorespaces Fuerza en función de la posición del vástago evaluada como el parámetro \(x\) de la figura \ref {fig:esquemaDesTeor}.}}{23}{figure.caption.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Geometría de la barra y bobina en 3D.}}{25}{figure.caption.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Mallado de la barra y bobina en 3D.}}{26}{figure.caption.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Detalle del mallado de la barra y bobina en 3D.}}{26}{figure.caption.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Geometría de la barra y bobina en 2D.}}{27}{figure.caption.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Mallado de la barra y bobina en 2D.}}{27}{figure.caption.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Detalle del mallado de la barra y bobina en 2D.}}{28}{figure.caption.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Visualización de los campos magnéticos con la bobina energizada con \(I_{cc}=3.5~\text {A}\) y \(x=8/10 * h_c\).}}{28}{figure.caption.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Visualización de los campos magnéticos dentro del solenoide.}}{29}{figure.caption.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Fuerza (verde) y corriente (rojo) en función del tiempo de la configuración 1.}}{30}{figure.caption.24}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Posición (verde) y velocidad (rojo) en función del tiempo de en la configuración 1.}}{30}{figure.caption.25}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Fuerza (rojo) y corriente (verde) en función del tiempo de la configuración 2.}}{31}{figure.caption.26}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Posición (verde) y velocidad (rojo) en función del tiempo de la configuración 2.}}{31}{figure.caption.27}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Fuerza (rojo) y corriente (verde) en función del tiempo de la configuración 3.}}{32}{figure.caption.28}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Posición (verde) y velocidad (rojo) en función del tiempo de la configuración 3.}}{32}{figure.caption.29}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Imagen del banco de pruebas definitivo.}}{33}{figure.caption.30}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Dato experimental de fuerza con la bobina alimentada.}}{34}{figure.caption.31}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Perfiles de aluminio utilizados en la estructura.}}{34}{figure.caption.32}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Esquema conexiones de los sensores capacitivos.}}{35}{figure.caption.33}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Conexión del interrupor de disparo.}}{36}{figure.caption.34}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Colocación del sensor.}}{36}{figure.caption.35}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Esquema eléctrico de la conexión del SSR.}}{37}{figure.caption.36}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Imagen del relé de estado sólido \citep {rs2024ksj}.}}{37}{figure.caption.37}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Imagen del relé PRMA1A05 \citep {coto2024prma1a05b}.}}{37}{figure.caption.38}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Esquema eléctrico de un divisor de tensiones.}}{38}{figure.caption.39}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Esquemático de la PCB del proyecto.}}{39}{figure.caption.40}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Distribución de la placa del proyecto.}}{39}{figure.caption.41}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Sección central del solenoide.}}{40}{figure.caption.42}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Interfaz de la calculadora actualizada.}}{41}{figure.caption.43}%
-\contentsline {figure}{\numberline {43}{\ignorespaces Comparación de las figuras \ref {fig:calcFsetupBase} y \ref {fig:S3ForceCurrent}.}}{42}{figure.caption.44}%
-\contentsline {figure}{\numberline {44}{\ignorespaces Visualización del campo magnético de una bobina energizada.}}{47}{figure.caption.50}%
-\contentsline {figure}{\numberline {45}{\ignorespaces Esquema geométrico del sistema.}}{48}{figure.caption.51}%
-\contentsline {figure}{\numberline {46}{\ignorespaces Aplicación de ejemplo.}}{49}{figure.caption.53}%
-\contentsline {figure}{\numberline {47}{\ignorespaces Reluctancia en función de \textit {x}.}}{50}{figure.caption.54}%
-\contentsline {figure}{\numberline {48}{\ignorespaces Inducción magnética en función de \textit {x}.}}{50}{figure.caption.55}%
-\contentsline {figure}{\numberline {49}{\ignorespaces Fuerza de atracción magnética en función de \textit {x}.}}{50}{figure.caption.56}%
-\contentsline {figure}{\numberline {50}{\ignorespaces Banco de pruebas.}}{51}{figure.caption.57}%
-\contentsline {figure}{\numberline {51}{\ignorespaces Comparación de fuerzas.}}{54}{figure.caption.60}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Geometría de la barra y bobina en 3D.}}{24}{figure.caption.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Mallado de la barra y bobina en 3D.}}{25}{figure.caption.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Detalle del mallado de la barra y bobina en 3D.}}{25}{figure.caption.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Geometría de la barra y bobina en 2D.}}{26}{figure.caption.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Mallado de la barra y bobina en 2D.}}{26}{figure.caption.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Detalle del mallado de la barra y bobina en 2D.}}{27}{figure.caption.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Visualización de los campos magnéticos con la bobina energizada con \(I_{cc}=3.5~\text {A}\) y \(x=8/10 * h_c\).}}{27}{figure.caption.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Visualización de los campos magnéticos dentro del solenoide.}}{28}{figure.caption.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Fuerza (verde) y corriente (rojo) en función del tiempo de la configuración 1.}}{29}{figure.caption.24}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Posición (verde) y velocidad (rojo) en función del tiempo de en la configuración 1.}}{29}{figure.caption.25}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Fuerza (rojo) y corriente (verde) en función del tiempo de la configuración 2.}}{30}{figure.caption.26}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Posición (verde) y velocidad (rojo) en función del tiempo de la configuración 2.}}{30}{figure.caption.27}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Fuerza (rojo) y corriente (verde) en función del tiempo de la configuración 3.}}{31}{figure.caption.28}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Posición (verde) y velocidad (rojo) en función del tiempo de la configuración 3.}}{31}{figure.caption.29}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Imagen del banco de pruebas definitivo.}}{32}{figure.caption.30}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Dato experimental de fuerza con la bobina alimentada.}}{33}{figure.caption.31}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Perfiles de aluminio utilizados en la estructura.}}{33}{figure.caption.32}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Esquema conexiones de los sensores capacitivos.}}{34}{figure.caption.33}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Conexión del interrupor de disparo.}}{35}{figure.caption.34}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Colocación del sensor.}}{35}{figure.caption.35}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Esquema eléctrico de la conexión del SSR.}}{36}{figure.caption.36}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Imagen del relé de estado sólido \citep {rs2024ksj}.}}{36}{figure.caption.37}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Imagen del relé PRMA1A05 \citep {coto2024prma1a05b}.}}{36}{figure.caption.38}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Esquema eléctrico de un divisor de tensiones.}}{37}{figure.caption.39}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Esquemático de la PCB del proyecto.}}{38}{figure.caption.40}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Distribución de la placa del proyecto.}}{38}{figure.caption.41}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Sección central del solenoide.}}{39}{figure.caption.42}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Interfaz de la calculadora actualizada.}}{40}{figure.caption.43}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Comparación de las figuras \ref {fig:calcFsetupBase} y \ref {fig:S3ForceCurrent}.}}{41}{figure.caption.44}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Visualización del campo magnético de una bobina energizada.}}{46}{figure.caption.50}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Esquema geométrico del sistema.}}{47}{figure.caption.51}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Aplicación de ejemplo.}}{48}{figure.caption.53}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Reluctancia en función de \textit {x}.}}{49}{figure.caption.54}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Inducción magnética en función de \textit {x}.}}{49}{figure.caption.55}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Fuerza de atracción magnética en función de \textit {x}.}}{49}{figure.caption.56}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Banco de pruebas.}}{50}{figure.caption.57}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Comparación de fuerzas.}}{53}{figure.caption.60}%

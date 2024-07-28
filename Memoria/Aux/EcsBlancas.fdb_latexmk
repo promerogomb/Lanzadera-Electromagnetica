@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1721207347.98096 "/Users/pjose/Desktop/PFG/Memoria/Aux/EcsBlancas.tex" "EcsBlancas.pdf" "EcsBlancas" 1721207349.10392 0
-  "/Users/pjose/Desktop/PFG/Memoria/Aux/EcsBlancas.tex" 1721207347.57522 1642 1ef4d956e77e7da2b38a96875486dd66 ""
+["pdflatex"] 1722161287.5847 "/Users/pjose/Desktop/PFG/Memoria/Aux/EcsBlancas.tex" "EcsBlancas.pdf" "EcsBlancas" 1722161288.69226 0
+  "/Users/pjose/Desktop/PFG/Memoria/Aux/EcsBlancas.tex" 1722161287.30482 1819 fb827549f8b4ad8e5b17581bc32b3c4a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
@@ -38,8 +38,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1716570018.05068 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1716570010 8221431 36001531ea65909097ff1852a0c815b2 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "EcsBlancas.aux" 1721207348.99351 194 05eaff20a35224c0a0d2a9aceff1100f "pdflatex"
-  "EcsBlancas.tex" 1721207347.57522 1642 1ef4d956e77e7da2b38a96875486dd66 ""
+  "EcsBlancas.aux" 1722161288.59677 194 d12d2f42a1ce5499c2e0a2e2f9926e09 "pdflatex"
+  "EcsBlancas.tex" 1722161287.30482 1819 fb827549f8b4ad8e5b17581bc32b3c4a ""
   (generated)
   "EcsBlancas.aux"
   "EcsBlancas.log"

@@ -1,81 +1,66 @@
-\begin{thebibliography}{13}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{10}
 
-\bibitem[Michelson(2024)]{coilgun2024}
+\bibitem{coilgun2024}
 David~W. Michelson.
 \newblock Coilgun physics and design, 2024.
-\newblock URL \url{http://www.coilgun.eclipse.co.uk/}.
 \newblock Accedido: 2024-06-18.
 
-\bibitem[\textit{Purcell, Edward M. and Morin, David J.}(2013)]{purcell2013electricidad}
+\bibitem{purcell2013electricidad}
 \textit{Purcell, Edward M. and Morin, David J.}
 \newblock Electricidad y magnetismo, 2013.
 
-\bibitem[Ltd.(2023)]{artpictures2023}
+\bibitem{artpictures2023}
 Simple Solutions~WBN Ltd.
 \newblock Artpictures, 2023.
-\newblock URL \url{https://artpictures.club/autumn-2023.html}.
 \newblock Accedido: 2024-06-22.
 
-\bibitem[of~Electrical and Computer~Engineering(2024)]{northeastern2024electromagnets}
+\bibitem{northeastern2024electromagnets}
 Department of~Electrical and Northeastern~University Computer~Engineering.
 \newblock Electromagnets, 2024.
-\newblock URL \url{https://ece.northeastern.edu/fac-ece/nian/mom/electromagnets.html}.
 \newblock Accedido: 2024-06-22.
 
-\bibitem[i~Autoc(2024)]{rs2024ksj}
+\bibitem{rs2024ksj}
 i~Autoc.
 \newblock Ksj series solid state relay, 2024.
-\newblock URL \url{https://es.rs-online.com/web/p/reles-de-estado-solido/9032933}.
 \newblock Accedido: 2024-07-03.
 
-\bibitem[Technology(2024)]{coto2024prma1a05b}
+\bibitem{coto2024prma1a05b}
 Coto Technology.
 \newblock Prma1a05b - reed relay, 2024.
-\newblock URL \url{https://www.digikey.es/en/products/detail/coto-technology/PRMA1A05B/264389}.
 \newblock Accedido: 2024-07-03.
 
-\bibitem[Sai~Chaithanya(2018)]{introCoilGun}
+\bibitem{introCoilGun}
 Vineeth~Kumar Sai~Chaithanya.
 \newblock \textit{A Review on Technological Advancement in Electromagnetic Coil Gun System}, 2018.
-\newblock URL \url{https://www.ijert.org/}.
 \newblock Accedido: 05-06-2024.
 
-\bibitem[Kaye et~al.(2002)Kaye, Turman, and Shope]{inproceedings}
+\bibitem{inproceedings}
 R.J. Kaye, B.N. Turman, and S.L. Shope.
 \newblock \textit{Applications of coilgun electromagnetic propulsion technology}, 08 2002.
-\newblock URL \url{https://ieeexplore.ieee.org/abstract/document/1189573}.
 \newblock Accedido: 05-06-2024.
 
-\bibitem[{IEEE Spain}(2020)]{oersted2024}
+\bibitem{oersted2024}
 {IEEE Spain}.
 \newblock \textit{Doscientos aniversario de Oersted y el descubrimiento del electromagnetismo}, 2020.
-\newblock URL \url{https://ieeespain.org/doscientos-aniversario-oersted-y-el-descubrimiento-del-electromagnetismo/}.
 \newblock Accedido: 24-06-2024.
 
-\bibitem[Griffiths(2005)]{griffiths2005}
+\bibitem{griffiths2005}
 David~J. Griffiths.
 \newblock \textit{Introduction to Electrodynamics}, 2005.
 
-\bibitem[Tipler and Mosca(2008)]{tipler2008}
+\bibitem{tipler2008}
 Paul~A. Tipler and Gene Mosca.
-\newblock \emph{\textit{Physics for Scientists and Engineers}}.
+\newblock {\em \textit{Physics for Scientists and Engineers}}.
 \newblock W. H. Freeman, New York, NY, 6th edition, 2008.
 
-\bibitem[Jerez(2016)]{jerez2016resueltos}
+\bibitem{jerez2016resueltos}
 Nicolás Jerez.
 \newblock \textit{Problemas de Máquinas Électricas}, 2016.
-\newblock URL \url{https://www.researchgate.net/profile/Nicolas-Jerez-3/}.
 \newblock Accedido: 2024-06-04.
 
-\bibitem[{ANSOFT}(2012)]{ansoft2012maxwell}
+\bibitem{ansoft2012maxwell}
 {ANSOFT}.
-\newblock \emph{ANSOFT Maxwell 3D V15 User Guide}, 2012.
-\newblock URL \url{https://ansoft-maxwell.narod.ru/en/CompleteMaxwell3D_V15.pdf}.
+\newblock {\em ANSOFT Maxwell 3D V15 User Guide}, 2012.
 \newblock Accedido: 2024-06-22.
 
 \end{thebibliography}
