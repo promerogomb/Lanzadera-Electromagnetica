@@ -737,14 +737,6 @@ INPUT ./anexo2.tex
 INPUT ./anexo2.tex
 INPUT anexo2.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
-INPUT ./anexo3.tex
-INPUT ./anexo3.tex
-INPUT anexo3.tex
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fontawesomethree.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc
 INPUT ./sensorDatasheet.pdf
 INPUT ./sensorDatasheet.pdf
 INPUT ./sensorDatasheet.pdf
@@ -798,7 +790,6 @@ INPUT ./ssrDatasheet.pdf
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb

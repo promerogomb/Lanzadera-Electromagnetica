@@ -160,10 +160,10 @@ El relé \textit{U3} que se observa en los esquemas es el PRMA1A05. Esta PCB ir�
 Los solenoides que se prueben en el prototipo deben de cumplir las siguientes especificaciones:
 
 \begin{itemize}
-    \item \(0.5\leq l_{c} \leq XX\): la longitud máxima de la bobina está delimitada por la longitud del perfil menos un espacio mínimo entre sensores.
+    \item \(l_{c} \leq 133.20~\text{mm}\): la longitud máxima de la bobina está delimitada por el espacio disponible antes de los sensores de posición.
     \item \(l_c~<~l_{fe}\): como se ha desarrollado en el apartado anterior, será necesario que la longitud de la bobina sea menor que la del vástago para que el sistema de medición funcione.
     \item \(r_{cint} > r_{fe}\): es evidente que el radio interior de la bobina debe ser mayor que el del vástago para permitir que este último pueda desplazarse en su interior.
-    \item \(r_{cext} < XXX\): debido a la disposición de los perfiles de aluminio, hay un radio máximo para que la bobina entre en el banco de pruebas.
+    \item \(r_{cext} < 30.00~\text{mm}\): debido a la disposición de los perfiles de aluminio, hay un radio máximo para que la bobina entre en el banco de pruebas.
 \end{itemize}
 
 En cuanto al solenoide del banco de pruebas, solo queda un aspecto por valorar. Aunque hasta el momento no se ha considerado, es crucial para el diseño de una bobina tener en cuenta el radio de la sección del cobre (\(r_{cu}\)), ya que este determinará la cantidad de corriente que la bobina puede soportar dentro de los límites térmicos del material, así como sus dimensiones. Este radio del cobre hace que el radio externo de la bobina se convierta en un parámetro dependiente, por lo que ya no será un valor de diseño a elección del alumno. Los estudiantes que realicen la práctica deberán evaluar la cantidad de corriente y el número de espiras que desean implementar, y seleccionar una sección de cobre que les proporcione un \(r_{cext}\) dentro del límite especificado al inicio de esta sección. Para comprobar que efectivamente el radio cumple con las restricciones, se desarrollará una expresión partiendo de \(N,~r_{cu},~r_{int}~\text{y}~l_c\) como variables conocidas:
